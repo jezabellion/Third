@@ -1,0 +1,35 @@
+{
+  "bundler": "rollup",
+  "shimport": "1.0.1",
+  "assets": {
+    "main": "client.39fd40bb.js"
+  },
+  "css": {
+    "main": "main.1444929681.css",
+    "chunks": {
+      "index.svelte": [
+        "index.d5c03dc4.css",
+        "client.39fd40bb.css"
+      ],
+      "istanbul.svelte": [
+        "istanbul.e2e550a3.css",
+        "client.39fd40bb.css"
+      ],
+      "travel.svelte": [
+        "travel.fe67e919.css",
+        "client.39fd40bb.css"
+      ],
+      "about.svelte": [
+        "client.39fd40bb.css"
+      ],
+      "blog/index.svelte": [
+        "index.ac9994cd.css",
+        "client.39fd40bb.css"
+      ],
+      "blog/[slug].svelte": [
+        "[slug].c5bad352.css",
+        "client.39fd40bb.css"
+      ]
+    }
+  }
+}
