@@ -1,7 +1,8 @@
 
-<style media="screen">
+<style media="screen" lang="scss">
+	@import "./style/theme.scss";
 h1 {
-    color: pink;
+    color: $lightgrey;
     text-align: center;
     font-family: 'Engagement', cursive;
     font-size: 8rem;
@@ -9,4 +10,4 @@ h1 {
   }
 </style>
 
-<h1>Your first real component</h1>
+<h1>Your first fake component</h1>
