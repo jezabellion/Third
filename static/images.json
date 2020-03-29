@@ -1,0 +1,10 @@
+[
+one {
+  src: 'images/bbb.jpg'
+  alt: "handsome man"
+}
+
+two {
+  src: 'images/bbb.jpg'
+  alt: "handsome man"
+}]

@@ -1,6 +1,11 @@
 <script>
 	import Bonkers from '../components/Bonkers.svelte';
   import Truman from '../components/Truman.svelte';
+	import { fade } from 'svelte/transition';
+	// import images from '../static/images.json';
+	let visible = true;
+	let destination = 'Morocco';
+	let mank = 'images/bbb.jpg';
 </script>
 
 
@@ -48,20 +53,21 @@
     background: url('../images/morocco-thumb.jpg');
     background-position: center;
     background-size: cover;
+		background-color: red;
   }
 </style>
 
 <svelte:head>
-	<title>Morocco</title>
+	<title>{destination}</title>
 </svelte:head>
 
-<section class="hero is-link is-fullheight">
+<section in:fade ="{{ duration: 500 }}" class="hero is-link is-fullheight">
 
 <Truman/>
 
   <div class="hero-body">
     <div class="container">
-      <h1>Morocco</h1>
+      <h1 in:fade="{{ duration: 2000 }}">{destination}</h1>
     </div>
   </div>
 </section>
@@ -73,7 +79,7 @@
 </div>
 
 <div class="container image-gallery">
-  <figure><img alt='handsome man' src='images/bbb.jpg'></figure>
+  <figure><img src={mank} alt="man dances."></figure>
 </div>
 
 <div class="container">
