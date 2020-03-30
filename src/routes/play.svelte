@@ -5,18 +5,47 @@
 </style>
 
 <script>
-	let photos = [
+	import Bonkers from '../components/Bonkers.svelte';
+	let photosOne = [
 		{ src: 'images/aaa.jpg', alt: 'whatever' },
 		{ src: 'images/bbb.jpg', alt: 'yup' },
-		{ src: 'images/ccc.jpg', alt: 'new' },
-		{ src: 'images/ddd.jpg', alt: 'stuff' },
-		{ src: 'images/eee.jpg', alt: 'shit' },
-		{ src: 'images/fff.jpg', alt: 'nothing' }
+		{ src: 'images/ccc.jpg', alt: 'new' }
 	];
+  let photosTwo = [
+    { src: 'images/ddd.jpg', alt: 'stuff' },
+    { src: 'images/eee.jpg', alt: 'shit' }
+	];
+	let chapterOne = 'Aït Benhaddou';
+	let chapterTwo = 	'Erg Chebbi';
+	// let chapters = [
+	// 	{ one: 'Aït Benhaddou' },
+	// 	{ two: 'Erg Chebbi'}
+	// ]
 </script>
 
-{#each photos as photo, i}
+
+{#each photosOne as photo, i}
 	<div class="container image-gallery">
 			<figure><img src={photo.src} alt={photo.alt}></figure>
 	</div>
 {/each}
+
+<div class="container">
+  <div class="chapter-header">
+    <h2>{chapterOne}</h2>
+    <p>* * *</p>
+  </div>
+</div>
+
+{#each photosTwo as photo, i}
+	<div class="container image-gallery">
+			<figure><img src={photo.src} alt={photo.alt}></figure>
+	</div>
+{/each}
+
+<div class="container">
+  <div class="chapter-header">
+    <h2>{chapterTwo}</h2>
+    <p>* * *</p>
+  </div>
+</div>

@@ -57,6 +57,9 @@
   }
 </style>
 
+
+<!-- Page starts -->
+
 <svelte:head>
 	<title>{destination}</title>
 </svelte:head>
