@@ -1,7 +1,6 @@
 <style media="screen" lang="scss">
 	@import "./style/theme.scss";
-  .blurb,
-  .chapter-header {
+  .blurb {
     margin: 6rem 14rem;
   }
   .blurb p {

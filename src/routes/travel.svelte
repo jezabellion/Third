@@ -2,6 +2,7 @@
 	import Bonkers from '../components/Bonkers.svelte';
   import Truman from '../components/Truman.svelte';
 	import Blurb from '../components/Blurb.svelte';
+	import ChapterHeader from '../components/ChapterHeader.svelte';
 	import { fade } from 'svelte/transition';
 	// import images from '../static/images.json';
 	let visible = true;
@@ -12,34 +13,22 @@
 
 <style media="screen" lang="scss">
 	@import "./style/theme.scss";
-	h1 {
-	 color: white;
-	}
-  .image-gallery figure img {
-    margin-bottom: 30px;
-  }
+
+
   h1 {
     font-family: 'Engagement', cursive;
     font-size: 8rem;
     text-align: center;
-  }
-  h2 {
-    font-family: 'Engagement', cursive;
-    font-size: 4rem;
-    text-align: center;
-		color: $lightgrey;
-  }
-  .chapter-header p {
-    font-size: 1.5rem;
-    margin-top: 0px;
-    text-align: center;
-		color: $lightgrey;
+		color: white;
   }
   .hero {
     background: url('../images/morocco-thumb.jpg');
     background-position: center;
     background-size: cover;
 		background-color: red;
+  }
+	.image-gallery figure img {
+    margin-bottom: 30px;
   }
 </style>
 
@@ -52,7 +41,7 @@
 
 <section in:fade ="{{ duration: 500 }}" class="hero is-link is-fullheight">
 
-<Truman/>
+	<Truman/>
 
   <div class="hero-body">
     <div class="container">
@@ -67,12 +56,7 @@
   <figure><img src={mank} alt="man dances."></figure>
 </div>
 
-<div class="container">
-  <div class="chapter-header">
-    <h2>Aït Benhaddou</h2>
-    <p>* * *</p>
-  </div>
-</div>
+<ChapterHeader/>
 
 <div class="container image-gallery">
   <figure><img alt='handsome man' src='images/aaa.jpg'></figure>
