@@ -1,6 +1,7 @@
 <script>
 	import Bonkers from '../components/Bonkers.svelte';
   import Truman from '../components/Truman.svelte';
+	import Blurb from '../components/Blurb.svelte';
 	import { fade } from 'svelte/transition';
 	// import images from '../static/images.json';
 	let visible = true;
@@ -27,21 +28,6 @@
     font-size: 4rem;
     text-align: center;
 		color: $lightgrey;
-  }
-  .blurb,
-  .chapter-header {
-    margin: 6rem 14rem;
-  }
-  .blurb p {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    text-align: center;
-    color: $lightgrey;
-
-  }
-  .blurb p:first-child {
-    font-size: 2rem;
-    text-align: center;
   }
   .chapter-header p {
     font-size: 1.5rem;
@@ -75,11 +61,7 @@
   </div>
 </section>
 
-<div class="container blurb">
-  <p>Buying the right telescope to take your love of astronomy to the next level is a big next step in the propsition</p>
-  <p>* * *</p>
-  <p>Andrea & Jeremy</p>
-</div>
+<Blurb/>
 
 <div class="container image-gallery">
   <figure><img src={mank} alt="man dances."></figure>

@@ -1,5 +1,4 @@
 <script>
-	import Nav from '../components/Nav.svelte';
 	import Bonkers from '../components/Bonkers.svelte';
 </script>
 
