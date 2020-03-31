@@ -4,10 +4,22 @@
 	import Blurb from '../components/Blurb.svelte';
 	import ChapterHeader from '../components/ChapterHeader.svelte';
 	import { fade } from 'svelte/transition';
-	// import images from '../static/images.json';
+
 	let visible = true;
 	let destination = 'Morocco';
-	let mank = 'images/bbb.jpg';
+	let chapterOne = 'Aït Benhaddou';
+	let chapterTwo = 	'Erg Chebbi';
+
+	let photosOne = [
+		{ src: 'images/aaa.jpg', alt: 'whatever' },
+		{ src: 'images/bbb.jpg', alt: 'yup' },
+		{ src: 'images/ccc.jpg', alt: 'new' }
+	];
+  let photosTwo = [
+    { src: 'images/ddd.jpg', alt: 'stuff' },
+    { src: 'images/eee.jpg', alt: 'shit' }
+	];
+
 </script>
 
 
@@ -52,17 +64,18 @@
 
 <Blurb/>
 
-<div class="container image-gallery">
-  <figure><img src={mank} alt="man dances."></figure>
-</div>
+{#each photosOne as photo, i}
+	<div class="container image-gallery">
+			<figure><img src={photo.src} alt={photo.alt}></figure>
+	</div>
+{/each}
 
 <ChapterHeader/>
 
-<div class="container image-gallery">
-  <figure><img alt='handsome man' src='images/aaa.jpg'></figure>
-  <figure><img alt='handsome man' src='images/bbb.jpg'></figure>
-  <figure><img alt='handsome man' src='images/ccc.jpg'></figure>
-  <figure><img alt='handsome man' src='images/ddd.jpg'></figure>
-</div>
+{#each photosTwo as photo, i}
+	<div class="container image-gallery">
+			<figure><img src={photo.src} alt={photo.alt}></figure>
+	</div>
+{/each}
 
 <Bonkers/>
