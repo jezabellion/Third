@@ -21,8 +21,12 @@
 	// 	{ one: 'Aït Benhaddou' },
 	// 	{ two: 'Erg Chebbi'}
 	// ]
+	// import test from 'test.js';
 </script>
 
+<!-- <div class="container">
+	<p>{test}</p>
+</div> -->
 
 {#each photosOne as photo, i}
 	<div class="container image-gallery">
@@ -36,6 +40,8 @@
     <p>* * *</p>
   </div>
 </div>
+
+
 
 {#each photosTwo as photo, i}
 	<div class="container image-gallery">
