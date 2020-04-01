@@ -6,18 +6,18 @@
 	import { fade } from 'svelte/transition';
 	// import photosOne from './test.js'
 	import test from './test.js';
-	// import morocco from './morocco.js';
+	import { photosOne } from './morocco.js';
 
 	let visible = true;
 	let destination = 'Morocco';
 	let chapterOne = 'Aït Benhaddou';
 	let chapterTwo = 	'Erg Chebbi';
 
-	let photosOne = [
-		{ src: 'images/aaa.jpg', alt: 'whatever' },
-		{ src: 'images/bbb.jpg', alt: 'yup' },
-		{ src: 'images/ccc.jpg', alt: 'new' }
-	];
+	// let photosOne = [
+	// 	{ src: 'images/aaa.jpg', alt: 'whatever' },
+	// 	{ src: 'images/bbb.jpg', alt: 'yup' },
+	// 	{ src: 'images/ccc.jpg', alt: 'new' }
+	// ];
   let photosTwo = [
     { src: 'images/ddd.jpg', alt: 'stuff' },
     { src: 'images/eee.jpg', alt: 'shit' }
