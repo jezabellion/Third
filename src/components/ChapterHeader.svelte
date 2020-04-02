@@ -1,3 +1,8 @@
+<script>
+	import { chapterOne } from '../routes/morocco.js';
+	import { chapterTwo } from '../routes/morocco.js';
+</script>
+
 <style media="screen" lang="scss">
 	@import "./style/theme.scss";
 
@@ -21,7 +26,7 @@
 
 <div class="container">
   <div class="chapter-header">
-    <h2>Aït Benhaddou</h2>
+    <h2>{chapterOne}</h2>
     <p>* * *</p>
   </div>
 </div>
