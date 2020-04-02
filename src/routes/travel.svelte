@@ -4,26 +4,9 @@
 	import Blurb from '../components/Blurb.svelte';
 	import ChapterHeader from '../components/ChapterHeader.svelte';
 	import { fade } from 'svelte/transition';
-	// import photosOne from './test.js'
-	import test from './test.js';
-	import { photosOne } from './morocco.js';
-
+	import { photosOne, photosTwo } from './morocco.js';
+	import { destination, chapterOne, chapterTwo } from './morocco.js';
 	let visible = true;
-	let destination = 'Morocco';
-	let chapterOne = 'Aït Benhaddou';
-	let chapterTwo = 	'Erg Chebbi';
-
-	// let photosOne = [
-	// 	{ src: 'images/aaa.jpg', alt: 'whatever' },
-	// 	{ src: 'images/bbb.jpg', alt: 'yup' },
-	// 	{ src: 'images/ccc.jpg', alt: 'new' }
-	// ];
-	
-  let photosTwo = [
-    { src: 'images/ddd.jpg', alt: 'stuff' },
-    { src: 'images/eee.jpg', alt: 'shit' }
-	];
-
 </script>
 
 <style media="screen" lang="scss">
@@ -62,12 +45,6 @@
     </div>
   </div>
 </section>
-
-
-<div class="container">
-	<p>{test}</p>
-</div>
-
 
 <Blurb/>
 
