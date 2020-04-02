@@ -5,7 +5,7 @@
 	import ChapterHeader from '../components/ChapterHeader.svelte';
 	import { fade } from 'svelte/transition';
 	import { photosOne, photosTwo } from './morocco.js';
-	import { destination, chapterOne, chapterTwo } from './morocco.js';
+	import { destination, chapterOne, chapterTwo, chapter } from './morocco.js';
 	let visible = true;
 	let tester = 'horse';
 </script>
@@ -25,6 +25,9 @@
 
 <Hero/>
 
+<p>{chapter.one}</p>
+<p>{chapter.two}</p>
+
 <Blurb/>
 
 	{#each photosOne as photo, i}
@@ -33,7 +36,8 @@
 		</div>
 	{/each}
 
-<ChapterHeader tester={chapterOne}/>
+
+<ChapterHeader chapter={chapter.one}/>
 
 	{#each photosTwo as photo, i}
 		<div class="container image-gallery">
