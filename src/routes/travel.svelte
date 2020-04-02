@@ -18,6 +18,7 @@
 	// 	{ src: 'images/bbb.jpg', alt: 'yup' },
 	// 	{ src: 'images/ccc.jpg', alt: 'new' }
 	// ];
+	
   let photosTwo = [
     { src: 'images/ddd.jpg', alt: 'stuff' },
     { src: 'images/eee.jpg', alt: 'shit' }
