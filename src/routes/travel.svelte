@@ -28,6 +28,7 @@
 <p>{chapter.one}</p>
 <p>{chapter.two}</p>
 
+
 <Blurb/>
 
 	{#each photosOne as photo, i}
@@ -37,7 +38,7 @@
 	{/each}
 
 
-<ChapterHeader chapter={chapter.one}/>
+<ChapterHeader/>
 
 	{#each photosTwo as photo, i}
 		<div class="container image-gallery">
@@ -45,7 +46,7 @@
 		</div>
 	{/each}
 
-<ChapterHeader tester={chapterTwo}/>
+<ChapterHeader/>
 
 	{#each photosTwo as photo, i}
 		<div class="container image-gallery">

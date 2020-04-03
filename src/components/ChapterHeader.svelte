@@ -1,6 +1,7 @@
 <script>
 	import { chapterOne } from '../routes/morocco.js';
 	import { chapterTwo } from '../routes/morocco.js';
+	import { chapter } from '../routes/morocco.js';
 </script>
 
 <style media="screen" lang="scss">
@@ -26,7 +27,7 @@
 
 <div class="container">
   <div class="chapter-header">
-    <h2>{chapterOne}</h2>
+    <h2>{chapter.one}</h2>
     <p>* * *</p>
   </div>
 </div>
