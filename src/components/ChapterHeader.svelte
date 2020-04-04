@@ -2,6 +2,7 @@
 	import { chapterOne } from '../routes/morocco.js';
 	import { chapterTwo } from '../routes/morocco.js';
 	import { chapter } from '../routes/morocco.js';
+	export let title;
 </script>
 
 <style media="screen" lang="scss">
@@ -27,7 +28,7 @@
 
 <div class="container">
   <div class="chapter-header">
-    <h2>{chapter.one}</h2>
+    <h2>{title}</h2>
     <p>* * *</p>
   </div>
 </div>

@@ -9,8 +9,6 @@ export const chapter = {
     two: 'Erg Chebbi'
   };
 
-
-
 // Imagery
 export const photosOne = [
 	{ src: 'images/bbb.jpg', alt: 'whatever' },

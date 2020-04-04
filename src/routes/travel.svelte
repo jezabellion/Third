@@ -7,7 +7,6 @@
 	import { photosOne, photosTwo } from './morocco.js';
 	import { destination, chapterOne, chapterTwo, chapter } from './morocco.js';
 	let visible = true;
-	let tester = 'horse';
 </script>
 
 <style media="screen" lang="scss">
@@ -25,10 +24,6 @@
 
 <Hero/>
 
-<p>{chapter.one}</p>
-<p>{chapter.two}</p>
-
-
 <Blurb/>
 
 	{#each photosOne as photo, i}
@@ -38,7 +33,8 @@
 	{/each}
 
 
-<ChapterHeader/>
+<ChapterHeader title={chapter.one}/>
+
 
 	{#each photosTwo as photo, i}
 		<div class="container image-gallery">
@@ -46,7 +42,7 @@
 		</div>
 	{/each}
 
-<ChapterHeader/>
+<ChapterHeader title={chapter.two}/>
 
 	{#each photosTwo as photo, i}
 		<div class="container image-gallery">

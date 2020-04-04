@@ -22,11 +22,16 @@
 	// 	{ two: 'Erg Chebbi'}
 	// ]
 	// import test from 'test.js';
+
+	import ChapterHeader from '../components/ChapterHeader.svelte';
 </script>
 
 <!-- <div class="container">
 	<p>{test}</p>
 </div> -->
+
+
+
 
 {#each photosOne as photo, i}
 	<div class="container image-gallery">
