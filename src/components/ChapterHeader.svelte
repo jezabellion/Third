@@ -1,6 +1,4 @@
 <script>
-	import { chapterOne } from '../routes/morocco.js';
-	import { chapterTwo } from '../routes/morocco.js';
 	import { chapter } from '../routes/morocco.js';
 	export let title;
 </script>

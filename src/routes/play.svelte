@@ -5,7 +5,6 @@
 </style>
 
 <script>
-	import Bonkers from '../components/Bonkers.svelte';
 	let photosOne = [
 		{ src: 'images/aaa.jpg', alt: 'whatever' },
 		{ src: 'images/bbb.jpg', alt: 'yup' },

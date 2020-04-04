@@ -1,5 +1,4 @@
 <script>
-	import Bonkers from '../components/Bonkers.svelte';
 </script>
 
 <style lang="scss" global>

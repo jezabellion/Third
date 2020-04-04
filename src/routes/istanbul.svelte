@@ -1,5 +1,4 @@
 <script>
-	import Bonkers from '../components/Bonkers.svelte';
   import Truman from '../components/Truman.svelte';
 </script>
 

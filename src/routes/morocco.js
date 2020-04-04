@@ -1,9 +1,5 @@
 // Copy
 export const destination = 'Morocco';
-export const chapterOne = 'Aït Benhaddou';
-export const chapterTwo = 	'Erg Chebbi';
-
-
 export const chapter = {
     one: 'Aït Benhaddou',
     two: 'Erg Chebbi'
