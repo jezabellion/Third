@@ -6,14 +6,13 @@
 	@import "./style/theme.scss";
 
   .hero {
-    background-color: pink;
+    background-color: white;
   }
 
   .hero-body h1,
   .hero-body h2 {
     color: white;
   }
-
 
   .hero-body h1 {
   font-family: 'Engagement';
@@ -67,10 +66,9 @@
     background-image: url("../images/shoes.jpg") !important;
     background-size: cover;
     background-position: center;
-    margin-left: 8rem;
-    margin-right: 8rem;
+    // margin-left: 8rem;
+    // margin-right: 8rem;
   }
-
 
   // bottom nav
   .hero .hero-foot .tabs a {
@@ -99,7 +97,7 @@
   <div class="hero-head">
     <header class="navbar">
       <div class="container">
-        <div class="navbar-brand">
+        <div class="navbar-brand is-hidden-tablet">
           <a class="navbar-item">
             <img src="wanderlust.svg" alt='logomark' width="112" height="28">
           </a>
@@ -118,8 +116,8 @@
 
   <div class="hero-image">
     <div class="shoes hero-body">
-      <div class="container has-text-centered">
-        <h1 class="title">
+      <div class="container">
+        <h1>
           Wanderlust
         </h1>
       </div>
@@ -132,10 +130,10 @@
       <div class="container">
         <ul>
           <li class="is-active"><a>Home</a></li>
-          <li><a>Morocco</a></li>
-          <li><a>Istanbul</a></li>
-          <li><a>Russia</a></li>
-          <li><a>Peru</a></li>
+          <li><a href="travel">Morocco</a></li>
+          <li><a href="travel">Istanbul</a></li>
+          <li><a href="travel">Russia</a></li>
+          <li><a href="travel">Peru</a></li>
         </ul>
       </div>
     </nav>

@@ -16,7 +16,7 @@
 		background: url('../images/morocco-thumb.jpg');
 		background-position: center;
 		background-size: cover;
-		background-color: red;
+		background-color: #5876A3;
 	}
 
 	.image-gallery figure img {

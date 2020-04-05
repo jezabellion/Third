@@ -1,7 +1,7 @@
 <div class="hero-head">
   <nav class="navbar is-transparent is-spaced">
     <div class="navbar-brand">
-      <a class="navbar-item" href="shoes">
+      <a class="navbar-item" href="base">
         <img  alt='logomark' src="../wanderlust-white.svg" width="112" height="28">
       </a>
       <a role="button" class="navbar-burger is-hidden-tablet" aria-label="menu" aria-expanded="false">
