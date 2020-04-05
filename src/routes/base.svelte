@@ -1,5 +1,11 @@
 <script>
   import { destination, chapter } from './morocco.js';
+  export let active = false;
+
+  // function handleClick() {
+  //   this.classList.toggle('in-active');
+  //   this.classList.toggle('is-active');
+	// }
 </script>
 
 <style media="screen" lang="scss">
@@ -115,16 +121,46 @@
           <a class="navbar-item">
             <img src="wanderlust.svg" alt='logomark' width="112" height="28">
           </a>
+
           <span class="navbar-burger burger" data-target="navbarMenuHeroC">
             <span></span>
             <span></span>
             <span></span>
           </span>
+
         </div>
 
       </div>
     </header>
+
+    <!-- modal -->
+        <div class:is-active={active} class="modal is-clipped">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <div class="container">
+                <div class="columns has-text-centered">
+                  <div class="column">
+                    <a href="pages/morocco.html">Morocco</a>
+                  </div>
+                  <div class="column">
+                    <a href="pages/morocco.html">Istanbul</a>
+                  </div>
+                  <div class="column">
+                    <a href="pages/morocco.html">Peru</a>
+                  </div>
+                  <div class="column">
+                    <a href="pages/morocco.html">Russia</a>
+                  </div>
+                </div>
+              </div>
+              <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+          </div>
+
   </div>
+  <input type="checkbox" bind:checked={active}>
+
+
 
   <!-- Hero content: will be in the middle -->
 
