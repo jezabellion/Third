@@ -13,27 +13,7 @@
             <span></span>
           </span>
         </div>
-        <div id="navbarMenuHeroC" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item is-active">
-              Home
-            </a>
-            <a class="navbar-item">
-              Examples
-            </a>
-            <a class="navbar-item">
-              Documentation
-            </a>
-            <span class="navbar-item">
-              <a class="button is-success is-inverted">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>Download</span>
-              </a>
-            </span>
-          </div>
-        </div>
+        
       </div>
     </header>
   </div>
