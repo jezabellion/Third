@@ -9,7 +9,7 @@
 </script>
 
 <style media="screen" lang="scss">
-	.image-gallery figure img {
+	figure img {
     margin-bottom: 30px;
   }
 </style>

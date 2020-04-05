@@ -1,6 +1,8 @@
 <script>
   import Truman from '../components/Truman.svelte';
   import { destination } from '../routes/morocco.js';
+  import { fade } from 'svelte/transition';
+	let visible = true;
 </script>
 
 <style media="screen" lang="scss">
