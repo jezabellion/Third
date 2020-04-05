@@ -90,6 +90,42 @@
     margin: 10rem 5rem;
   }
 
+
+  // Responisve sizes
+  // Home Pages
+
+@media screen and (max-width: 768px) {
+
+  .hero-image {
+    margin: auto 2rem;
+  }
+
+  .navbar-brand {
+    padding: 1rem;
+  }
+
+  .navbar-burger {
+    color: white !important;
+  }
+
+  .navbar-burger {
+    color: $black !important;
+  }
+
+  .hero-body h1 {
+    // color: red !important;
+    visibility: hidden;
+  }
+
+  .shoes {
+    background-image: url("../images/shoes-portrait.jpg") !important;
+    background-size: cover;
+    background-position: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
 </style>
 
 <section class="hero is-success is-fullheight">
