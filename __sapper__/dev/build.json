@@ -2,39 +2,39 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.ac55d631.js"
+    "main": "client.37eb5c2e.js"
   },
   "css": {
     "main": "main.122527182.css",
     "chunks": {
       "index.svelte": [
-        "index.26ec481d.css",
-        "client.ac55d631.css"
+        "index.3c96d37f.css",
+        "client.37eb5c2e.css"
       ],
       "istanbul.svelte": [
-        "client.ac55d631.css"
+        "client.37eb5c2e.css"
       ],
       "travel.svelte": [
-        "travel.14ce46cf.css",
-        "client.ac55d631.css",
-        "ChapterHeader.b4a30f3f.css"
+        "travel.5715e258.css",
+        "client.37eb5c2e.css",
+        "ChapterHeader.44532bf5.css"
       ],
       "base.svelte": [
-        "base.982cbf43.css",
-        "client.ac55d631.css"
+        "base.5b8ea0de.css",
+        "client.37eb5c2e.css"
       ],
       "blog/index.svelte": [
-        "index.5b563bcd.css",
-        "client.ac55d631.css"
+        "index.76617219.css",
+        "client.37eb5c2e.css"
       ],
       "blog/[slug].svelte": [
-        "[slug].553eba4c.css",
-        "client.ac55d631.css"
+        "[slug].7ebed4c8.css",
+        "client.37eb5c2e.css"
       ],
       "play.svelte": [
-        "play.238c8e76.css",
-        "client.ac55d631.css",
-        "ChapterHeader.b4a30f3f.css"
+        "play.ecb11807.css",
+        "client.37eb5c2e.css",
+        "ChapterHeader.44532bf5.css"
       ]
     }
   }

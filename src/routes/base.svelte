@@ -4,28 +4,18 @@
 
 <style media="screen" lang="scss">
 	@import "./style/theme.scss";
-
   .hero {
     background-color: white;
   }
 
-  .hero-body h1,
-  .hero-body h2 {
-    color: white;
-  }
-
-  .hero-body h1 {
+  h1 {
   font-family: 'Engagement';
   font-size: 150px;
   color: #FFFFFF;
   letter-spacing: -6.25px;
   text-align: center;
-  margin-top: -70px;
   font-weight: normal;
-  }
-
-  .hero-body h1 {
-    margin-top: auto;
+  margin-top: auto;
   }
 
   .hero-body {
@@ -37,6 +27,16 @@
     margin-left: 8rem;
     margin-right: 8rem;
   }
+
+  .shoes,
+  .home-pic {
+    background-image: url("../images/shoes.jpg") !important;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  // bottom nav
 
   .hero-foot {
     margin-bottom: 2rem;
@@ -56,21 +56,6 @@
     margin-top: auto;
   }
 
-  .hero-foot .hero-body {
-      padding-top: 8rem;
-      padding-bottom: 8rem;
-  }
-
-  .shoes,
-  .home-pic {
-    background-image: url("../images/shoes.jpg") !important;
-    background-size: cover;
-    background-position: center;
-    // margin-left: 8rem;
-    // margin-right: 8rem;
-  }
-
-  // bottom nav
   .hero .hero-foot .tabs a {
     color: $black;
     font-size: 1rem;
@@ -90,41 +75,34 @@
     margin: 10rem 5rem;
   }
 
-
   // Responisve sizes
-  // Home Pages
 
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
 
-  .hero-image {
-    margin: auto 2rem;
+    .hero-image {
+      margin: auto 2rem;
+    }
+
+    .navbar-brand {
+      padding: 1rem;
+    }
+
+    .navbar-burger {
+      color: $black !important;
+    }
+
+    .hero-body h1 {
+      visibility: hidden;
+    }
+
+    .shoes {
+      background-image: url("../images/shoes-portrait.jpg") !important;
+      background-size: cover;
+      background-position: center;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
   }
-
-  .navbar-brand {
-    padding: 1rem;
-  }
-
-  .navbar-burger {
-    color: white !important;
-  }
-
-  .navbar-burger {
-    color: $black !important;
-  }
-
-  .hero-body h1 {
-    // color: red !important;
-    visibility: hidden;
-  }
-
-  .shoes {
-    background-image: url("../images/shoes-portrait.jpg") !important;
-    background-size: cover;
-    background-position: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
 
 </style>
 
@@ -153,9 +131,7 @@
   <div class="hero-image">
     <div class="shoes hero-body">
       <div class="container">
-        <h1>
-          Wanderlust
-        </h1>
+        <h1>Wanderlust</h1>
       </div>
     </div>
   </div>
