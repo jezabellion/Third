@@ -18,10 +18,10 @@
 <!-- Page starts -->
 
 <svelte:head>
-	<title>{destination}</title>
+	<title>{destination.one}</title>
 </svelte:head>
 
-<Hero/>
+<Hero destHead={destination.one}/>
 
 <Blurb/>
 
