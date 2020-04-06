@@ -77,6 +77,21 @@
     margin: 10rem 5rem;
   }
 
+  // Modal Nav
+
+  .modal a {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .modal a:hover {
+    opacity: 50%;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
   // Responisve sizes
 
   @media screen and (max-width: 768px) {
@@ -135,16 +150,16 @@
             <div class="container">
                 <div class="columns has-text-centered">
                   <div class="column">
-                    <a href="pages/morocco.html">{destination.one}</a>
+                    <a href="morocco">{destination.one}</a>
                   </div>
                   <div class="column">
-                    <a href="pages/morocco.html">{destination.two}</a>
+                    <a href="morocco">{destination.two}</a>
                   </div>
                   <div class="column">
-                    <a href="pages/morocco.html">Peru</a>
+                    <a href="peru">Peru</a>
                   </div>
                   <div class="column">
-                    <a href="pages/morocco.html">Russia</a>
+                    <a href="russia">Russia</a>
                   </div>
                 </div>
               </div>
@@ -170,10 +185,10 @@
       <div class="container">
         <ul>
           <!-- <li class="is-active"><a>Home</a></li> -->
-          <li><a href="travel">{destination.one}</a></li>
+          <li><a href="morocco">{destination.one}</a></li>
           <li><a href="travel">{destination.two}</a></li>
-          <li><a href="travel">Russia</a></li>
-          <li><a href="travel">Peru</a></li>
+          <li><a href="travel">{destination.three}</a></li>
+          <li><a href="travel">{destination.four}</a></li>
         </ul>
       </div>
     </nav>

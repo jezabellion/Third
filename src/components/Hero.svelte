@@ -1,5 +1,5 @@
 <script>
-  import Truman from '../components/Truman.svelte';
+  import TravelPageNav from '../components/TravelPageNav.svelte';
   import { destination } from '../routes/morocco.js';
   import { fade } from 'svelte/transition';
 	let visible = true;
@@ -27,7 +27,7 @@
 
 <section in:fade ="{{ duration: 500 }}" class="hero is-link is-fullheight">
 
-	<Truman/>
+	<TravelPageNav/>
 
   <div class="hero-body">
     <div class="container">

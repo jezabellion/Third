@@ -1,7 +1,9 @@
 // Copy
 export const destination = {
     one: 'Morocco',
-    two: 'Istanbul'
+    two: 'Istanbul',
+    three: 'Russia',
+    four: 'Peru'
   };
 
 export const chapter = {
