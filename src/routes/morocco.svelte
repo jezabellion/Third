@@ -4,7 +4,7 @@
 	import ChapterHeader from '../components/ChapterHeader.svelte';
 	import { fade } from 'svelte/transition';
 	import { photosOne, photosTwo } from './morocco.js';
-	import { destination, chapter } from './morocco.js';
+	import { destination, chapter, blurb } from './morocco.js';
 	let visible = true;
 </script>
 
@@ -23,7 +23,7 @@
 
 <Hero destHead={destination.one}/>
 
-<Blurb/>
+<Blurb blurbCopy={blurb.morocco}/>
 
 	{#each photosOne as photo, i}
 		<div class="container image-gallery">

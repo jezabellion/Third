@@ -1,3 +1,8 @@
+<script>
+ import { blurb } from '../routes/morocco.js';
+ export let blurbCopy;
+</script>
+
 <style media="screen" lang="scss">
 	@import "./style/theme.scss";
   .blurb {
@@ -18,7 +23,7 @@
 </style>
 
 <div class="container blurb">
-  <p>Buying the right telescope to take your love of astronomy to the next level is a big next step in the propsition</p>
+  <p>{blurbCopy}</p>
   <p>* * *</p>
   <p>Andrea & Jeremy</p>
 </div>

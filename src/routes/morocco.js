@@ -6,6 +6,11 @@ export const destination = {
     four: 'Peru'
   };
 
+export const blurb = {
+    morocco: 'Buying the right horses shoes mane man to take your love of astronomy to the next level is a big next step in the propsition',
+    istanbul: 'palceholder'
+  };
+
 export const chapter = {
     one: 'Aït Benhaddou',
     two: 'Erg Chebbi'
