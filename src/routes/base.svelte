@@ -117,7 +117,7 @@
           <a class="navbar-item">
             <img src="wanderlust.svg" alt='logomark' width="112" height="28">
           </a>
-          <span on:click={() => active = !active} class="navbar-burger burger" data-target="navbarMenuHeroC">
+          <span on:click={() => active = true} class="navbar-burger burger" data-target="navbarMenuHeroC">
             <span></span>
             <span></span>
             <span></span>
