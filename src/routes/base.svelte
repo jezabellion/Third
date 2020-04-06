@@ -1,11 +1,7 @@
-<script>
+<script >
   import { destination, chapter } from './morocco.js';
   export let active = false;
 
-  // function handleClick() {
-  //   this.classList.toggle('in-active');
-  //   this.classList.toggle('is-active');
-	// }
 </script>
 
 <style media="screen" lang="scss">
@@ -153,11 +149,12 @@
                   </div>
                 </div>
               </div>
-              <button class="modal-close is-large" aria-label="close"></button>
+              <button lass="modal-close is-large" aria-label="close"></button>
             </div>
           </div>
 
   </div>
+
   <input type="checkbox" bind:checked={active}>
 
 
