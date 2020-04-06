@@ -121,6 +121,13 @@
     }
   }
 
+  @media screen and (max-width: 1023px) {
+    .hero-body h1 {
+      font-size: 6rem;
+      letter-spacing: -4px;
+    }
+  }
+
 </style>
 
 <section class="hero is-success is-fullheight">

@@ -10,8 +10,16 @@
 
 <style media="screen" lang="scss">
 	figure img {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
+	@media screen and (max-width: 1023px) {
+	  .container {
+	    margin: 1rem !important;
+	   }
+		 figure img {
+	    margin-bottom: 0rem;
+	   }
+	 }
 </style>
 
 

@@ -22,6 +22,18 @@
     margin: 6rem 14rem;
   }
 
+@media screen and (max-width: 1023px) {
+	.chapter-header {
+		margin: 5rem 1rem;
+	}
+	.chapter-header h2 {
+		font-size: 3rem;
+		line-height: 3rem;
+	}
+	.chapter-header p:nth-child(2) {
+		font-size: 1.5rem;
+	}
+}
 </style>
 
 <div class="container">

@@ -20,6 +20,14 @@
     text-align: center;
   }
 
+@media screen and (max-width: 1023px) {
+	.blurb {
+		margin: 4rem 1rem;
+	}
+	.blurb p:first-child {
+		font-size: 1.5rem
+	}
+}
 </style>
 
 <div class="container blurb">

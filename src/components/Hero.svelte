@@ -19,9 +19,11 @@
 		background-size: cover;
 		background-color: #5876A3;
 	}
-
-	.image-gallery figure img {
-    margin-bottom: 30px;
+  @media screen and (max-width: 1023px) {
+    .hero-body h1 {
+      font-size: 6rem;
+      letter-spacing: -4px;
+    }
   }
 </style>
 
