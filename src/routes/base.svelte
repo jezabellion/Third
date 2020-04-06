@@ -1,6 +1,6 @@
 <script >
   import { destination, chapter } from './morocco.js';
-  export let active = false;
+  export let showModal = false;
 
 </script>
 
@@ -117,7 +117,7 @@
           <a class="navbar-item">
             <img src="wanderlust.svg" alt='logomark' width="112" height="28">
           </a>
-          <span on:click={() => active = true} class="navbar-burger burger" data-target="navbarMenuHeroC">
+          <span on:click={() => showModal = true} class="navbar-burger burger" data-target="navbarMenuHeroC">
             <span></span>
             <span></span>
             <span></span>
@@ -129,7 +129,7 @@
     </header>
 
     <!-- modal -->
-        <div class:is-active={active} class="modal is-clipped">
+        <div class:is-active={showModal} class="modal is-clipped">
           <div class="modal-background"></div>
           <div class="modal-content">
             <div class="container">
@@ -148,15 +148,11 @@
                   </div>
                 </div>
               </div>
-              <button on:click={() => active = false} class="modal-close is-large" aria-label="close"></button>
+              <button on:click={() => showModal = false} class="modal-close is-large" aria-label="close"></button>
             </div>
           </div>
 
   </div>
-
-  <!-- <input type="checkbox" bind:checked={active}> -->
-  <!-- <button on:click={() => active = !active}>text</button> -->
-
 
   <!-- Hero content: will be in the middle -->
 
