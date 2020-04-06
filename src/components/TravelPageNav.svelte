@@ -2,6 +2,17 @@
   import { destination } from '../routes/morocco.js';
 </script>
 
+<style>
+  .navbar-burger span {
+    color: white;
+  }
+  @media screen and (max-width: 768px) {
+    .navbar-brand {
+      padding: 1rem;
+    }
+  }
+</style>
+
 <div class="hero-head">
   <nav class="navbar is-transparent is-spaced">
     <div class="navbar-brand">
