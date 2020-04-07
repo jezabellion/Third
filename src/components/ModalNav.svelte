@@ -1,7 +1,23 @@
 <script>
   import { destination } from '../routes/morocco.js';
-  let showModal;
+  export let showModal = false;
 </script>
+
+<style>
+  .modal {
+    margin: 1rem;
+  }
+  .modal-content {
+    overflow: hidden;
+  }
+  .modal a {
+    font-size: 1.5rem;
+    color: white;
+  }
+  .modal a:hover {
+    opacity: 50%;
+  }
+</style>
 
 <div class:is-active={showModal} class="modal is-clipped">
   <div class="modal-background"></div>

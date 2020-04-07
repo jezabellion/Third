@@ -1,8 +1,7 @@
 <script >
   import { destination, chapter } from './morocco.js';
   import ModalNav from '../components/ModalNav.svelte';
-  export let showModal = true;
-
+  export let showModal = false;
 </script>
 
 <style media="screen" lang="scss">
@@ -78,21 +77,6 @@
     margin: 10rem 5rem;
   }
 
-  // Modal Nav
-
-  .modal a {
-    font-size: 1.5rem;
-    color: white;
-  }
-
-  .modal a:hover {
-    opacity: 50%;
-  }
-
-  .hidden {
-    visibility: hidden;
-  }
-
   // Responisve sizes
 
   @media screen and (max-width: 768px) {
@@ -131,15 +115,15 @@
 
 </style>
 
-<ModalNav/>
+<ModalNav bind:showModal/>
 
-<section class="hero is-success is-fullheight">
+<section class="hero is-fullheight">
   <!-- Hero head: will stick at the top -->
   <div class="hero-head">
     <header class="navbar">
       <div class="container">
         <div class="navbar-brand is-hidden-tablet">
-          <a class="navbar-item">
+          <a class="navbar-item" href='./'>
             <img src="wanderlust.svg" alt='logomark' width="112" height="28">
           </a>
           <span on:click={() => showModal = true} class="navbar-burger burger" data-target="navbarMenuHeroC">

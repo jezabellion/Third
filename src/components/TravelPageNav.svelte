@@ -2,13 +2,16 @@
   import { destination } from '../routes/morocco.js';
 </script>
 
-<style>
+<style media="screen" lang="scss">
   .navbar-burger span {
     color: white;
   }
   @media screen and (max-width: 768px) {
     .navbar-brand {
       padding: 1rem;
+    }
+    .hero.is-link .navbar-item:hover {
+      background-color: red;
     }
   }
 </style>

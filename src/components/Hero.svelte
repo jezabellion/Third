@@ -24,6 +24,7 @@
       font-size: 6rem;
       letter-spacing: -4px;
     }
+
   }
 </style>
 
