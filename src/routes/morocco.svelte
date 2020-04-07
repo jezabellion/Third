@@ -9,6 +9,8 @@
 </script>
 
 <style media="screen" lang="scss">
+	@import "./style/theme.scss";
+
 	figure img {
     margin-bottom: 3rem;
   }

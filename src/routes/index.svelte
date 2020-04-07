@@ -62,6 +62,8 @@
     color: $black;
     font-size: 1rem;
     font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
   }
 
   .hero .hero-foot .tabs a:hover {

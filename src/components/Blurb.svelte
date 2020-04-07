@@ -18,6 +18,7 @@
   .blurb p:first-child {
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 1rem;
   }
 
 @media screen and (max-width: 1023px) {

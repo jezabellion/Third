@@ -13,7 +13,7 @@
   .modal a {
     font-size: 1.25rem;
     color: white;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
   }
   .modal a:hover {

@@ -7,6 +7,7 @@
 </script>
 
 <style media="screen" lang="scss">
+  @import "./style/theme.scss";
 	h1 {
 		font-family: 'Engagement', cursive;
 		font-size: 8rem;
@@ -19,6 +20,9 @@
 		background-size: cover;
 		background-color: #5876A3;
 	}
+  .hero.is-link a.navbar-item:hover {
+    background-color: red !important;
+  }
   @media screen and (max-width: 1023px) {
     .hero-body h1 {
       font-size: 6rem;
@@ -28,7 +32,7 @@
   }
 </style>
 
-<section in:fade ="{{ duration: 500 }}" class="hero is-link is-fullheight">
+<section in:fade ="{{ duration: 500 }}" class="hero is-transparent is-fullheight">
 
 	<TravelPageNav/>
 

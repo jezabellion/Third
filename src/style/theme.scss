@@ -1,6 +1,10 @@
 // theme.scss
-// $main-color: blue;
 $black: black;
 $grey: grey;
 $lightgrey: #969CA8;
-$navbar-item-hover-color: pink !important;
+
+// broken no idea why
+$family-sans-serif: 'Source Sans Pro', sans-serif;
+$navbar-item-color: pink !important;
+$navbar-item-hover-color: #969CA8 !important;
+$navbar-height: 3rem;

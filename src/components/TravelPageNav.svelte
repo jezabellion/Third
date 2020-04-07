@@ -5,15 +5,20 @@
 </script>
 
 <style media="screen" lang="scss">
+  @import "./style/theme.scss";
   .navbar-burger span {
     color: white;
+  }
+  .navbar-item {
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+  .navbar-item a:hover {
+    opacity: 70%;
   }
   @media screen and (max-width: 768px) {
     .navbar-brand {
       padding: 1rem;
-    }
-    .hero.is-link .navbar-item:hover {
-      background-color: red;
     }
   }
 </style>
