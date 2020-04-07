@@ -1,5 +1,7 @@
 <script>
   import { destination } from '../routes/morocco.js';
+  import ModalNav from '../components/ModalNav.svelte';
+  export let showModal = false;
 </script>
 
 <style media="screen" lang="scss">
@@ -16,13 +18,15 @@
   }
 </style>
 
+<ModalNav bind:showModal/>
+
 <div class="hero-head">
   <nav class="navbar is-transparent is-spaced">
     <div class="navbar-brand">
       <a class="navbar-item" href="./">
         <img  alt='logomark' src="../wanderlust-white.svg" width="112" height="28">
       </a>
-      <a role="button" class="navbar-burger is-hidden-tablet" aria-label="menu" aria-expanded="false">
+      <a on:click={() => showModal = true} role="button" class="navbar-burger is-hidden-tablet" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
