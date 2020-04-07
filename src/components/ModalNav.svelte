@@ -11,8 +11,10 @@
     overflow: hidden;
   }
   .modal a {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
   }
   .modal a:hover {
     opacity: 50%;
