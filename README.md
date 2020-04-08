@@ -1,5 +1,3 @@
-# Third
-
-## Travel Site
-Built with Sapper & Bulma
-A side project to explore using Svelte
+#Travel Site
+Built with Svelte/Sapper & Bulma. <br>
+A side project to explore using Svelte.

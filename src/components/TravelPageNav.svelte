@@ -13,9 +13,16 @@
     color: white;
     font-family: 'Lato', sans-serif;
   }
+
   .navbar-item a:hover {
     opacity: 70%;
   }
+
+  .navbar-item .is-active {
+    opacity: 70%;
+    text-decoration:line-through !important;
+  }
+  
   @media screen and (max-width: 768px) {
     .navbar-brand {
       padding: 1rem;
@@ -41,7 +48,7 @@
     <div class="navbar-end is-hidden-mobile">
       <div class="navbar-item">
         <div class="field is-grouped">
-          <a class="navbar-item" href='morocco'>{destination.one}</a>
+          <a class="navbar-item is-active" href='morocco'>{destination.one}</a>
           <a class="navbar-item" href='istanbul'>{destination.two}</a>
           <a class="navbar-item" href='peru'>{destination.three}</a>
           <a class="navbar-item" href='russia'>{destination.four}</a>

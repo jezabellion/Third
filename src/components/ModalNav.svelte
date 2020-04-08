@@ -19,6 +19,9 @@
   .modal a:hover {
     opacity: 50%;
   }
+  .modal .is-selected {
+    text-decoration:line-through;
+  }
 </style>
 
 <div class:is-active={showModal} class="modal is-clipped">
@@ -27,7 +30,7 @@
     <div class="container">
         <div class="columns has-text-centered">
           <div class="column">
-            <a href="morocco">{destination.one}</a>
+            <a class="is-selected" href="morocco">{destination.one}</a>
           </div>
           <div class="column">
             <a href="morocco">{destination.two}</a>
