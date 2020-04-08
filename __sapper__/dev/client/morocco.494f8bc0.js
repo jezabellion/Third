@@ -1,0 +1,43 @@
+// Global
+const destination = {
+    one: 'Morocco',
+    two: 'Istanbul',
+    three: 'Russia',
+    four: 'Peru'
+  };
+
+const blurb = {
+    morocco: 'Buying the right horses shoes mane man to take your love of astronomy to the next level is a big next step in the propsition',
+    istanbul: 'palceholder'
+  };
+
+const farewell = {
+    morocco: 'Merci beaucoup Morocco!',
+    istanbul: 'palceholder'
+  };
+
+// Travel Pages
+// Morocco
+
+// Copy
+const chapter = {
+    one: 'Aït Benhaddou',
+    two: 'Erg Chebbi'
+  };
+
+// Imagery
+const photosOne = [
+	{ src: 'images/bbb.jpg', alt: 'whatever' },
+	{ src: 'images/bbb.jpg', alt: 'yup' },
+	{ src: 'images/bbb.jpg', alt: 'new' }
+];
+
+const photosTwo = [
+  { src: 'images/ddd.jpg', alt: 'stuff' },
+  { src: 'images/eee.jpg', alt: 'shit' },
+  { src: 'images/aaa.jpg', alt: 'shit' },
+  { src: 'images/bbb.jpg', alt: 'shit' }
+];
+
+export { photosTwo as a, blurb as b, chapter as c, destination as d, farewell as f, photosOne as p };
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibW9yb2Njby40OTRmOGJjMC5qcyIsInNvdXJjZXMiOlsiLi4vLi4vLi4vc3JjL3JvdXRlcy9tb3JvY2NvLmpzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIEdsb2JhbFxuZXhwb3J0IGNvbnN0IGRlc3RpbmF0aW9uID0ge1xuICAgIG9uZTogJ01vcm9jY28nLFxuICAgIHR3bzogJ0lzdGFuYnVsJyxcbiAgICB0aHJlZTogJ1J1c3NpYScsXG4gICAgZm91cjogJ1BlcnUnXG4gIH07XG5cbmV4cG9ydCBjb25zdCBibHVyYiA9IHtcbiAgICBtb3JvY2NvOiAnQnV5aW5nIHRoZSByaWdodCBob3JzZXMgc2hvZXMgbWFuZSBtYW4gdG8gdGFrZSB5b3VyIGxvdmUgb2YgYXN0cm9ub215IHRvIHRoZSBuZXh0IGxldmVsIGlzIGEgYmlnIG5leHQgc3RlcCBpbiB0aGUgcHJvcHNpdGlvbicsXG4gICAgaXN0YW5idWw6ICdwYWxjZWhvbGRlcidcbiAgfTtcblxuZXhwb3J0IGNvbnN0IGZhcmV3ZWxsID0ge1xuICAgIG1vcm9jY286ICdNZXJjaSBiZWF1Y291cCBNb3JvY2NvIScsXG4gICAgaXN0YW5idWw6ICdwYWxjZWhvbGRlcidcbiAgfTtcblxuLy8gVHJhdmVsIFBhZ2VzXG4vLyBNb3JvY2NvXG5cbi8vIENvcHlcbmV4cG9ydCBjb25zdCBjaGFwdGVyID0ge1xuICAgIG9uZTogJ0HDr3QgQmVuaGFkZG91JyxcbiAgICB0d286ICdFcmcgQ2hlYmJpJ1xuICB9O1xuXG4vLyBJbWFnZXJ5XG5leHBvcnQgY29uc3QgcGhvdG9zT25lID0gW1xuXHR7IHNyYzogJ2ltYWdlcy9iYmIuanBnJywgYWx0OiAnd2hhdGV2ZXInIH0sXG5cdHsgc3JjOiAnaW1hZ2VzL2JiYi5qcGcnLCBhbHQ6ICd5dXAnIH0sXG5cdHsgc3JjOiAnaW1hZ2VzL2JiYi5qcGcnLCBhbHQ6ICduZXcnIH1cbl07XG5cbmV4cG9ydCBjb25zdCBwaG90b3NUd28gPSBbXG4gIHsgc3JjOiAnaW1hZ2VzL2RkZC5qcGcnLCBhbHQ6ICdzdHVmZicgfSxcbiAgeyBzcmM6ICdpbWFnZXMvZWVlLmpwZycsIGFsdDogJ3NoaXQnIH0sXG4gIHsgc3JjOiAnaW1hZ2VzL2FhYS5qcGcnLCBhbHQ6ICdzaGl0JyB9LFxuICB7IHNyYzogJ2ltYWdlcy9iYmIuanBnJywgYWx0OiAnc2hpdCcgfVxuXTtcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNZLE1BQUMsV0FBVyxHQUFHO0FBQzNCLElBQUksR0FBRyxFQUFFLFNBQVM7QUFDbEIsSUFBSSxHQUFHLEVBQUUsVUFBVTtBQUNuQixJQUFJLEtBQUssRUFBRSxRQUFRO0FBQ25CLElBQUksSUFBSSxFQUFFLE1BQU07QUFDaEIsSUFBSTtBQUNKO0FBQ1ksTUFBQyxLQUFLLEdBQUc7QUFDckIsSUFBSSxPQUFPLEVBQUUsOEhBQThIO0FBQzNJLElBQUksUUFBUSxFQUFFLGFBQWE7QUFDM0IsSUFBSTtBQUNKO0FBQ1ksTUFBQyxRQUFRLEdBQUc7QUFDeEIsSUFBSSxPQUFPLEVBQUUseUJBQXlCO0FBQ3RDLElBQUksUUFBUSxFQUFFLGFBQWE7QUFDM0IsSUFBSTtBQUNKO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDWSxNQUFDLE9BQU8sR0FBRztBQUN2QixJQUFJLEdBQUcsRUFBRSxlQUFlO0FBQ3hCLElBQUksR0FBRyxFQUFFLFlBQVk7QUFDckIsSUFBSTtBQUNKO0FBQ0E7QUFDWSxNQUFDLFNBQVMsR0FBRztBQUN6QixDQUFDLEVBQUUsR0FBRyxFQUFFLGdCQUFnQixFQUFFLEdBQUcsRUFBRSxVQUFVLEVBQUU7QUFDM0MsQ0FBQyxFQUFFLEdBQUcsRUFBRSxnQkFBZ0IsRUFBRSxHQUFHLEVBQUUsS0FBSyxFQUFFO0FBQ3RDLENBQUMsRUFBRSxHQUFHLEVBQUUsZ0JBQWdCLEVBQUUsR0FBRyxFQUFFLEtBQUssRUFBRTtBQUN0QyxFQUFFO0FBQ0Y7QUFDWSxNQUFDLFNBQVMsR0FBRztBQUN6QixFQUFFLEVBQUUsR0FBRyxFQUFFLGdCQUFnQixFQUFFLEdBQUcsRUFBRSxPQUFPLEVBQUU7QUFDekMsRUFBRSxFQUFFLEdBQUcsRUFBRSxnQkFBZ0IsRUFBRSxHQUFHLEVBQUUsTUFBTSxFQUFFO0FBQ3hDLEVBQUUsRUFBRSxHQUFHLEVBQUUsZ0JBQWdCLEVBQUUsR0FBRyxFQUFFLE1BQU0sRUFBRTtBQUN4QyxFQUFFLEVBQUUsR0FBRyxFQUFFLGdCQUFnQixFQUFFLEdBQUcsRUFBRSxNQUFNLEVBQUU7QUFDeEM7Ozs7In0=

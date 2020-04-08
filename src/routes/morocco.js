@@ -1,4 +1,4 @@
-// Copy
+// Global
 export const destination = {
     one: 'Morocco',
     two: 'Istanbul',
@@ -11,14 +11,18 @@ export const blurb = {
     istanbul: 'palceholder'
   };
 
-export const chapter = {
-    one: 'Aït Benhaddou',
-    two: 'Erg Chebbi'
-  };
-
 export const farewell = {
     morocco: 'Merci beaucoup Morocco!',
     istanbul: 'palceholder'
+  };
+
+// Travel Pages
+// Morocco
+
+// Copy
+export const chapter = {
+    one: 'Aït Benhaddou',
+    two: 'Erg Chebbi'
   };
 
 // Imagery
