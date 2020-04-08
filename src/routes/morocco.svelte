@@ -4,8 +4,8 @@
 	import ChapterHeader from '../components/ChapterHeader.svelte';
 	import ShoeHero from '../components/ShoeHero.svelte';
 	import { fade } from 'svelte/transition';
-	import { photosOne, photosTwo } from './morocco.js';
-	import { destination, chapter, blurb, farewell } from './morocco.js';
+	import { photosTwo } from './morocco.js';
+	import { horse, global, morocco } from './morocco.js';
 	let visible = true;
 </script>
 
@@ -29,20 +29,22 @@
 <!-- Page starts -->
 
 <svelte:head>
-	<title>{destination.one}</title>
+	<title>{global.destination.one}</title>
 </svelte:head>
 
-<Hero destHead={destination.one}/>
+<Hero destHead={global.destination.one}/>
 
-<Blurb blurbCopy={blurb.morocco}/>
+<Blurb blurbCopy={global.blurb.morocco}/>
 
-	{#each photosOne as photo, i}
+<p>{horse.test.nut.shit}</p>
+
+	{#each morocco.photosOne as photo, i}
 		<div class="container image-gallery">
 				<figure><img src={photo.src} alt={photo.alt}></figure>
 		</div>
 	{/each}
 
-<ChapterHeader title={chapter.one}/>
+<ChapterHeader title={morocco.chapter.one}/>
 
 	{#each photosTwo as photo, i}
 		<div class="container image-gallery">
@@ -50,7 +52,7 @@
 		</div>
 	{/each}
 
-<ChapterHeader title={chapter.two}/>
+<ChapterHeader title={morocco.chapter.two}/>
 
 	{#each photosTwo as photo, i}
 		<div class="container image-gallery">
@@ -58,6 +60,6 @@
 		</div>
 	{/each}
 
-<ChapterHeader title={farewell.morocco}/>
+<ChapterHeader title={global.farewell.morocco}/>
 
 <ShoeHero/>

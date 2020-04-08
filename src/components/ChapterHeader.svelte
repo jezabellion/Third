@@ -1,5 +1,5 @@
 <script>
-	import { chapter, farewell } from '../routes/morocco.js';
+	import { global, morocco } from '../routes/morocco.js';
 	export let title;
 </script>
 
