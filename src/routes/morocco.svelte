@@ -2,6 +2,7 @@
 	import Hero from '../components/Hero.svelte';
 	import Blurb from '../components/Blurb.svelte';
 	import ChapterHeader from '../components/ChapterHeader.svelte';
+	import ShoeHero from '../components/ShoeHero.svelte';
 	import { fade } from 'svelte/transition';
 	import { photosOne, photosTwo } from './morocco.js';
 	import { destination, chapter, blurb, farewell } from './morocco.js';
@@ -58,3 +59,5 @@
 	{/each}
 
 <ChapterHeader title={farewell.morocco}/>
+
+<ShoeHero/>

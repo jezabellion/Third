@@ -3,7 +3,9 @@ $black: black;
 $grey: grey;
 $lightgrey: #969CA8;
 
-// broken no idea why
+
+$tabs-border-bottom-color: purple;
+// broken no idea why (they're not referenced, more specifically, there's no proper preprocessing)
 $family-sans-serif: 'Source Sans Pro', sans-serif;
 $navbar-item-color: pink !important;
 $navbar-item-hover-color: #969CA8 !important;
