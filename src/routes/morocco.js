@@ -16,6 +16,11 @@ export const chapter = {
     two: 'Erg Chebbi'
   };
 
+export const farewell = {
+    morocco: 'Merci beaucoup Morocco!',
+    istanbul: 'palceholder'
+  };
+
 // Imagery
 export const photosOne = [
 	{ src: 'images/bbb.jpg', alt: 'whatever' },

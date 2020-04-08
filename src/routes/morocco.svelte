@@ -4,7 +4,7 @@
 	import ChapterHeader from '../components/ChapterHeader.svelte';
 	import { fade } from 'svelte/transition';
 	import { photosOne, photosTwo } from './morocco.js';
-	import { destination, chapter, blurb } from './morocco.js';
+	import { destination, chapter, blurb, farewell } from './morocco.js';
 	let visible = true;
 </script>
 
@@ -56,3 +56,5 @@
 				<figure><img src={photo.src} alt={photo.alt}></figure>
 		</div>
 	{/each}
+
+<ChapterHeader title={farewell.morocco}/>
