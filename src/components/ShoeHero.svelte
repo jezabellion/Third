@@ -6,9 +6,6 @@
 
 <style media="screen" lang="scss">
 	@import "./style/theme.scss";
-  .hero {
-    background-color: white;
-  }
 
   h1 {
   font-family: 'Engagement';
@@ -30,8 +27,7 @@
     margin-right: 8rem;
   }
 
-  .shoes,
-  .home-pic {
+  .shoes {
     background-image: url("../images/shoes.jpg") !important;
     background-size: cover;
     background-position: center;
@@ -70,15 +66,6 @@
     color: $grey;
   }
 
-  .chapter-close h3 {
-    color: $grey;
-    text-align: center;
-    font-family: 'Engagement';
-    font-size: 4rem;
-    line-height: 4rem;
-    margin: 10rem 5rem;
-  }
-
   // Bottom Nav
 
   .tabs ul {
@@ -104,19 +91,9 @@
     .hero-image {
       margin: auto 2rem;
     }
-
-    .navbar-brand {
-      padding: 1rem;
-    }
-
-    .navbar-burger {
-      color: $black !important;
-    }
-
     .hero-body h1 {
       visibility: hidden;
     }
-
     .shoes {
       background-image: url("../images/shoes-portrait.jpg") !important;
       background-size: cover;
@@ -136,27 +113,6 @@
 </style>
 
 <ModalNav bind:showModal/>
-
-<!-- <section class="hero is-fullheight"> -->
-  <!-- Hero head: will stick at the top -->
-  <!-- <div class="hero-head">
-    <header class="navbar">
-      <div class="container">
-        <div class="navbar-brand is-hidden-tablet">
-          <a class="navbar-item" href='./'>
-            <img src="wanderlust.svg" alt='logomark' width="112" height="28">
-          </a>
-          <span on:click={() => showModal = true} class="navbar-burger burger" data-target="navbarMenuHeroC">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-
-        </div>
-
-       </div>
-     </header>
-   </div> -->
 
   <!-- Hero content: will be in the middle -->
 
