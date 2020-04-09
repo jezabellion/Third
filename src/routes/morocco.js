@@ -40,16 +40,16 @@ export const photosTwo = [
 ];
 
 
-export const horse = {
-  test: {
-    one: 'Affe',
-    two: 'Goat',
-    nut: {
-      shit: 'poo'
-      },
-    three: 'Cat',
-    four: {
-      fraction: 'wankclaw'
-    }
-  }
-};
+// export const horse = {
+//   test: {
+//     one: 'Affe',
+//     two: 'Goat',
+//     nut: {
+//       shit: 'poo'
+//       },
+//     three: 'Cat',
+//     four: {
+//       fraction: 'wankclaw'
+//     }
+//   }
+// };

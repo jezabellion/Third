@@ -5,7 +5,7 @@
 	import ShoeHero from '../components/ShoeHero.svelte';
 	import { fade } from 'svelte/transition';
 	import { photosTwo } from './morocco.js';
-	import { horse, global, morocco } from './morocco.js';
+	import { global, morocco } from './morocco.js';
 	let visible = true;
 </script>
 
@@ -35,8 +35,6 @@
 <Hero destHead={global.destination.one}/>
 
 <Blurb blurbCopy={global.blurb.morocco}/>
-
-<p>{horse.test.nut.shit}</p>
 
 	{#each morocco.photosOne as photo, i}
 		<div class="container image-gallery">
