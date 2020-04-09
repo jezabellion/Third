@@ -1,5 +1,5 @@
 <script >
-  import { global } from '../routes/morocco.js';
+  import { destination } from '../routes/data.js';
   import ModalNav from '../components/ModalNav.svelte';
   export let showModal = false;
 </script>
@@ -136,10 +136,10 @@
       <div class="container">
         <ul>
           <!-- <li class="is-active"><a>Home</a></li> -->
-          <li><a class="is-active" href="morocco">{global.destination.one}</a></li>
-          <li><a href="travel">{global.destination.two}</a></li>
-          <li><a href="travel">{global.destination.three}</a></li>
-          <li><a href="travel">{global.destination.four}</a></li>
+          <li><a class="is-active" href="morocco">{destination.one}</a></li>
+          <li><a href="travel">{destination.two}</a></li>
+          <li><a href="travel">{destination.three}</a></li>
+          <li><a href="travel">{destination.four}</a></li>
         </ul>
       </div>
     </nav>

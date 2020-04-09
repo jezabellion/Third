@@ -1,5 +1,5 @@
 <script>
- import { global, morocco } from '../routes/morocco.js';
+ import { copy } from '../routes/morocco.js';
  export let blurbCopy;
 </script>
 

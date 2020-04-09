@@ -1,6 +1,6 @@
 <script>
   import TravelPageNav from '../components/TravelPageNav.svelte';
-  import { global } from '../routes/morocco.js';
+  import { destination } from '../routes/data.js';
   import { fade } from 'svelte/transition';
 	let visible = true;
   export let destHead;

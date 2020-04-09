@@ -1,5 +1,5 @@
 <script>
-  import { global } from '../routes/morocco.js';
+  import { destination } from '../routes/data.js';
   import ModalNav from '../components/ModalNav.svelte';
   export let showModal = false;
 </script>
@@ -48,10 +48,10 @@
     <div class="navbar-end is-hidden-mobile">
       <div class="navbar-item">
         <div class="field is-grouped">
-          <a class="navbar-item is-active" href='morocco'>{global.destination.one}</a>
-          <a class="navbar-item" href='istanbul'>{global.destination.two}</a>
-          <a class="navbar-item" href='peru'>{global.destination.three}</a>
-          <a class="navbar-item" href='russia'>{global.destination.four}</a>
+          <a class="navbar-item is-active" href='morocco'>{destination.one}</a>
+          <a class="navbar-item" href='istanbul'>{destination.two}</a>
+          <a class="navbar-item" href='peru'>{destination.three}</a>
+          <a class="navbar-item" href='russia'>{destination.four}</a>
         </div>
       </div>
     </div>

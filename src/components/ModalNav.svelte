@@ -1,5 +1,5 @@
 <script>
-  import { global } from '../routes/morocco.js';
+  import { destination } from '../routes/data.js';
   export let showModal = false;
 </script>
 
@@ -30,10 +30,10 @@
     <div class="container">
         <div class="columns has-text-centered">
           <div class="column">
-            <a href="morocco">{global.destination.one}</a>
+            <a href="morocco">{destination.one}</a>
           </div>
           <div class="column">
-            <a href="morocco">{global.destination.two}</a>
+            <a href="morocco">{destination.two}</a>
           </div>
           <div class="column">
             <a href="peru">Peru</a>
