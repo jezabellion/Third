@@ -1,6 +1,8 @@
 // Travel Page Data
 // Morocco
 
+export const backgroundHero = 'url(../images/morocco-thumb.jpg);'
+
 export const copy = {
   blurb: 'New new new shoes mane man to take your love of astronomy to the next level is a big next step in the propsition',
   farewell: 'Merci beaucoup Morocco!'
