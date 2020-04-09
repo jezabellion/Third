@@ -5,7 +5,7 @@
 	let visible = true;
   // import {  } from '../routes/data.js';
   export let destHead;
-  export let backgroundHero;
+  // export let backgroundHero;
   // let backgroundHero = 'url(../images/morocco-thumb.jpg);'
 </script>
 
@@ -22,6 +22,11 @@
 		background-size: cover;
 		background-color: #5876A3;
 	}
+
+  .morocco {
+    background-image: url(../images/morocco-thumb.jpg);
+  }
+  
   @media screen and (max-width: 1023px) {
     .hero-body h1 {
       font-size: 6rem;
@@ -30,8 +35,8 @@
 
   }
 </style>
-
-<section style="background-image: {backgroundHero}" class="hero is-transparent is-fullheight">
+<!-- style="background-image: {backgroundHero}" -->
+<section class="hero morocco is-transparent is-fullheight" in:fade="{{ duration: 200 }}" >
 
 	<TravelPageNav/>
 
