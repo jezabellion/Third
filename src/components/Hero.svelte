@@ -5,7 +5,8 @@
 	let visible = true;
   // import {  } from '../routes/data.js';
   export let destHead;
-  let backgroundHero = 'url(../images/morocco-thumb.jpg);'
+  export let backgroundHero;
+  // let backgroundHero = 'url(../images/morocco-thumb.jpg);'
 </script>
 
 <style media="screen" lang="scss">
@@ -16,11 +17,11 @@
 		text-align: center;
 		color: white;
 	}
-  // .hero {
-  //   background-position: center;
-	// 	background-size: cover;
-	// 	background-color: #5876A3;
-	// }
+  .hero {
+    background-position: center;
+		background-size: cover;
+		background-color: #5876A3;
+	}
   @media screen and (max-width: 1023px) {
     .hero-body h1 {
       font-size: 6rem;

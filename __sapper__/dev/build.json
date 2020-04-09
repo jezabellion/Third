@@ -2,37 +2,37 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.43e6f429.js"
+    "main": "client.7519bb8d.js"
   },
   "css": {
     "main": "main.122527182.css",
     "chunks": {
       "index.svelte": [
-        "index.89507c75.css",
-        "client.43e6f429.css",
-        "ModalNav.239ef6e5.css"
+        "index.a41d38a3.css",
+        "client.7519bb8d.css",
+        "ModalNav.4236570f.css"
       ],
       "istanbul.svelte": [
-        "client.43e6f429.css"
+        "client.7519bb8d.css"
       ],
       "morocco.svelte": [
-        "morocco.73039b80.css",
-        "client.43e6f429.css",
-        "ModalNav.239ef6e5.css",
-        "ChapterHeader.0ff9ea89.css"
+        "morocco.daa03698.css",
+        "client.7519bb8d.css",
+        "ModalNav.4236570f.css",
+        "ChapterHeader.064c22e5.css"
       ],
       "blog/index.svelte": [
-        "index.ca18e4c1.css",
-        "client.43e6f429.css"
+        "index.ae003aef.css",
+        "client.7519bb8d.css"
       ],
       "blog/[slug].svelte": [
-        "[slug].7c89b0ed.css",
-        "client.43e6f429.css"
+        "[slug].e919ac65.css",
+        "client.7519bb8d.css"
       ],
       "play.svelte": [
-        "play.3ac8ec24.css",
-        "client.43e6f429.css",
-        "ChapterHeader.0ff9ea89.css"
+        "play.bcc7f376.css",
+        "client.7519bb8d.css",
+        "ChapterHeader.064c22e5.css"
       ]
     }
   }

@@ -1,5 +1,6 @@
 <script>
 	import Hero from '../components/Hero.svelte';
+	import Divider from '../components/Divider.svelte';
 	import Blurb from '../components/Blurb.svelte';
 	import ChapterHeader from '../components/ChapterHeader.svelte';
 	import ShoeHero from '../components/ShoeHero.svelte';
@@ -42,7 +43,7 @@
 		</div>
 	{/each}
 
-<ChapterHeader title={chapter.one}/>
+	<Divider/>
 
 	{#each photos.two as photo, i}
 		<div class="container image-gallery">
@@ -50,14 +51,62 @@
 		</div>
 	{/each}
 
-<ChapterHeader title={chapter.two}/>
+	<Divider/>
 
-	{#each photos.two as photo, i}
+	{#each photos.six as photo, i}
 		<div class="container image-gallery">
 				<figure><img src={photo.src} alt={photo.alt}></figure>
 		</div>
 	{/each}
 
-<ChapterHeader title={copy.farewell}/>
+	<ChapterHeader title={chapter.one}/>
 
-<ShoeHero/>
+	{#each photos.three as photo, i}
+		<div class="container image-gallery">
+				<figure><img src={photo.src} alt={photo.alt}></figure>
+		</div>
+	{/each}
+
+	<Divider/>
+
+	{#each photos.four as photo, i}
+		<div class="container image-gallery">
+				<figure><img src={photo.src} alt={photo.alt}></figure>
+		</div>
+	{/each}
+
+	<Divider/>
+
+	{#each photos.five as photo, i}
+		<div class="container image-gallery">
+				<figure><img src={photo.src} alt={photo.alt}></figure>
+		</div>
+	{/each}
+
+	<Divider/>
+
+	{#each photos.eight as photo, i}
+		<div class="container image-gallery">
+				<figure><img src={photo.src} alt={photo.alt}></figure>
+		</div>
+	{/each}
+
+	<ChapterHeader title={chapter.two}/>
+
+	{#each photos.seven as photo, i}
+		<div class="container image-gallery">
+				<figure><img src={photo.src} alt={photo.alt}></figure>
+		</div>
+	{/each}
+
+	<ChapterHeader title={chapter.two}/>	
+
+	{#each photos.nine as photo, i}
+		<div class="container image-gallery">
+				<figure><img src={photo.src} alt={photo.alt}></figure>
+		</div>
+	{/each}
+
+	<ChapterHeader title={copy.farewell}/>
+
+	<ShoeHero/>
