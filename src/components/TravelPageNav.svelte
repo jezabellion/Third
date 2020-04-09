@@ -11,7 +11,7 @@
   }
   .navbar-item {
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif !important;
   }
 
   .navbar-item a:hover {

@@ -6,7 +6,7 @@
 	import ShoeHero from '../components/ShoeHero.svelte';
 	import { fade } from 'svelte/transition';
 	import { destination } from './data.js';
-	import { copy, chapter, photos, backgroundHero } from './morocco.js';
+	import { copy, chapter, photos } from './morocco.js';
 	let visible = true;
 </script>
 
@@ -32,8 +32,8 @@
 <svelte:head>
 	<title>{destination.one}</title>
 </svelte:head>
-
-<Hero backgroundHero={backgroundHero} destHead={destination.one}/>
+<!-- backgroundHero={backgroundHero} -->
+<Hero destHead={destination.one}/>
 
 <Blurb blurbCopy={copy.blurb}/>
 
@@ -99,7 +99,7 @@
 		</div>
 	{/each}
 
-	<ChapterHeader title={chapter.two}/>	
+	<ChapterHeader title={chapter.two}/>
 
 	{#each photos.nine as photo, i}
 		<div class="container image-gallery">
