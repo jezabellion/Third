@@ -8,7 +8,6 @@
 	import { destination } from './data.js';
 	import { copy, chapter, photos } from './morocco.js';
 	let visible = true;
-	// let current = 'morocco'
 </script>
 
 <!-- Page starts -->
@@ -16,7 +15,6 @@
 <svelte:head>
 	<title>{destination.one}</title>
 </svelte:head>
-<!-- backgroundHero={backgroundHero} -->
 
 <div class="travelPage">
 	<Hero current={'morocco'} destHead={destination.one}/>

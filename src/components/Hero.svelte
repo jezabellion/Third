@@ -3,12 +3,9 @@
   import { destination } from '../routes/data.js';
   import { fade } from 'svelte/transition';
 	let visible = true;
-  // import {  } from '../routes/data.js';
   export let destHead;
   export let current;
   // let current = 'peru'
-  // export let backgroundHero;
-  // let backgroundHero = 'url(../images/morocco-thumb.jpg);'
 </script>
 
 <style media="screen" lang="scss">

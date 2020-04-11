@@ -4,7 +4,7 @@
 export const copy = {
   blurb: 'Next  ow whatever level is a big next step in the propsition New new new shoes mane man to take your love of astronomy to the',
   travelers: 'Izzy & Jeremy',
-  farewell: 'Merci beaucoup Morocco!'
+  farewell: 'Muchas gracias Peru!'
 }
 
 export const chapter = {
@@ -32,16 +32,26 @@ export const photos = {
      ],
      // Moutain
      three: [
-        { src: 'images/peru/IMG_CA62B005A47D-1.jpeg', alt: 'yup' },
-        { src: 'images/peru/IMG_CA62B005A47D-2.jpeg', alt: 'yup' },
-        { src: 'images/peru/IMG_CA62B005A47D-3.jpeg', alt: 'yup' },
-        { src: 'images/peru/IMG_CA62B005A47D-4.jpeg', alt: 'yup' },
-        { src: 'images/peru/IMG_CA62B005A47D-5.jpeg', alt: 'yup' },
-        { src: 'images/peru/IMG_CA62B005A47D-6.jpeg', alt: 'yup' },
-        { src: 'images/peru/IMG_CA62B005A47D-7.jpeg', alt: 'yup' },
-        { src: 'images/peru/IMG_CA62B005A47D-8.jpeg', alt: 'yup' },
-        { src: 'images/peru/IMG_CA62B005A47D-9.jpeg', alt: 'yup' },
-        { src: 'images/peru/IMG_CA62B005A47D-10.jpeg', alt: 'yup' }
+       { src: 'images/peru/IMG_AF7456149D65-3.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-2.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-1.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-4.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-5.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-6.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-7.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-8.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-9.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-10.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-1.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-2.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-3.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-4.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-5.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-6.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-7.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-8.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-9.jpeg', alt: 'yup' }
+
       ],
       // Wedding
       four: [
@@ -53,10 +63,11 @@ export const photos = {
          { src: 'images/peru/IMG_73848FD5B2F4-6.jpeg', alt: 'yup' },
          { src: 'images/peru/IMG_73848FD5B2F4-7.jpeg', alt: 'yup' },
          { src: 'images/peru/IMG_73848FD5B2F4-8.jpeg', alt: 'yup' },
-         { src: 'images/peru/IMG_73848FD5B2F4-9.jpeg', alt: 'yup' }
+         { src: 'images/peru/IMG_73848FD5B2F4-9.jpeg', alt: 'yup' },
        ],
+
        // Spilt screen
-       four: [
+       five: [
           { src: 'images/peru/IMG_A9068D7FA463-1.jpeg', alt: 'yup' },
           { src: 'images/peru/IMG_A9068D7FA463-1.jpeg', alt: 'yup' },
           { src: 'images/peru/IMG_A9068D7FA463-1.jpeg', alt: 'yup' },
