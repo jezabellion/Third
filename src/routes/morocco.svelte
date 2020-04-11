@@ -8,24 +8,8 @@
 	import { destination } from './data.js';
 	import { copy, chapter, photos } from './morocco.js';
 	let visible = true;
+	// let current = 'morocco'
 </script>
-
-<style media="screen" lang="scss">
-	@import "./style/theme.scss";
-
-	figure img {
-    margin-bottom: 3rem;
-  }
-	@media screen and (max-width: 1023px) {
-	  .container {
-	    margin: 1rem !important;
-	   }
-		 figure img {
-	    margin-bottom: 0rem;
-	   }
-	 }
-</style>
-
 
 <!-- Page starts -->
 
@@ -33,80 +17,83 @@
 	<title>{destination.one}</title>
 </svelte:head>
 <!-- backgroundHero={backgroundHero} -->
-<Hero destHead={destination.one}/>
 
-<Blurb blurbCopy={copy.blurb}/>
+<div class="travelPage">
+	<Hero current={'morocco'} destHead={destination.one}/>
 
-	{#each photos.one as photo, i}
-		<div class="container image-gallery">
-				<figure><img src={photo.src} alt={photo.alt}></figure>
-		</div>
-	{/each}
+	<Blurb TravlerCopy={copy.travelers} blurbCopy={copy.blurb}/>
 
-	<Divider/>
+		{#each photos.one as photo, i}
+			<div class="container image-gallery">
+					<figure><img src={photo.src} alt={photo.alt}></figure>
+			</div>
+		{/each}
 
-	{#each photos.two as photo, i}
-		<div class="container image-gallery">
-				<figure><img src={photo.src} alt={photo.alt}></figure>
-		</div>
-	{/each}
+		<Divider/>
 
-	<Divider/>
+		{#each photos.two as photo, i}
+			<div class="container image-gallery">
+					<figure><img src={photo.src} alt={photo.alt}></figure>
+			</div>
+		{/each}
 
-	{#each photos.six as photo, i}
-		<div class="container image-gallery">
-				<figure><img src={photo.src} alt={photo.alt}></figure>
-		</div>
-	{/each}
+		<Divider/>
 
-	<ChapterHeader title={chapter.one}/>
+		{#each photos.six as photo, i}
+			<div class="container image-gallery">
+					<figure><img src={photo.src} alt={photo.alt}></figure>
+			</div>
+		{/each}
 
-	{#each photos.three as photo, i}
-		<div class="container image-gallery">
-				<figure><img src={photo.src} alt={photo.alt}></figure>
-		</div>
-	{/each}
+		<ChapterHeader title={chapter.one}/>
 
-	<Divider/>
+		{#each photos.three as photo, i}
+			<div class="container image-gallery">
+					<figure><img src={photo.src} alt={photo.alt}></figure>
+			</div>
+		{/each}
 
-	{#each photos.four as photo, i}
-		<div class="container image-gallery">
-				<figure><img src={photo.src} alt={photo.alt}></figure>
-		</div>
-	{/each}
+		<Divider/>
 
-	<Divider/>
+		{#each photos.four as photo, i}
+			<div class="container image-gallery">
+					<figure><img src={photo.src} alt={photo.alt}></figure>
+			</div>
+		{/each}
 
-	{#each photos.five as photo, i}
-		<div class="container image-gallery">
-				<figure><img src={photo.src} alt={photo.alt}></figure>
-		</div>
-	{/each}
+		<Divider/>
 
-	<Divider/>
+		{#each photos.five as photo, i}
+			<div class="container image-gallery">
+					<figure><img src={photo.src} alt={photo.alt}></figure>
+			</div>
+		{/each}
 
-	{#each photos.eight as photo, i}
-		<div class="container image-gallery">
-				<figure><img src={photo.src} alt={photo.alt}></figure>
-		</div>
-	{/each}
+		<Divider/>
 
-	<ChapterHeader title={chapter.two}/>
+		{#each photos.eight as photo, i}
+			<div class="container image-gallery">
+					<figure><img src={photo.src} alt={photo.alt}></figure>
+			</div>
+		{/each}
 
-	{#each photos.seven as photo, i}
-		<div class="container image-gallery">
-				<figure><img src={photo.src} alt={photo.alt}></figure>
-		</div>
-	{/each}
+		<ChapterHeader title={chapter.two}/>
 
-	<ChapterHeader title={chapter.two}/>
+		{#each photos.seven as photo, i}
+			<div class="container image-gallery">
+					<figure><img src={photo.src} alt={photo.alt}></figure>
+			</div>
+		{/each}
 
-	{#each photos.nine as photo, i}
-		<div class="container image-gallery">
-				<figure><img src={photo.src} alt={photo.alt}></figure>
-		</div>
-	{/each}
+		<ChapterHeader title={chapter.two}/>
 
-	<ChapterHeader title={copy.farewell}/>
+		{#each photos.nine as photo, i}
+			<div class="container image-gallery">
+					<figure><img src={photo.src} alt={photo.alt}></figure>
+			</div>
+		{/each}
 
-	<ShoeHero/>
+		<ChapterHeader title={copy.farewell}/>
+
+		<ShoeHero/>
+	</div>

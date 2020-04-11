@@ -2,7 +2,7 @@
 // Peru
 
 export const copy = {
-  blurb: 'Next level is a big next step in the propsition New new new shoes mane man to take your love of astronomy to the',
+  blurb: 'Next  ow whatever level is a big next step in the propsition New new new shoes mane man to take your love of astronomy to the',
   travelers: 'Izzy & Jeremy',
   farewell: 'Merci beaucoup Morocco!'
 }

@@ -5,6 +5,7 @@
 
 export const copy = {
   blurb: 'New new new shoes mane man to take your love of astronomy to the next level is a big next step in the propsition',
+  travelers: 'Andrea & Jeremy',
   farewell: 'Merci beaucoup Morocco!'
 }
 

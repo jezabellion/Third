@@ -1,6 +1,7 @@
 <script>
- import { copy } from '../routes/morocco.js';
+ // import { copy } from '../routes/peru.js';
  export let blurbCopy;
+ export let TravlerCopy;
 </script>
 
 <style media="screen" lang="scss">
@@ -34,5 +35,5 @@
 <div class="container blurb">
   <p>{blurbCopy}</p>
   <p>* * *</p>
-  <p>Andrea & Jeremy</p>
+  <p>{TravlerCopy}</p>
 </div>
