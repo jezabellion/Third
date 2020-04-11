@@ -13,11 +13,11 @@
 <!-- Page starts -->
 
 <svelte:head>
-	<title>{destination.two}</title>
+	<title>{destination.three}</title>
 </svelte:head>
 
 <div class="travelPage">
-	<Hero current={'peru'} destHead={destination.two}/>
+	<Hero current={'peru'} destHead={destination.three}/>
 
 	<Blurb TravlerCopy={copy.travelers} blurbCopy={copy.blurb}/>
 
