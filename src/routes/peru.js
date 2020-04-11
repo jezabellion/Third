@@ -69,8 +69,8 @@ export const photos = {
        // Spilt screen
        five: [
           { src: 'images/peru/IMG_A9068D7FA463-1.jpeg', alt: 'yup' },
-          { src: 'images/peru/IMG_A9068D7FA463-1.jpeg', alt: 'yup' },
-          { src: 'images/peru/IMG_A9068D7FA463-1.jpeg', alt: 'yup' },
-          { src: 'images/peru/IMG_A9068D7FA463-1.jpeg', alt: 'yup' }
+          { src: 'images/peru/IMG_A9068D7FA463-2.jpeg', alt: 'yup' },
+          { src: 'images/peru/IMG_A9068D7FA463-3.jpeg', alt: 'yup' },
+          { src: 'images/peru/IMG_A9068D7FA463-4.jpeg', alt: 'yup' }
         ]
       };

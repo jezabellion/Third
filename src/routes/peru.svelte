@@ -51,6 +51,12 @@
 			</div>
 		{/each}
 
+		{#each photos.five as photo, i}
+			<div class="container image-gallery">
+					<figure><img src={photo.src} alt={photo.alt}></figure>
+			</div>
+		{/each}
+
 		<ChapterHeader title={copy.farewell}/>
 
 		<ShoeHero/>

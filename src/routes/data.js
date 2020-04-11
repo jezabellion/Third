@@ -2,6 +2,6 @@
 export const destination = {
     one: 'Morocco',
     two: 'Istanbul',
-    three: 'Russia',
-    four: 'Peru'
+    three: 'Peru',
+    four: 'Russia'
 };
