@@ -2,46 +2,52 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.2feafe48.js"
+    "main": "client.e11380c3.js"
   },
   "css": {
     "main": "main.122527182.css",
     "chunks": {
       "index.svelte": [
-        "index.ce81d7d0.css",
-        "client.2feafe48.css",
-        "ModalNav.cf911243.css"
+        "index.2a3d84b0.css",
+        "client.e11380c3.css",
+        "ModalNav.7dc51b11.css"
       ],
       "istanbul.svelte": [
-        "client.2feafe48.css",
-        "ModalNav.cf911243.css",
-        "ShoeHero.b8251c9c.css",
-        "ChapterHeader.fffd1743.css"
+        "client.e11380c3.css",
+        "ModalNav.7dc51b11.css",
+        "ShoeHero.623d37f3.css",
+        "ChapterHeader.2542d980.css"
       ],
       "morocco.svelte": [
-        "client.2feafe48.css",
-        "ModalNav.cf911243.css",
-        "ShoeHero.b8251c9c.css",
-        "ChapterHeader.fffd1743.css"
+        "client.e11380c3.css",
+        "ModalNav.7dc51b11.css",
+        "ShoeHero.623d37f3.css",
+        "ChapterHeader.2542d980.css"
+      ],
+      "russia.svelte": [
+        "client.e11380c3.css",
+        "ModalNav.7dc51b11.css",
+        "ShoeHero.623d37f3.css",
+        "ChapterHeader.2542d980.css"
       ],
       "blog/index.svelte": [
-        "index.71fa498d.css",
-        "client.2feafe48.css"
+        "index.47c04d88.css",
+        "client.e11380c3.css"
       ],
       "blog/[slug].svelte": [
-        "[slug].dd60f160.css",
-        "client.2feafe48.css"
+        "[slug].05f2cfdb.css",
+        "client.e11380c3.css"
       ],
       "peru.svelte": [
-        "client.2feafe48.css",
-        "ModalNav.cf911243.css",
-        "ShoeHero.b8251c9c.css",
-        "ChapterHeader.fffd1743.css"
+        "client.e11380c3.css",
+        "ModalNav.7dc51b11.css",
+        "ShoeHero.623d37f3.css",
+        "ChapterHeader.2542d980.css"
       ],
       "play.svelte": [
-        "play.c3ee4ef3.css",
-        "client.2feafe48.css",
-        "ChapterHeader.fffd1743.css"
+        "play.5398b9c8.css",
+        "client.e11380c3.css",
+        "ChapterHeader.2542d980.css"
       ]
     }
   }
