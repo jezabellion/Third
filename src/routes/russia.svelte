@@ -67,17 +67,7 @@
 			</div>
 		{/each}
 
-		<Divider/>
-
 		{#each photos.seven as photo, i}
-			<div class="container image-gallery">
-					<figure><img src={photo.src} alt={photo.alt}></figure>
-			</div>
-		{/each}
-
-		<Divider/>
-
-		{#each photos.eight as photo, i}
 			<div class="container image-gallery">
 					<figure><img src={photo.src} alt={photo.alt}></figure>
 			</div>

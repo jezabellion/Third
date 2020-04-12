@@ -2,52 +2,52 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.e11380c3.js"
+    "main": "client.6a5ecd46.js"
   },
   "css": {
     "main": "main.122527182.css",
     "chunks": {
       "index.svelte": [
-        "index.2a3d84b0.css",
-        "client.e11380c3.css",
-        "ModalNav.7dc51b11.css"
+        "index.6134a6d5.css",
+        "client.6a5ecd46.css",
+        "ModalNav.4d1d8a32.css"
       ],
       "istanbul.svelte": [
-        "client.e11380c3.css",
-        "ModalNav.7dc51b11.css",
-        "ShoeHero.623d37f3.css",
-        "ChapterHeader.2542d980.css"
+        "client.6a5ecd46.css",
+        "ModalNav.4d1d8a32.css",
+        "ShoeHero.8cba87f6.css",
+        "ChapterHeader.2d9b3261.css"
       ],
       "morocco.svelte": [
-        "client.e11380c3.css",
-        "ModalNav.7dc51b11.css",
-        "ShoeHero.623d37f3.css",
-        "ChapterHeader.2542d980.css"
+        "client.6a5ecd46.css",
+        "ModalNav.4d1d8a32.css",
+        "ShoeHero.8cba87f6.css",
+        "ChapterHeader.2d9b3261.css"
       ],
       "russia.svelte": [
-        "client.e11380c3.css",
-        "ModalNav.7dc51b11.css",
-        "ShoeHero.623d37f3.css",
-        "ChapterHeader.2542d980.css"
+        "client.6a5ecd46.css",
+        "ModalNav.4d1d8a32.css",
+        "ShoeHero.8cba87f6.css",
+        "ChapterHeader.2d9b3261.css"
       ],
       "blog/index.svelte": [
-        "index.47c04d88.css",
-        "client.e11380c3.css"
+        "index.b2f709c3.css",
+        "client.6a5ecd46.css"
       ],
       "blog/[slug].svelte": [
-        "[slug].05f2cfdb.css",
-        "client.e11380c3.css"
+        "[slug].a3f2267e.css",
+        "client.6a5ecd46.css"
       ],
       "peru.svelte": [
-        "client.e11380c3.css",
-        "ModalNav.7dc51b11.css",
-        "ShoeHero.623d37f3.css",
-        "ChapterHeader.2542d980.css"
+        "client.6a5ecd46.css",
+        "ModalNav.4d1d8a32.css",
+        "ShoeHero.8cba87f6.css",
+        "ChapterHeader.2d9b3261.css"
       ],
       "play.svelte": [
-        "play.5398b9c8.css",
-        "client.e11380c3.css",
-        "ChapterHeader.2542d980.css"
+        "play.2326d78f.css",
+        "client.6a5ecd46.css",
+        "ChapterHeader.2d9b3261.css"
       ]
     }
   }
