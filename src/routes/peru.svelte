@@ -43,15 +43,9 @@
 			</div>
 		{/each}
 
-		<ChapterHeader title={chapter.one}/>
+		<Divider/>
 
 		{#each photos.four as photo, i}
-			<div class="container image-gallery">
-					<figure><img src={photo.src} alt={photo.alt}></figure>
-			</div>
-		{/each}
-
-		{#each photos.five as photo, i}
 			<div class="container image-gallery">
 					<figure><img src={photo.src} alt={photo.alt}></figure>
 			</div>

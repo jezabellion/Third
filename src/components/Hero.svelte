@@ -40,7 +40,7 @@
 
     <div class="hero-body">
       <div class="container">
-        <h1 in:fade="{{ duration: 2000 }}">{destHead}</h1>
+        <h1 in:fade="{{ duration: 1000 }}">{destHead}</h1>
       </div>
     </div>
 

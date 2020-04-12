@@ -48,7 +48,7 @@
     <div class="navbar-end is-hidden-mobile">
       <div class="navbar-item">
         <div class="field is-grouped">
-          <a class="navbar-item is-active" href='morocco'>{destination.one}</a>
+          <a class="navbar-item" href='morocco'>{destination.one}</a>
           <a class="navbar-item" href='istanbul'>{destination.two}</a>
           <a class="navbar-item" href='peru'>{destination.three}</a>
           <a class="navbar-item" href='russia'>{destination.four}</a>

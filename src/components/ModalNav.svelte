@@ -33,7 +33,7 @@
             <a href="morocco">{destination.one}</a>
           </div>
           <div class="column">
-            <a href="morocco">{destination.two}</a>
+            <a href="istanbul">{destination.two}</a>
           </div>
           <div class="column">
             <a href="peru">{destination.three}</a>

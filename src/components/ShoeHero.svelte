@@ -136,10 +136,10 @@
       <div class="container">
         <ul>
           <!-- <li class="is-active"><a>Home</a></li> -->
-          <li><a class="is-active" href="morocco">{destination.one}</a></li>
-          <li><a href="travel">{destination.two}</a></li>
-          <li><a href="travel">{destination.three}</a></li>
-          <li><a href="travel">{destination.four}</a></li>
+          <li><a href="morocco">{destination.one}</a></li>
+          <li><a href="istabul">{destination.two}</a></li>
+          <li><a href="peru">{destination.three}</a></li>
+          <li><a href="russia">{destination.four}</a></li>
         </ul>
       </div>
     </nav>
