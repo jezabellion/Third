@@ -25,6 +25,7 @@
   .morocco { background-image: url(../images/morocco-thumb.jpg);}
   .peru { background-image: url(../images/peru-thumb.jpeg);}
   .istanbul { background-image: url(../images/istanbul-thumb.jpeg);}
+  .russia { background-image: url(../images/russia-thumb.jpeg);}
 
   @media screen and (max-width: 1023px) {
     .hero-body h1 {
