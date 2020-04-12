@@ -29,17 +29,19 @@ export const photos = {
     ],
     // Streets
     two: [
+       { src: 'images/istanbul/IMG_6A759CE0259C-11.jpeg', alt: 'yup'},
+       { src: 'images/istanbul/IMG_6A759CE0259C-6.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_6A759CE0259C-5.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_6A759CE0259C-10.jpeg', alt: 'yup'},
        { src: 'images/istanbul/IMG_6A759CE0259C-1.jpeg', alt: 'yup' },
        { src: 'images/istanbul/IMG_6A759CE0259C-2.jpeg', alt: 'yup' },
        { src: 'images/istanbul/IMG_6A759CE0259C-3.jpeg', alt: 'yup' },
        { src: 'images/istanbul/IMG_6A759CE0259C-4.jpeg', alt: 'yup' },
-       { src: 'images/istanbul/IMG_6A759CE0259C-5.jpeg', alt: 'yup' },
-       { src: 'images/istanbul/IMG_6A759CE0259C-6.jpeg', alt: 'yup' },
+
        { src: 'images/istanbul/IMG_6A759CE0259C-7.jpeg', alt: 'yup' },
        { src: 'images/istanbul/IMG_6A759CE0259C-8.jpeg', alt: 'yup' },
-       { src: 'images/istanbul/IMG_6A759CE0259C-9.jpeg', alt: 'yup' },
-       { src: 'images/istanbul/IMG_6A759CE0259C-10.jpeg', alt: 'yup' },
-       { src: 'images/istanbul/IMG_6A759CE0259C-11.jpeg', alt: 'yup' }
+       { src: 'images/istanbul/IMG_6A759CE0259C-9.jpeg', alt: 'yup' }
+
      ],
      // Three
      three: [

@@ -1,5 +1,4 @@
 <script>
- // import { copy } from '../routes/peru.js';
  export let blurbCopy;
  export let TravlerCopy;
 </script>
@@ -24,10 +23,10 @@
 
 @media screen and (max-width: 1023px) {
 	.blurb {
-		margin: 4rem 1rem;
+		margin: 4rem 1rem !important;
 	}
 	.blurb p:first-child {
-		font-size: 1.5rem
+		font-size: 1.5rem;
 	}
 }
 </style>
