@@ -19,7 +19,6 @@
   .hero {
     background-position: center;
 		background-size: cover;
-		background-color: #5876A3;
 	}
 
   .morocco { background-image: url(../images/morocco-thumb.jpg);}
