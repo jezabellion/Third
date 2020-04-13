@@ -29,6 +29,14 @@
 
 		<Divider/>
 
+		{#each photos.four as photo, i}
+			<div class="container image-gallery">
+					<figure><img src={photo.src} alt={photo.alt}></figure>
+			</div>
+		{/each}
+
+		<Divider/>
+
 		{#each photos.one as photo, i}
 			<div class="container image-gallery">
 					<figure><img src={photo.src} alt={photo.alt}></figure>
