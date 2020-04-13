@@ -29,8 +29,8 @@
   @media screen and (max-width: 768px) {
     .morocco { background-image: url(../images/mobile/morocco-sm.jpg);}
     .peru { background-image: url(../images/mobile/peru-sm.jpg);}
-    .istanbul { background-image: url(../images/mobile/istanbul.jpg);}
-    .russia { background-image: url(../images/mobile/russia.jpg);}
+    .istanbul { background-image: url(../images/mobile/istanbul-sm.jpg);}
+    .russia { background-image: url(../images/mobile/russia-sm.jpg);}
 
   }
 
