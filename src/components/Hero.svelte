@@ -26,6 +26,14 @@
   .istanbul { background-image: url(../images/istanbul-thumb.jpeg);}
   .russia { background-image: url(../images/russia/f-photo4.jpg);}
 
+  @media screen and (max-width: 768px) {
+    .morocco { background-image: url(../images/mobile/morocco-sm.jpg);}
+    .peru { background-image: url(../images/mobile/peru-sm.jpg);}
+    .istanbul { background-image: url(../images/mobile/istanbul.jpg);}
+    .russia { background-image: url(../images/mobile/russia.jpg);}
+
+  }
+
   @media screen and (max-width: 1023px) {
     .hero-body h1 {
       font-size: 6rem;
