@@ -120,8 +120,8 @@
 <svelte:head>
   <meta property="og:title" content="Wanderlust" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="www.amazon.com" />
-  <meta property="og:image" content="/images/social-images/home-og.jpg" />
+  <meta property="og:url" content="https://affectionate-mayer-fa488a.netlify.com/" />
+  <meta property="og:image" content="https://affectionate-mayer-fa488a.netlify.com/images/social-images/home-og.jpg" />
 </svelte:head>
 
 <ModalNav bind:showModal/>
