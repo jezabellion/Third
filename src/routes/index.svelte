@@ -121,7 +121,7 @@
   <meta property="og:title" content="Wanderlust" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="www.amazon.com" />
-  <meta property="og:image" content="../images/social-images/home-og.jpg" />
+  <meta property="og:image" content="../images/shoes-portrait.jpg" />
 </svelte:head>
 
 <ModalNav bind:showModal/>

@@ -14,21 +14,81 @@ var https = _interopDefault(require('https'));
 var zlib = _interopDefault(require('zlib'));
 
 // Travel Page Data
-// Morocco
-
-// export const backgroundHero = 'url(../images/morocco-thumb.jpg);'
+// Istanbul
 
 const copy = {
-  blurb: 'New new new shoes mane man to take your love of astronomy to the next level is a big next step in the propsition',
-  farewell: 'Merci beaucoup Morocco!'
+  blurb: 'Next  ow whatever level is a big next step in the propsition New new new shoes mane man to take your love of astronomy to the',
+  travelers: 'Andrea & Jeremy',
+  farewell: 'Teşekkür ederim Turkey!'
 };
 
 const chapter = {
+      // one: 'Aït Benhaddou',
+      // two: 'Erg Chebbi'
+    };
+
+const photos = {
+  // Mosques
+   one: [
+      { src: 'images/istanbul/IMG_3D229D115AEA-1.jpeg', alt: 'yup' },
+      { src: 'images/istanbul/IMG_3D229D115AEA-10.jpeg', alt: 'yup' },
+      { src: 'images/istanbul/IMG_3D229D115AEA-2.jpeg', alt: 'yup' },
+      { src: 'images/istanbul/IMG_3D229D115AEA-3.jpeg', alt: 'yup' },
+      { src: 'images/istanbul/IMG_162399BF1636-4.jpeg', alt: 'yup' },
+      { src: 'images/istanbul/IMG_3D229D115AEA-6.jpeg', alt: 'yup' }
+    ],
+    // Streets
+    two: [
+       { src: 'images/istanbul/IMG_6A759CE0259C-11.jpeg', alt: 'yup'},
+       { src: 'images/istanbul/IMG_6A759CE0259C-6.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_6A759CE0259C-5.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_6A759CE0259C-10.jpeg', alt: 'yup'}
+     ],
+     // four
+     four: [
+       { src: 'images/istanbul/IMG_6A759CE0259C-8.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_6A759CE0259C-7.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_6A759CE0259C-4.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_6A759CE0259C-2.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_6A759CE0259C-1.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_3D229D115AEA-5.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_6A759CE0259C-3.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_6A759CE0259C-9.jpeg', alt: 'yup' }
+     ],
+
+     // Three
+     three: [
+       { src: 'images/istanbul/IMG_162399BF1636-1.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_162399BF1636-6.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_3D229D115AEA-8.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_3D229D115AEA-9.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_3D229D115AEA-11.jpeg', alt: 'yup' },
+       { src: 'images/istanbul/IMG_3D229D115AEA-4.jpeg', alt: 'yup' }
+      ]
+    };
+
+var route_0 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  copy: copy,
+  chapter: chapter,
+  photos: photos
+});
+
+// Travel Page Data
+// Morocco
+
+const copy$1 = {
+  blurb: 'New new new shoes mane man to take your love of astronomy to the next level is a big next step in the propsition',
+  travelers: 'Andrea & Jeremy',
+  farewell: 'Merci beaucoup Morocco!'
+};
+
+const chapter$1 = {
       one: 'Aït Benhaddou',
       two: 'Erg Chebbi'
     };
 
-const photos = {
+const photos$1 = {
    one: [
       { src: 'images/morocco/IMG_AEF333E26C15-1.jpeg', alt: 'yup' },
       { src: 'images/morocco/IMG_AEF333E26C15-2.jpeg', alt: 'whatever'}
@@ -44,51 +104,52 @@ const photos = {
     // Ait
     three: [
       { src: 'images/morocco/IMG_758CCCE68AFA-5.jpeg', alt: 'new' },
-      { src: 'images/morocco/IMG_758CCCE68AFA-4.jpeg', alt: 'new' },
       { src: 'images/morocco/IMG_758CCCE68AFA-2.jpeg', alt: 'new' },
+      { src: 'images/morocco/IMG_758CCCE68AFA-1.jpeg', alt: 'new' },
+      { src: 'images/morocco/IMG_758CCCE68AFA-4.jpeg', alt: 'new' },
       { src: 'images/morocco/IMG_758CCCE68AFA-3.jpeg', alt: 'new' },
       { src: 'images/morocco/IMG_758CCCE68AFA-6.jpeg', alt: 'new' }
     ],
     // Empty
     four: [
       { src: 'images/morocco/IMG_0B4A7FBD5D2C-3.jpeg', alt: 'new' },
-      { src: 'images/morocco/IMG_0B4A7FBD5D2C-2.jpeg', alt: 'new' },
-      { src: 'images/morocco/IMG_0B4A7FBD5D2C-1.jpeg', alt: 'new' }
+      { src: 'images/morocco/IMG_0B4A7FBD5D2C-1.jpeg', alt: 'new' },
+      { src: 'images/morocco/IMG_0B4A7FBD5D2C-2.jpeg', alt: 'new' }
     ],
     // Mosque
     five: [
       { src: 'images/morocco/IMG_BA1EE5C061F8-5.jpeg', alt: 'new' },
-      { src: 'images/morocco/IMG_BA1EE5C061F8-4.jpeg', alt: 'new' },
       { src: 'images/morocco/IMG_BA1EE5C061F8-1.jpeg', alt: 'new' },
-      { src: 'images/morocco/IMG_BA1EE5C061F8-3.jpeg', alt: 'new' }
+      { src: 'images/morocco/IMG_BA1EE5C061F8-4.jpeg', alt: 'new' }
+      // { src: 'images/morocco/IMG_BA1EE5C061F8-3.jpeg', alt: 'new' }
     ],
     // valley
     six: [
       { src: 'images/morocco/IMG_0852E891A202-1.jpeg', alt: 'new' },
       { src: 'images/morocco/IMG_0852E891A202-2.jpeg', alt: 'new' },
       { src: 'images/morocco/IMG_0852E891A202-3.jpeg', alt: 'new' },
-      { src: 'images/morocco/IMG_0852E891A202-4.jpeg', alt: 'new' },
       { src: 'images/morocco/IMG_0852E891A202-5.jpeg', alt: 'new' },
-      { src: 'images/morocco/IMG_0852E891A202-6.jpeg', alt: 'new' }
+      { src: 'images/morocco/IMG_0852E891A202-6.jpeg', alt: 'new' },
+      { src: 'images/morocco/IMG_0852E891A202-4.jpeg', alt: 'new' }
     ],
     // wild town
     seven: [
-      { src: 'images/morocco/IMG_F397C50B4C57-1.jpeg', alt: 'new' },
-      { src: 'images/morocco/IMG_F397C50B4C57-2.jpeg', alt: 'new' },
       { src: 'images/morocco/IMG_F397C50B4C57-3.jpeg', alt: 'new' },
+      { src: 'images/morocco/IMG_F397C50B4C57-2.jpeg', alt: 'new' },
+      { src: 'images/morocco/IMG_F397C50B4C57-1.jpeg', alt: 'new' },
       { src: 'images/morocco/IMG_F397C50B4C57-4.jpeg', alt: 'new' }
     ],
     // wild coutry
     eight: [
-      { src: 'images/morocco/IMG_83B95BE9F1B8-1.jpeg', alt: 'new' },
-      { src: 'images/morocco/IMG_83B95BE9F1B8-2.jpeg', alt: 'new' },
-      { src: 'images/morocco/IMG_83B95BE9F1B8-3.jpeg', alt: 'new' },
       { src: 'images/morocco/IMG_83B95BE9F1B8-4.jpeg', alt: 'new' },
-      { src: 'images/morocco/IMG_83B95BE9F1B8-5.jpeg', alt: 'new' },
-      { src: 'images/morocco/IMG_83B95BE9F1B8-6.jpeg', alt: 'new' },
-      { src: 'images/morocco/IMG_83B95BE9F1B8-6.jpeg', alt: 'new' },
+      { src: 'images/morocco/IMG_83B95BE9F1B8-9.jpeg', alt: 'new' },
       { src: 'images/morocco/IMG_83B95BE9F1B8-8.jpeg', alt: 'new' },
-      { src: 'images/morocco/IMG_83B95BE9F1B8-9.jpeg', alt: 'new' }
+      { src: 'images/morocco/IMG_83B95BE9F1B8-6.jpeg', alt: 'new' },
+      { src: 'images/morocco/IMG_83B95BE9F1B8-1.jpeg', alt: 'new' },
+      { src: 'images/morocco/IMG_83B95BE9F1B8-5.jpeg', alt: 'new' },
+      { src: 'images/morocco/IMG_83B95BE9F1B8-3.jpeg', alt: 'new' },
+      { src: 'images/morocco/IMG_83B95BE9F1B8-2.jpeg', alt: 'new' },
+      { src: 'images/morocco/IMG_83B95BE9F1B8-7.jpeg', alt: 'new' }
     ],
     // desert
       nine: [
@@ -105,11 +166,93 @@ const photos = {
       ]
 };
 
-var route_0 = /*#__PURE__*/Object.freeze({
+var route_1 = /*#__PURE__*/Object.freeze({
   __proto__: null,
-  copy: copy,
-  chapter: chapter,
-  photos: photos
+  copy: copy$1,
+  chapter: chapter$1,
+  photos: photos$1
+});
+
+// Travel Page Data
+// Russia
+
+const copy$2 = {
+  blurb: 'Russia russia russia propsition New new new shoes mane man to take your love of astronomy to the',
+  travelers: 'Ben & Jeremy',
+  farewell: 'Spasibo Russia!'
+};
+
+const chapter$2 = {
+      // one: 'Aït Benhaddou',
+      // two: 'Erg Chebbi'
+    };
+
+const photos$2 = {
+  // Intro
+   one: [
+      { src: 'images/russia/a-photo_0.jpg', alt: 'yup' },
+      { src: 'images/russia/a-photo_2.jpg', alt: 'yup' },
+      { src: 'images/russia/a-photo_3.jpg', alt: 'yup' },
+      { src: 'images/russia/a-photo_4.jpg', alt: 'yup' },
+      { src: 'images/russia/a-photo_5.jpg', alt: 'yup' },
+      { src: 'images/russia/a-photo_6.jpg', alt: 'yup' }
+
+    ],
+    // Soviet
+    two: [
+       { src: 'images/russia/b-photo_1.jpg', alt: 'yup' },
+       { src: 'images/russia/b-photo_2.jpg', alt: 'yup' },
+       { src: 'images/russia/b-photo_3.jpg', alt: 'yup' },
+       { src: 'images/russia/h-bunker.jpg', alt: 'yup' },
+       { src: 'images/russia/b-photo_4.jpg', alt: 'yup' },
+       { src: 'images/russia/b-photo_5.jpg', alt: 'yup' },
+       { src: 'images/russia/b-photo_6.jpg', alt: 'yup' }
+     ],
+     // Space
+     three: [
+       { src: 'images/russia/c-photo4.jpg', alt: 'yup' },
+       { src: 'images/russia/h-space1.jpg', alt: 'yup' },
+       { src: 'images/russia/c-photo1.jpg', alt: 'yup' },
+       { src: 'images/russia/h-space2.jpg', alt: 'yup' },
+       { src: 'images/russia/c-photo2.jpg', alt: 'yup' },
+       { src: 'images/russia/h-space3.jpg', alt: 'yup' },
+       { src: 'images/russia/c-photo3.jpg', alt: 'yup' }
+
+     ],
+     // Outside at night
+      four: [
+        { src: 'images/russia/d-photo3.jpg', alt: 'yup' },
+        { src: 'images/russia/d-photo2.jpg', alt: 'yup' },
+        { src: 'images/russia/h-church.jpg', alt: 'yup' },
+        { src: 'images/russia/d-photo1.jpg', alt: 'yup' }
+      ],
+      // Russian Table
+       five: [
+         { src: 'images/russia/e-photo2.jpg', alt: 'yup' },
+         { src: 'images/russia/e-photo3.jpg', alt: 'yup' },
+         { src: 'images/russia/e-photo4.jpg', alt: 'yup' },
+         { src: 'images/russia/e-photo1.jpg', alt: 'yup' }
+       ],
+       // Dostoyevsky
+      six: [
+        { src: 'images/russia/f-photo4.jpg', alt: 'yup' },
+        { src: 'images/russia/f-photo1.jpg', alt: 'yup' },
+        { src: 'images/russia/f-photo2.jpg', alt: 'yup' },
+        { src: 'images/russia/f-photo3.jpg', alt: 'yup' }
+      ],
+      // Acrhitecture
+       seven: [
+         { src: 'images/russia/g-photo1.jpg', alt: 'yup' },
+         { src: 'images/russia/g-photo2.jpg', alt: 'yup' },
+         { src: 'images/russia/g-photo3.jpg', alt: 'yup' }
+      ]
+    };
+
+var route_2 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  copy: copy$2,
+  chapter: chapter$2,
+  photos: photos$2
 });
 
 // Ordinarily, you'd generate this data from markdown files in your
@@ -218,7 +361,7 @@ function get(req, res) {
 	res.end(contents);
 }
 
-var route_1 = /*#__PURE__*/Object.freeze({
+var route_3 = /*#__PURE__*/Object.freeze({
   __proto__: null,
   get: get
 });
@@ -250,7 +393,7 @@ function get$1(req, res, next) {
 	}
 }
 
-var route_2 = /*#__PURE__*/Object.freeze({
+var route_4 = /*#__PURE__*/Object.freeze({
   __proto__: null,
   get: get$1
 });
@@ -259,13 +402,93 @@ var route_2 = /*#__PURE__*/Object.freeze({
 const destination = {
     one: 'Morocco',
     two: 'Istanbul',
-    three: 'Russia',
-    four: 'Peru'
+    three: 'Peru',
+    four: 'Russia'
 };
 
-var route_3 = /*#__PURE__*/Object.freeze({
+var route_5 = /*#__PURE__*/Object.freeze({
   __proto__: null,
   destination: destination
+});
+
+// Travel Page Data
+// Peru
+
+const copy$3 = {
+  blurb: 'Next  ow whatever level is a big next step in the propsition New new new shoes mane man to take your love of astronomy to the',
+  travelers: 'Izzy & Jeremy',
+  farewell: 'Muchas gracias Peru!'
+};
+
+const chapter$3 = {
+      // one: 'Aït Benhaddou',
+      // two: 'Erg Chebbi'
+    };
+
+const photos$3 = {
+  // Central Restaurant
+   one: [
+      { src: 'images/peru/IMG_4F7880AC67C8-7.jpeg', alt: 'yup' },
+      { src: 'images/peru/IMG_4F7880AC67C8-4.jpeg', alt: 'yup' },
+      { src: 'images/peru/IMG_4F7880AC67C8-1.jpeg', alt: 'yup' },
+      { src: 'images/peru/IMG_4F7880AC67C8-3.jpeg', alt: 'yup' },
+      { src: 'images/peru/IMG_4F7880AC67C8-5.jpeg', alt: 'yup' },
+      { src: 'images/peru/IMG_4F7880AC67C8-2.jpeg', alt: 'yup' },
+      { src: 'images/peru/IMG_4F7880AC67C8-6.jpeg', alt: 'yup' },
+      { src: 'images/peru/IMG_4F7880AC67C8-8.jpeg', alt: 'yup' }
+    ],
+    // Cuzco
+    two: [
+       { src: 'images/peru/IMG_CA62B005A47D-2.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_A9068D7FA463-4.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_CA62B005A47D-1.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_CA62B005A47D-3.jpeg', alt: 'yup' }
+
+     ],
+     // Moutain
+     three: [
+       { src: 'images/peru/IMG_AF7456149D65-3.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-5.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-2.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-8.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-6.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-7.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-4.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-10.jpeg', alt: 'yup'},
+       { src: 'images/peru/IMG_A9068D7FA463-3.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-3.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-6.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-9.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-1.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-7.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-8.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-5.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-2.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-4.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_465F42B09DFB-9.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_AF7456149D65-1.jpeg', alt: 'yup' },
+       { src: 'images/peru/IMG_A9068D7FA463-1.jpeg', alt: 'yup' }
+      ],
+      // Wedding
+      four: [
+         { src: 'images/peru/IMG_73848FD5B2F4-1.jpeg', alt: 'yup' },
+         { src: 'images/peru/IMG_73848FD5B2F4-4.jpeg', alt: 'yup' },
+         { src: 'images/peru/IMG_73848FD5B2F4-6.jpeg', alt: 'yup' },
+         { src: 'images/peru/IMG_A9068D7FA463-2.jpeg', alt: 'yup' },
+         { src: 'images/peru/IMG_73848FD5B2F4-2.jpeg', alt: 'yup' },
+         { src: 'images/peru/IMG_73848FD5B2F4-3.jpeg', alt: 'yup' },
+         { src: 'images/peru/IMG_73848FD5B2F4-5.jpeg', alt: 'yup' },
+         { src: 'images/peru/IMG_73848FD5B2F4-7.jpeg', alt: 'yup' },
+         { src: 'images/peru/IMG_73848FD5B2F4-8.jpeg', alt: 'yup' },
+         { src: 'images/peru/IMG_73848FD5B2F4-9.jpeg', alt: 'yup' }
+       ],
+      };
+
+var route_6 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  copy: copy$3,
+  chapter: chapter$3,
+  photos: photos$3
 });
 
 function noop() { }
@@ -368,7 +591,7 @@ function add_attribute(name, value, boolean) {
 
 const css = {
 	code: ".modal.svelte-3x636q.svelte-3x636q{margin:1rem}.modal-content.svelte-3x636q.svelte-3x636q{overflow:hidden}.modal.svelte-3x636q a.svelte-3x636q{font-size:1.25rem;color:white;font-family:'Lato', sans-serif;font-weight:bold}.modal.svelte-3x636q a.svelte-3x636q:hover{opacity:50%}",
-	map: "{\"version\":3,\"file\":\"ModalNav.svelte\",\"sources\":[\"ModalNav.svelte\"],\"sourcesContent\":[\"<script>\\n  import { destination } from '../routes/data.js';\\n  export let showModal = false;\\n</script>\\n\\n<style>\\n  .modal {\\n    margin: 1rem;\\n  }\\n  .modal-content {\\n    overflow: hidden;\\n  }\\n  .modal a {\\n    font-size: 1.25rem;\\n    color: white;\\n    font-family: 'Lato', sans-serif;\\n    font-weight: bold;\\n  }\\n  .modal a:hover {\\n    opacity: 50%;\\n  }\\n  /* .modal .is-selected {\\n    text-decoration:line-through;\\n  } */\\n\\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jb21wb25lbnRzL01vZGFsTmF2LnN2ZWx0ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0VBQ0U7SUFDRSxZQUFZO0VBQ2Q7RUFDQTtJQUNFLGdCQUFnQjtFQUNsQjtFQUNBO0lBQ0Usa0JBQWtCO0lBQ2xCLFlBQVk7SUFDWiwrQkFBK0I7SUFDL0IsaUJBQWlCO0VBQ25CO0VBQ0E7SUFDRSxZQUFZO0VBQ2Q7RUFDQTs7S0FFRyIsImZpbGUiOiJzcmMvY29tcG9uZW50cy9Nb2RhbE5hdi5zdmVsdGUiLCJzb3VyY2VzQ29udGVudCI6WyJcbiAgLm1vZGFsIHtcbiAgICBtYXJnaW46IDFyZW07XG4gIH1cbiAgLm1vZGFsLWNvbnRlbnQge1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gIH1cbiAgLm1vZGFsIGEge1xuICAgIGZvbnQtc2l6ZTogMS4yNXJlbTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdMYXRvJywgc2Fucy1zZXJpZjtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgfVxuICAubW9kYWwgYTpob3ZlciB7XG4gICAgb3BhY2l0eTogNTAlO1xuICB9XG4gIC8qIC5tb2RhbCAuaXMtc2VsZWN0ZWQge1xuICAgIHRleHQtZGVjb3JhdGlvbjpsaW5lLXRocm91Z2g7XG4gIH0gKi9cbiJdfQ== */</style>\\n\\n<div class:is-active={showModal} class=\\\"modal is-clipped\\\">\\n  <div class=\\\"modal-background\\\"></div>\\n  <div class=\\\"modal-content\\\">\\n    <div class=\\\"container\\\">\\n        <div class=\\\"columns has-text-centered\\\">\\n          <div class=\\\"column\\\">\\n            <a href=\\\"morocco\\\">{destination.one}</a>\\n          </div>\\n          <div class=\\\"column\\\">\\n            <a href=\\\"morocco\\\">{destination.two}</a>\\n          </div>\\n          <div class=\\\"column\\\">\\n            <a href=\\\"peru\\\">Peru</a>\\n          </div>\\n          <div class=\\\"column\\\">\\n            <a href=\\\"russia\\\">Russia</a>\\n          </div>\\n        </div>\\n      </div>\\n      <button on:click={() => showModal = false} class=\\\"modal-close is-large\\\" aria-label=\\\"close\\\"></button>\\n    </div>\\n  </div>\\n\"],\"names\":[],\"mappings\":\"AAME,MAAM,4BAAC,CAAC,AACN,MAAM,CAAE,IAAI,AACd,CAAC,AACD,cAAc,4BAAC,CAAC,AACd,QAAQ,CAAE,MAAM,AAClB,CAAC,AACD,oBAAM,CAAC,CAAC,cAAC,CAAC,AACR,SAAS,CAAE,OAAO,CAClB,KAAK,CAAE,KAAK,CACZ,WAAW,CAAE,MAAM,CAAC,CAAC,UAAU,CAC/B,WAAW,CAAE,IAAI,AACnB,CAAC,AACD,oBAAM,CAAC,eAAC,MAAM,AAAC,CAAC,AACd,OAAO,CAAE,GAAG,AACd,CAAC\"}"
+	map: "{\"version\":3,\"file\":\"ModalNav.svelte\",\"sources\":[\"ModalNav.svelte\"],\"sourcesContent\":[\"<script>\\n  import { destination } from '../routes/data.js';\\n  export let showModal = false;\\n</script>\\n\\n<style>\\n  .modal {\\n    margin: 1rem;\\n  }\\n  .modal-content {\\n    overflow: hidden;\\n  }\\n  .modal a {\\n    font-size: 1.25rem;\\n    color: white;\\n    font-family: 'Lato', sans-serif;\\n    font-weight: bold;\\n  }\\n  .modal a:hover {\\n    opacity: 50%;\\n  }\\n  /* .modal .is-selected {\\n    text-decoration:line-through;\\n  } */\\n\\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jb21wb25lbnRzL01vZGFsTmF2LnN2ZWx0ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0VBQ0U7SUFDRSxZQUFZO0VBQ2Q7RUFDQTtJQUNFLGdCQUFnQjtFQUNsQjtFQUNBO0lBQ0Usa0JBQWtCO0lBQ2xCLFlBQVk7SUFDWiwrQkFBK0I7SUFDL0IsaUJBQWlCO0VBQ25CO0VBQ0E7SUFDRSxZQUFZO0VBQ2Q7RUFDQTs7S0FFRyIsImZpbGUiOiJzcmMvY29tcG9uZW50cy9Nb2RhbE5hdi5zdmVsdGUiLCJzb3VyY2VzQ29udGVudCI6WyJcbiAgLm1vZGFsIHtcbiAgICBtYXJnaW46IDFyZW07XG4gIH1cbiAgLm1vZGFsLWNvbnRlbnQge1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gIH1cbiAgLm1vZGFsIGEge1xuICAgIGZvbnQtc2l6ZTogMS4yNXJlbTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdMYXRvJywgc2Fucy1zZXJpZjtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgfVxuICAubW9kYWwgYTpob3ZlciB7XG4gICAgb3BhY2l0eTogNTAlO1xuICB9XG4gIC8qIC5tb2RhbCAuaXMtc2VsZWN0ZWQge1xuICAgIHRleHQtZGVjb3JhdGlvbjpsaW5lLXRocm91Z2g7XG4gIH0gKi9cbiJdfQ== */</style>\\n\\n<div class:is-active={showModal} class=\\\"modal is-clipped\\\">\\n  <div class=\\\"modal-background\\\"></div>\\n  <div class=\\\"modal-content\\\">\\n    <div class=\\\"container\\\">\\n        <div class=\\\"columns has-text-centered\\\">\\n          <div class=\\\"column\\\">\\n            <a href=\\\"morocco\\\">{destination.one}</a>\\n          </div>\\n          <div class=\\\"column\\\">\\n            <a href=\\\"istanbul\\\">{destination.two}</a>\\n          </div>\\n          <div class=\\\"column\\\">\\n            <a href=\\\"peru\\\">{destination.three}</a>\\n          </div>\\n          <div class=\\\"column\\\">\\n            <a href=\\\"russia\\\">{destination.four}</a>\\n          </div>\\n        </div>\\n      </div>\\n      <button on:click={() => showModal = false} class=\\\"modal-close is-large\\\" aria-label=\\\"close\\\"></button>\\n    </div>\\n  </div>\\n\"],\"names\":[],\"mappings\":\"AAME,MAAM,4BAAC,CAAC,AACN,MAAM,CAAE,IAAI,AACd,CAAC,AACD,cAAc,4BAAC,CAAC,AACd,QAAQ,CAAE,MAAM,AAClB,CAAC,AACD,oBAAM,CAAC,CAAC,cAAC,CAAC,AACR,SAAS,CAAE,OAAO,CAClB,KAAK,CAAE,KAAK,CACZ,WAAW,CAAE,MAAM,CAAC,CAAC,UAAU,CAC/B,WAAW,CAAE,IAAI,AACnB,CAAC,AACD,oBAAM,CAAC,eAAC,MAAM,AAAC,CAAC,AACd,OAAO,CAAE,GAAG,AACd,CAAC\"}"
 };
 
 const ModalNav = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
@@ -378,9 +601,9 @@ const ModalNav = create_ssr_component(($$result, $$props, $$bindings, $$slots) =
 
 	return `<div class="${["modal is-clipped svelte-3x636q", showModal ? "is-active" : ""].join(" ").trim()}"><div class="${"modal-background"}"></div>
   <div class="${"modal-content svelte-3x636q"}"><div class="${"container"}"><div class="${"columns has-text-centered"}"><div class="${"column"}"><a href="${"morocco"}" class="${"svelte-3x636q"}">${escape(destination.one)}</a></div>
-          <div class="${"column"}"><a href="${"morocco"}" class="${"svelte-3x636q"}">${escape(destination.two)}</a></div>
-          <div class="${"column"}"><a href="${"peru"}" class="${"svelte-3x636q"}">Peru</a></div>
-          <div class="${"column"}"><a href="${"russia"}" class="${"svelte-3x636q"}">Russia</a></div></div></div>
+          <div class="${"column"}"><a href="${"istanbul"}" class="${"svelte-3x636q"}">${escape(destination.two)}</a></div>
+          <div class="${"column"}"><a href="${"peru"}" class="${"svelte-3x636q"}">${escape(destination.three)}</a></div>
+          <div class="${"column"}"><a href="${"russia"}" class="${"svelte-3x636q"}">${escape(destination.four)}</a></div></div></div>
       <button class="${"modal-close is-large"}" aria-label="${"close"}"></button></div></div>`;
 });
 
@@ -388,7 +611,7 @@ const ModalNav = create_ssr_component(($$result, $$props, $$bindings, $$slots) =
 
 const css$1 = {
 	code: ".hero.svelte-mp8gi9.svelte-mp8gi9{background-color:white}h1.svelte-mp8gi9.svelte-mp8gi9{font-family:'Engagement';font-size:150px;color:#FFFFFF;letter-spacing:-6.25px;text-align:center;font-weight:normal;margin-top:auto}.hero-body.svelte-mp8gi9.svelte-mp8gi9{padding-top:8rem;padding-bottom:8rem}.hero-image.svelte-mp8gi9.svelte-mp8gi9{margin-left:8rem;margin-right:8rem}.shoes.svelte-mp8gi9.svelte-mp8gi9{background-image:url(\"../images/shoes.jpg\") !important;background-size:cover;background-position:center}.hero-foot.svelte-mp8gi9.svelte-mp8gi9{margin-bottom:2rem}.hero.svelte-mp8gi9 .tabs ul.svelte-mp8gi9,.hero.svelte-mp8gi9 .hero-foot .tabs ul.svelte-mp8gi9{padding-left:14rem;padding-right:14rem}.hero.svelte-mp8gi9 .hero-foot .tabs ul.svelte-mp8gi9{padding-top:3rem}.hero-foot .hero-body.svelte-mp8gi9 h1.svelte-mp8gi9{margin-top:auto}.hero.svelte-mp8gi9 .hero-foot .tabs a.svelte-mp8gi9{color:black;font-size:1rem;font-weight:bold;font-family:'Lato', sans-serif;font-size:1rem}.hero.svelte-mp8gi9 .hero-foot .tabs a.svelte-mp8gi9:hover{color:grey}@media screen and (max-width: 768px){.hero-image.svelte-mp8gi9.svelte-mp8gi9{margin:auto 2rem}.navbar-brand.svelte-mp8gi9.svelte-mp8gi9{padding:1rem}.navbar-burger.svelte-mp8gi9.svelte-mp8gi9{color:black !important}.hero-body.svelte-mp8gi9 h1.svelte-mp8gi9{visibility:hidden}.shoes.svelte-mp8gi9.svelte-mp8gi9{background-image:url(\"../images/shoes-portrait.jpg\") !important;background-size:cover;background-position:center;margin-left:1rem;margin-right:1rem}}@media screen and (max-width: 1023px){.hero-body.svelte-mp8gi9 h1.svelte-mp8gi9{font-size:6rem;letter-spacing:-4px}}",
-	map: "{\"version\":3,\"file\":\"index.svelte\",\"sources\":[\"index.svelte\"],\"sourcesContent\":[\"<script >\\n  import { destination } from './data.js';\\n  import ModalNav from '../components/ModalNav.svelte';\\n  export let showModal = false;\\n</script>\\n\\n<style media=\\\"screen\\\" lang=\\\"scss\\\">.hero {\\n  background-color: white; }\\n\\nh1 {\\n  font-family: 'Engagement';\\n  font-size: 150px;\\n  color: #FFFFFF;\\n  letter-spacing: -6.25px;\\n  text-align: center;\\n  font-weight: normal;\\n  margin-top: auto; }\\n\\n.hero-body {\\n  padding-top: 8rem;\\n  padding-bottom: 8rem; }\\n\\n.hero-image {\\n  margin-left: 8rem;\\n  margin-right: 8rem; }\\n\\n.shoes,\\n.home-pic {\\n  background-image: url(\\\"../images/shoes.jpg\\\") !important;\\n  background-size: cover;\\n  background-position: center; }\\n\\n.hero-foot {\\n  margin-bottom: 2rem; }\\n\\n.hero .tabs ul,\\n.hero .hero-foot .tabs ul {\\n  padding-left: 14rem;\\n  padding-right: 14rem; }\\n\\n.hero .hero-foot .tabs ul {\\n  padding-top: 3rem; }\\n\\n.hero-foot .hero-body h1 {\\n  margin-top: auto; }\\n\\n.hero .hero-foot .tabs a {\\n  color: black;\\n  font-size: 1rem;\\n  font-weight: bold;\\n  font-family: 'Lato', sans-serif;\\n  font-size: 1rem; }\\n\\n.hero .hero-foot .tabs a:hover {\\n  color: grey; }\\n\\n.chapter-close h3 {\\n  color: grey;\\n  text-align: center;\\n  font-family: 'Engagement';\\n  font-size: 4rem;\\n  line-height: 4rem;\\n  margin: 10rem 5rem; }\\n\\n@media screen and (max-width: 768px) {\\n  .hero-image {\\n    margin: auto 2rem; }\\n  .navbar-brand {\\n    padding: 1rem; }\\n  .navbar-burger {\\n    color: black !important; }\\n  .hero-body h1 {\\n    visibility: hidden; }\\n  .shoes {\\n    background-image: url(\\\"../images/shoes-portrait.jpg\\\") !important;\\n    background-size: cover;\\n    background-position: center;\\n    margin-left: 1rem;\\n    margin-right: 1rem; } }\\n\\n@media screen and (max-width: 1023px) {\\n  .hero-body h1 {\\n    font-size: 6rem;\\n    letter-spacing: -4px; } }\\n/*# sourceMappingURL=src/routes/index.svelte.map */</style>\\n\\n<ModalNav bind:showModal/>\\n\\n<section class=\\\"hero is-fullheight\\\">\\n  <!-- Hero head: will stick at the top -->\\n  <div class=\\\"hero-head\\\">\\n    <header class=\\\"navbar\\\">\\n      <div class=\\\"container\\\">\\n        <div class=\\\"navbar-brand is-hidden-tablet\\\">\\n          <a class=\\\"navbar-item\\\" href='./'>\\n            <img src=\\\"wanderlust.svg\\\" alt='logomark' width=\\\"112\\\" height=\\\"28\\\">\\n          </a>\\n          <span on:click={() => showModal = true} class=\\\"navbar-burger burger\\\" data-target=\\\"navbarMenuHeroC\\\">\\n            <span></span>\\n            <span></span>\\n            <span></span>\\n          </span>\\n\\n        </div>\\n\\n      </div>\\n    </header>\\n\\n    <!-- modal -->\\n\\n\\n  </div>\\n\\n  <!-- Hero content: will be in the middle -->\\n\\n  <div class=\\\"hero-image\\\">\\n    <div class=\\\"shoes hero-body\\\">\\n      <div class=\\\"container\\\">\\n        <h1>Wanderlust</h1>\\n      </div>\\n    </div>\\n  </div>\\n\\n  <!-- Hero footer: will stick at the bottom -->\\n  <div class=\\\"hero-foot is-hidden-mobile\\\">\\n    <nav class=\\\"tabs is-fullwidth\\\">\\n      <div class=\\\"container\\\">\\n        <ul>\\n          <!-- <li class=\\\"is-active\\\"><a>Home</a></li> -->\\n          <li><a href=\\\"morocco\\\">{destination.one}</a></li>\\n          <li><a href=\\\"travel\\\">{destination.two}</a></li>\\n          <li><a href=\\\"travel\\\">{destination.three}</a></li>\\n          <li><a href=\\\"travel\\\">{destination.four}</a></li>\\n        </ul>\\n      </div>\\n    </nav>\\n  </div>\\n</section>\\n\"],\"names\":[],\"mappings\":\"AAMkC,KAAK,4BAAC,CAAC,AACvC,gBAAgB,CAAE,KAAK,AAAE,CAAC,AAE5B,EAAE,4BAAC,CAAC,AACF,WAAW,CAAE,YAAY,CACzB,SAAS,CAAE,KAAK,CAChB,KAAK,CAAE,OAAO,CACd,cAAc,CAAE,OAAO,CACvB,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,MAAM,CACnB,UAAU,CAAE,IAAI,AAAE,CAAC,AAErB,UAAU,4BAAC,CAAC,AACV,WAAW,CAAE,IAAI,CACjB,cAAc,CAAE,IAAI,AAAE,CAAC,AAEzB,WAAW,4BAAC,CAAC,AACX,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,AAAE,CAAC,AAEvB,MAAM,4BACI,CAAC,AACT,gBAAgB,CAAE,IAAI,qBAAqB,CAAC,CAAC,UAAU,CACvD,eAAe,CAAE,KAAK,CACtB,mBAAmB,CAAE,MAAM,AAAE,CAAC,AAEhC,UAAU,4BAAC,CAAC,AACV,aAAa,CAAE,IAAI,AAAE,CAAC,AAExB,mBAAK,CAAC,KAAK,CAAC,gBAAE,CACd,mBAAK,CAAC,UAAU,CAAC,KAAK,CAAC,EAAE,cAAC,CAAC,AACzB,YAAY,CAAE,KAAK,CACnB,aAAa,CAAE,KAAK,AAAE,CAAC,AAEzB,mBAAK,CAAC,UAAU,CAAC,KAAK,CAAC,EAAE,cAAC,CAAC,AACzB,WAAW,CAAE,IAAI,AAAE,CAAC,AAEtB,UAAU,CAAC,wBAAU,CAAC,EAAE,cAAC,CAAC,AACxB,UAAU,CAAE,IAAI,AAAE,CAAC,AAErB,mBAAK,CAAC,UAAU,CAAC,KAAK,CAAC,CAAC,cAAC,CAAC,AACxB,KAAK,CAAE,KAAK,CACZ,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,IAAI,CACjB,WAAW,CAAE,MAAM,CAAC,CAAC,UAAU,CAC/B,SAAS,CAAE,IAAI,AAAE,CAAC,AAEpB,mBAAK,CAAC,UAAU,CAAC,KAAK,CAAC,eAAC,MAAM,AAAC,CAAC,AAC9B,KAAK,CAAE,IAAI,AAAE,CAAC,AAUhB,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACpC,WAAW,4BAAC,CAAC,AACX,MAAM,CAAE,IAAI,CAAC,IAAI,AAAE,CAAC,AACtB,aAAa,4BAAC,CAAC,AACb,OAAO,CAAE,IAAI,AAAE,CAAC,AAClB,cAAc,4BAAC,CAAC,AACd,KAAK,CAAE,KAAK,CAAC,UAAU,AAAE,CAAC,AAC5B,wBAAU,CAAC,EAAE,cAAC,CAAC,AACb,UAAU,CAAE,MAAM,AAAE,CAAC,AACvB,MAAM,4BAAC,CAAC,AACN,gBAAgB,CAAE,IAAI,8BAA8B,CAAC,CAAC,UAAU,CAChE,eAAe,CAAE,KAAK,CACtB,mBAAmB,CAAE,MAAM,CAC3B,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,AAAE,CAAC,AAAC,CAAC,AAE3B,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,MAAM,CAAC,AAAC,CAAC,AACrC,wBAAU,CAAC,EAAE,cAAC,CAAC,AACb,SAAS,CAAE,IAAI,CACf,cAAc,CAAE,IAAI,AAAE,CAAC,AAAC,CAAC\"}"
+	map: "{\"version\":3,\"file\":\"index.svelte\",\"sources\":[\"index.svelte\"],\"sourcesContent\":[\"<script >\\n  import { destination } from './data.js';\\n  import ModalNav from '../components/ModalNav.svelte';\\n  export let showModal = false;\\n</script>\\n\\n<style media=\\\"screen\\\" lang=\\\"scss\\\">.hero {\\n  background-color: white; }\\n\\nh1 {\\n  font-family: 'Engagement';\\n  font-size: 150px;\\n  color: #FFFFFF;\\n  letter-spacing: -6.25px;\\n  text-align: center;\\n  font-weight: normal;\\n  margin-top: auto; }\\n\\n.hero-body {\\n  padding-top: 8rem;\\n  padding-bottom: 8rem; }\\n\\n.hero-image {\\n  margin-left: 8rem;\\n  margin-right: 8rem; }\\n\\n.shoes,\\n.home-pic {\\n  background-image: url(\\\"../images/shoes.jpg\\\") !important;\\n  background-size: cover;\\n  background-position: center; }\\n\\n.hero-foot {\\n  margin-bottom: 2rem; }\\n\\n.hero .tabs ul,\\n.hero .hero-foot .tabs ul {\\n  padding-left: 14rem;\\n  padding-right: 14rem; }\\n\\n.hero .hero-foot .tabs ul {\\n  padding-top: 3rem; }\\n\\n.hero-foot .hero-body h1 {\\n  margin-top: auto; }\\n\\n.hero .hero-foot .tabs a {\\n  color: black;\\n  font-size: 1rem;\\n  font-weight: bold;\\n  font-family: 'Lato', sans-serif;\\n  font-size: 1rem; }\\n\\n.hero .hero-foot .tabs a:hover {\\n  color: grey; }\\n\\n.chapter-close h3 {\\n  color: grey;\\n  text-align: center;\\n  font-family: 'Engagement';\\n  font-size: 4rem;\\n  line-height: 4rem;\\n  margin: 10rem 5rem; }\\n\\n@media screen and (max-width: 768px) {\\n  .hero-image {\\n    margin: auto 2rem; }\\n  .navbar-brand {\\n    padding: 1rem; }\\n  .navbar-burger {\\n    color: black !important; }\\n  .hero-body h1 {\\n    visibility: hidden; }\\n  .shoes {\\n    background-image: url(\\\"../images/shoes-portrait.jpg\\\") !important;\\n    background-size: cover;\\n    background-position: center;\\n    margin-left: 1rem;\\n    margin-right: 1rem; } }\\n\\n@media screen and (max-width: 1023px) {\\n  .hero-body h1 {\\n    font-size: 6rem;\\n    letter-spacing: -4px; } }\\n/*# sourceMappingURL=src/routes/index.svelte.map */</style>\\n\\n<svelte:head>\\n  <meta property=\\\"og:title\\\" content=\\\"Wanderlust\\\" />\\n  <meta property=\\\"og:type\\\" content=\\\"website\\\" />\\n  <meta property=\\\"og:url\\\" content=\\\"www.amazon.com\\\" />\\n  <meta property=\\\"og:image\\\" content=\\\"../images/social-images/home-og.jpg\\\" />\\n</svelte:head>\\n\\n<ModalNav bind:showModal/>\\n\\n<section class=\\\"hero is-fullheight\\\">\\n  <!-- Hero head: will stick at the top -->\\n  <div class=\\\"hero-head\\\">\\n    <header class=\\\"navbar\\\">\\n      <div class=\\\"container\\\">\\n        <div class=\\\"navbar-brand is-hidden-tablet\\\">\\n          <a class=\\\"navbar-item\\\" href='./'>\\n            <img src=\\\"wanderlust.svg\\\" alt='logomark' width=\\\"112\\\" height=\\\"28\\\">\\n          </a>\\n          <span on:click={() => showModal = true} class=\\\"navbar-burger burger\\\" data-target=\\\"navbarMenuHeroC\\\">\\n            <span></span>\\n            <span></span>\\n            <span></span>\\n          </span>\\n\\n        </div>\\n\\n      </div>\\n    </header>\\n\\n    <!-- modal -->\\n\\n\\n  </div>\\n\\n  <!-- Hero content: will be in the middle -->\\n\\n  <div class=\\\"hero-image\\\">\\n    <div class=\\\"shoes hero-body\\\">\\n      <div class=\\\"container\\\">\\n        <h1>Wanderlust</h1>\\n      </div>\\n    </div>\\n  </div>\\n\\n  <!-- Hero footer: will stick at the bottom -->\\n  <div class=\\\"hero-foot is-hidden-mobile\\\">\\n    <nav class=\\\"tabs is-fullwidth\\\">\\n      <div class=\\\"container\\\">\\n        <ul>\\n          <!-- <li class=\\\"is-active\\\"><a>Home</a></li> -->\\n          <li><a href=\\\"morocco\\\">{destination.one}</a></li>\\n          <li><a href=\\\"istanbul\\\">{destination.two}</a></li>\\n          <li><a href=\\\"peru\\\">{destination.three}</a></li>\\n          <li><a href=\\\"russia\\\">{destination.four}</a></li>\\n        </ul>\\n      </div>\\n    </nav>\\n  </div>\\n</section>\\n\"],\"names\":[],\"mappings\":\"AAMkC,KAAK,4BAAC,CAAC,AACvC,gBAAgB,CAAE,KAAK,AAAE,CAAC,AAE5B,EAAE,4BAAC,CAAC,AACF,WAAW,CAAE,YAAY,CACzB,SAAS,CAAE,KAAK,CAChB,KAAK,CAAE,OAAO,CACd,cAAc,CAAE,OAAO,CACvB,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,MAAM,CACnB,UAAU,CAAE,IAAI,AAAE,CAAC,AAErB,UAAU,4BAAC,CAAC,AACV,WAAW,CAAE,IAAI,CACjB,cAAc,CAAE,IAAI,AAAE,CAAC,AAEzB,WAAW,4BAAC,CAAC,AACX,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,AAAE,CAAC,AAEvB,MAAM,4BACI,CAAC,AACT,gBAAgB,CAAE,IAAI,qBAAqB,CAAC,CAAC,UAAU,CACvD,eAAe,CAAE,KAAK,CACtB,mBAAmB,CAAE,MAAM,AAAE,CAAC,AAEhC,UAAU,4BAAC,CAAC,AACV,aAAa,CAAE,IAAI,AAAE,CAAC,AAExB,mBAAK,CAAC,KAAK,CAAC,gBAAE,CACd,mBAAK,CAAC,UAAU,CAAC,KAAK,CAAC,EAAE,cAAC,CAAC,AACzB,YAAY,CAAE,KAAK,CACnB,aAAa,CAAE,KAAK,AAAE,CAAC,AAEzB,mBAAK,CAAC,UAAU,CAAC,KAAK,CAAC,EAAE,cAAC,CAAC,AACzB,WAAW,CAAE,IAAI,AAAE,CAAC,AAEtB,UAAU,CAAC,wBAAU,CAAC,EAAE,cAAC,CAAC,AACxB,UAAU,CAAE,IAAI,AAAE,CAAC,AAErB,mBAAK,CAAC,UAAU,CAAC,KAAK,CAAC,CAAC,cAAC,CAAC,AACxB,KAAK,CAAE,KAAK,CACZ,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,IAAI,CACjB,WAAW,CAAE,MAAM,CAAC,CAAC,UAAU,CAC/B,SAAS,CAAE,IAAI,AAAE,CAAC,AAEpB,mBAAK,CAAC,UAAU,CAAC,KAAK,CAAC,eAAC,MAAM,AAAC,CAAC,AAC9B,KAAK,CAAE,IAAI,AAAE,CAAC,AAUhB,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACpC,WAAW,4BAAC,CAAC,AACX,MAAM,CAAE,IAAI,CAAC,IAAI,AAAE,CAAC,AACtB,aAAa,4BAAC,CAAC,AACb,OAAO,CAAE,IAAI,AAAE,CAAC,AAClB,cAAc,4BAAC,CAAC,AACd,KAAK,CAAE,KAAK,CAAC,UAAU,AAAE,CAAC,AAC5B,wBAAU,CAAC,EAAE,cAAC,CAAC,AACb,UAAU,CAAE,MAAM,AAAE,CAAC,AACvB,MAAM,4BAAC,CAAC,AACN,gBAAgB,CAAE,IAAI,8BAA8B,CAAC,CAAC,UAAU,CAChE,eAAe,CAAE,KAAK,CACtB,mBAAmB,CAAE,MAAM,CAC3B,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,AAAE,CAAC,AAAC,CAAC,AAE3B,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,MAAM,CAAC,AAAC,CAAC,AACrC,wBAAU,CAAC,EAAE,cAAC,CAAC,AACb,SAAS,CAAE,IAAI,CACf,cAAc,CAAE,IAAI,AAAE,CAAC,AAAC,CAAC\"}"
 };
 
 const Routes = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
@@ -401,7 +624,9 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, $$slots) => 
 	do {
 		$$settled = true;
 
-		$$rendered = `${validate_component(ModalNav, "ModalNav").$$render(
+		$$rendered = `${($$result.head += `<meta property="${"og:title"}" content="${"Wanderlust"}"><meta property="${"og:type"}" content="${"website"}"><meta property="${"og:url"}" content="${"www.amazon.com"}"><meta property="${"og:image"}" content="${"../images/social-images/home-og.jpg"}">`, "")}
+
+${validate_component(ModalNav, "ModalNav").$$render(
 			$$result,
 			{ showModal },
 			{
@@ -428,25 +653,19 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, $$slots) => 
   
   <div class="${"hero-foot is-hidden-mobile svelte-mp8gi9"}"><nav class="${"tabs is-fullwidth"}"><div class="${"container"}"><ul class="${"svelte-mp8gi9"}">
           <li><a href="${"morocco"}" class="${"svelte-mp8gi9"}">${escape(destination.one)}</a></li>
-          <li><a href="${"travel"}" class="${"svelte-mp8gi9"}">${escape(destination.two)}</a></li>
-          <li><a href="${"travel"}" class="${"svelte-mp8gi9"}">${escape(destination.three)}</a></li>
-          <li><a href="${"travel"}" class="${"svelte-mp8gi9"}">${escape(destination.four)}</a></li></ul></div></nav></div></section>`;
+          <li><a href="${"istanbul"}" class="${"svelte-mp8gi9"}">${escape(destination.two)}</a></li>
+          <li><a href="${"peru"}" class="${"svelte-mp8gi9"}">${escape(destination.three)}</a></li>
+          <li><a href="${"russia"}" class="${"svelte-mp8gi9"}">${escape(destination.four)}</a></li></ul></div></nav></div></section>`;
 	} while (!$$settled);
 
 	return $$rendered;
 });
 
-/* src/routes/istanbul.svelte generated by Svelte v3.20.1 */
-
-const Istanbul = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
-	return ``;
-});
-
 /* src/components/TravelPageNav.svelte generated by Svelte v3.20.1 */
 
 const css$2 = {
-	code: ".navbar-burger.svelte-1xng6na span.svelte-1xng6na{color:white}.navbar-item.svelte-1xng6na.svelte-1xng6na{color:white;font-family:'Lato', sans-serif !important}.navbar-item.svelte-1xng6na a.svelte-1xng6na:hover{opacity:70%}.navbar-item.svelte-1xng6na .is-active.svelte-1xng6na{opacity:70%;text-decoration:line-through !important}@media screen and (max-width: 768px){.navbar-brand.svelte-1xng6na.svelte-1xng6na{padding:1rem}}",
-	map: "{\"version\":3,\"file\":\"TravelPageNav.svelte\",\"sources\":[\"TravelPageNav.svelte\"],\"sourcesContent\":[\"<script>\\n  import { destination } from '../routes/data.js';\\n  import ModalNav from '../components/ModalNav.svelte';\\n  export let showModal = false;\\n</script>\\n\\n<style media=\\\"screen\\\" lang=\\\"scss\\\">.navbar-burger span {\\n  color: white; }\\n\\n.navbar-item {\\n  color: white;\\n  font-family: 'Lato', sans-serif !important; }\\n\\n.navbar-item a:hover {\\n  opacity: 70%; }\\n\\n.navbar-item .is-active {\\n  opacity: 70%;\\n  text-decoration: line-through !important; }\\n\\n@media screen and (max-width: 768px) {\\n  .navbar-brand {\\n    padding: 1rem; } }\\n/*# sourceMappingURL=src/components/TravelPageNav.svelte.map */</style>\\n\\n<ModalNav bind:showModal/>\\n\\n<div class=\\\"hero-head\\\">\\n  <nav class=\\\"navbar is-transparent is-spaced\\\">\\n    <div class=\\\"navbar-brand\\\">\\n      <a class=\\\"navbar-item\\\" href=\\\"./\\\">\\n        <img  alt='logomark' src=\\\"../wanderlust-white.svg\\\" width=\\\"112\\\" height=\\\"28\\\">\\n      </a>\\n      <a on:click={() => showModal = true} role=\\\"button\\\" class=\\\"navbar-burger is-hidden-tablet\\\" aria-label=\\\"menu\\\" aria-expanded=\\\"false\\\">\\n        <span aria-hidden=\\\"true\\\"></span>\\n        <span aria-hidden=\\\"true\\\"></span>\\n        <span aria-hidden=\\\"true\\\"></span>\\n      </a>\\n    </div>\\n\\n    <div class=\\\"navbar-end is-hidden-mobile\\\">\\n      <div class=\\\"navbar-item\\\">\\n        <div class=\\\"field is-grouped\\\">\\n          <a class=\\\"navbar-item is-active\\\" href='morocco'>{destination.one}</a>\\n          <a class=\\\"navbar-item\\\" href='istanbul'>{destination.two}</a>\\n          <a class=\\\"navbar-item\\\" href='peru'>{destination.three}</a>\\n          <a class=\\\"navbar-item\\\" href='russia'>{destination.four}</a>\\n        </div>\\n      </div>\\n    </div>\\n  </nav>\\n</div>\\n\"],\"names\":[],\"mappings\":\"AAMkC,6BAAc,CAAC,IAAI,eAAC,CAAC,AACrD,KAAK,CAAE,KAAK,AAAE,CAAC,AAEjB,YAAY,8BAAC,CAAC,AACZ,KAAK,CAAE,KAAK,CACZ,WAAW,CAAE,MAAM,CAAC,CAAC,UAAU,CAAC,UAAU,AAAE,CAAC,AAE/C,2BAAY,CAAC,gBAAC,MAAM,AAAC,CAAC,AACpB,OAAO,CAAE,GAAG,AAAE,CAAC,AAEjB,2BAAY,CAAC,UAAU,eAAC,CAAC,AACvB,OAAO,CAAE,GAAG,CACZ,eAAe,CAAE,YAAY,CAAC,UAAU,AAAE,CAAC,AAE7C,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACpC,aAAa,8BAAC,CAAC,AACb,OAAO,CAAE,IAAI,AAAE,CAAC,AAAC,CAAC\"}"
+	code: ".navbar-burger.svelte-1xng6na span.svelte-1xng6na{color:white}.navbar-item.svelte-1xng6na.svelte-1xng6na{color:white;font-family:'Lato', sans-serif !important}.navbar-item.svelte-1xng6na a.svelte-1xng6na:hover{opacity:70%}@media screen and (max-width: 768px){.navbar-brand.svelte-1xng6na.svelte-1xng6na{padding:1rem}}",
+	map: "{\"version\":3,\"file\":\"TravelPageNav.svelte\",\"sources\":[\"TravelPageNav.svelte\"],\"sourcesContent\":[\"<script>\\n  import { destination } from '../routes/data.js';\\n  import ModalNav from '../components/ModalNav.svelte';\\n  export let showModal = false;\\n</script>\\n\\n<style media=\\\"screen\\\" lang=\\\"scss\\\">.navbar-burger span {\\n  color: white; }\\n\\n.navbar-item {\\n  color: white;\\n  font-family: 'Lato', sans-serif !important; }\\n\\n.navbar-item a:hover {\\n  opacity: 70%; }\\n\\n.navbar-item .is-active {\\n  opacity: 70%;\\n  text-decoration: line-through !important; }\\n\\n@media screen and (max-width: 768px) {\\n  .navbar-brand {\\n    padding: 1rem; } }\\n/*# sourceMappingURL=src/components/TravelPageNav.svelte.map */</style>\\n\\n<ModalNav bind:showModal/>\\n\\n<div class=\\\"hero-head\\\">\\n  <nav class=\\\"navbar is-transparent is-spaced\\\">\\n    <div class=\\\"navbar-brand\\\">\\n      <a class=\\\"navbar-item\\\" href=\\\"./\\\">\\n        <img  alt='logomark' src=\\\"../wanderlust-white.svg\\\" width=\\\"112\\\" height=\\\"28\\\">\\n      </a>\\n      <a on:click={() => showModal = true} role=\\\"button\\\" class=\\\"navbar-burger is-hidden-tablet\\\" aria-label=\\\"menu\\\" aria-expanded=\\\"false\\\">\\n        <span aria-hidden=\\\"true\\\"></span>\\n        <span aria-hidden=\\\"true\\\"></span>\\n        <span aria-hidden=\\\"true\\\"></span>\\n      </a>\\n    </div>\\n\\n    <div class=\\\"navbar-end is-hidden-mobile\\\">\\n      <div class=\\\"navbar-item\\\">\\n        <div class=\\\"field is-grouped\\\">\\n          <a class=\\\"navbar-item\\\" href='morocco'>{destination.one}</a>\\n          <a class=\\\"navbar-item\\\" href='istanbul'>{destination.two}</a>\\n          <a class=\\\"navbar-item\\\" href='peru'>{destination.three}</a>\\n          <a class=\\\"navbar-item\\\" href='russia'>{destination.four}</a>\\n        </div>\\n      </div>\\n    </div>\\n  </nav>\\n</div>\\n\"],\"names\":[],\"mappings\":\"AAMkC,6BAAc,CAAC,IAAI,eAAC,CAAC,AACrD,KAAK,CAAE,KAAK,AAAE,CAAC,AAEjB,YAAY,8BAAC,CAAC,AACZ,KAAK,CAAE,KAAK,CACZ,WAAW,CAAE,MAAM,CAAC,CAAC,UAAU,CAAC,UAAU,AAAE,CAAC,AAE/C,2BAAY,CAAC,gBAAC,MAAM,AAAC,CAAC,AACpB,OAAO,CAAE,GAAG,AAAE,CAAC,AAMjB,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACpC,aAAa,8BAAC,CAAC,AACb,OAAO,CAAE,IAAI,AAAE,CAAC,AAAC,CAAC\"}"
 };
 
 const TravelPageNav = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
@@ -476,7 +695,7 @@ const TravelPageNav = create_ssr_component(($$result, $$props, $$bindings, $$slo
         <span aria-hidden="${"true"}" class="${"svelte-1xng6na"}"></span>
         <span aria-hidden="${"true"}" class="${"svelte-1xng6na"}"></span></a></div>
 
-    <div class="${"navbar-end is-hidden-mobile"}"><div class="${"navbar-item svelte-1xng6na"}"><div class="${"field is-grouped"}"><a class="${"navbar-item is-active svelte-1xng6na"}" href="${"morocco"}">${escape(destination.one)}</a>
+    <div class="${"navbar-end is-hidden-mobile"}"><div class="${"navbar-item svelte-1xng6na"}"><div class="${"field is-grouped"}"><a class="${"navbar-item svelte-1xng6na"}" href="${"morocco"}">${escape(destination.one)}</a>
           <a class="${"navbar-item svelte-1xng6na"}" href="${"istanbul"}">${escape(destination.two)}</a>
           <a class="${"navbar-item svelte-1xng6na"}" href="${"peru"}">${escape(destination.three)}</a>
           <a class="${"navbar-item svelte-1xng6na"}" href="${"russia"}">${escape(destination.four)}</a></div></div></div></nav></div>`;
@@ -488,19 +707,20 @@ const TravelPageNav = create_ssr_component(($$result, $$props, $$bindings, $$slo
 /* src/components/Hero.svelte generated by Svelte v3.20.1 */
 
 const css$3 = {
-	code: "h1.svelte-o2xj6m.svelte-o2xj6m{font-family:'Engagement', cursive;font-size:8rem;text-align:center;color:white}.hero.svelte-o2xj6m.svelte-o2xj6m{background-position:center;background-size:cover;background-color:#5876A3}.morocco.svelte-o2xj6m.svelte-o2xj6m{background-image:url(../images/morocco-thumb.jpg)}@media screen and (max-width: 1023px){.hero-body.svelte-o2xj6m h1.svelte-o2xj6m{font-size:6rem;letter-spacing:-4px}}",
-	map: "{\"version\":3,\"file\":\"Hero.svelte\",\"sources\":[\"Hero.svelte\"],\"sourcesContent\":[\"<script>\\n  import TravelPageNav from '../components/TravelPageNav.svelte';\\n  import { destination } from '../routes/data.js';\\n  import { fade } from 'svelte/transition';\\n\\tlet visible = true;\\n  // import {  } from '../routes/data.js';\\n  export let destHead;\\n  // export let backgroundHero;\\n  // let backgroundHero = 'url(../images/morocco-thumb.jpg);'\\n</script>\\n\\n<style media=\\\"screen\\\" lang=\\\"scss\\\">h1 {\\n  font-family: 'Engagement', cursive;\\n  font-size: 8rem;\\n  text-align: center;\\n  color: white; }\\n\\n.hero {\\n  background-position: center;\\n  background-size: cover;\\n  background-color: #5876A3; }\\n\\n.morocco {\\n  background-image: url(../images/morocco-thumb.jpg); }\\n\\n@media screen and (max-width: 1023px) {\\n  .hero-body h1 {\\n    font-size: 6rem;\\n    letter-spacing: -4px; } }\\n/*# sourceMappingURL=src/components/Hero.svelte.map */</style>\\n<!-- style=\\\"background-image: {backgroundHero}\\\" -->\\n<section class=\\\"hero morocco is-transparent is-fullheight\\\" in:fade=\\\"{{ duration: 200 }}\\\" >\\n\\n\\t<TravelPageNav/>\\n\\n  <div class=\\\"hero-body\\\">\\n    <div class=\\\"container\\\">\\n      <h1 in:fade=\\\"{{ duration: 2000 }}\\\">{destHead}</h1>\\n    </div>\\n  </div>\\n</section>\\n\"],\"names\":[],\"mappings\":\"AAWkC,EAAE,4BAAC,CAAC,AACpC,WAAW,CAAE,YAAY,CAAC,CAAC,OAAO,CAClC,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,MAAM,CAClB,KAAK,CAAE,KAAK,AAAE,CAAC,AAEjB,KAAK,4BAAC,CAAC,AACL,mBAAmB,CAAE,MAAM,CAC3B,eAAe,CAAE,KAAK,CACtB,gBAAgB,CAAE,OAAO,AAAE,CAAC,AAE9B,QAAQ,4BAAC,CAAC,AACR,gBAAgB,CAAE,IAAI,2BAA2B,CAAC,AAAE,CAAC,AAEvD,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,MAAM,CAAC,AAAC,CAAC,AACrC,wBAAU,CAAC,EAAE,cAAC,CAAC,AACb,SAAS,CAAE,IAAI,CACf,cAAc,CAAE,IAAI,AAAE,CAAC,AAAC,CAAC\"}"
+	code: "h1.svelte-10wr36a.svelte-10wr36a{font-family:'Engagement', cursive;font-size:8rem;text-align:center;color:white}.hero.svelte-10wr36a.svelte-10wr36a{background-position:center;background-size:cover;background-color:#5876A3}.morocco.svelte-10wr36a.svelte-10wr36a{background-image:url(../images/morocco-thumb.jpg)}.peru.svelte-10wr36a.svelte-10wr36a{background-image:url(../images/peru-thumb.jpeg)}.istanbul.svelte-10wr36a.svelte-10wr36a{background-image:url(../images/istanbul-thumb.jpeg)}.russia.svelte-10wr36a.svelte-10wr36a{background-image:url(../images/russia/f-photo4.jpg)}@media screen and (max-width: 1023px){.hero-body.svelte-10wr36a h1.svelte-10wr36a{font-size:6rem;letter-spacing:-4px}}",
+	map: "{\"version\":3,\"file\":\"Hero.svelte\",\"sources\":[\"Hero.svelte\"],\"sourcesContent\":[\"<script>\\n  import TravelPageNav from '../components/TravelPageNav.svelte';\\n  import { destination } from '../routes/data.js';\\n  import { fade } from 'svelte/transition';\\n\\tlet visible = true;\\n  export let destHead;\\n  export let current;\\n  // let current = 'peru'\\n</script>\\n\\n<style media=\\\"screen\\\" lang=\\\"scss\\\">h1 {\\n  font-family: 'Engagement', cursive;\\n  font-size: 8rem;\\n  text-align: center;\\n  color: white; }\\n\\n.hero {\\n  background-position: center;\\n  background-size: cover;\\n  background-color: #5876A3; }\\n\\n.morocco {\\n  background-image: url(../images/morocco-thumb.jpg); }\\n\\n.peru {\\n  background-image: url(../images/peru-thumb.jpeg); }\\n\\n.istanbul {\\n  background-image: url(../images/istanbul-thumb.jpeg); }\\n\\n.russia {\\n  background-image: url(../images/russia/f-photo4.jpg); }\\n\\n@media screen and (max-width: 1023px) {\\n  .hero-body h1 {\\n    font-size: 6rem;\\n    letter-spacing: -4px; } }\\n/*# sourceMappingURL=src/components/Hero.svelte.map */</style>\\n<section class=\\\"{current} hero is-transparent is-fullheight\\\" in:fade=\\\"{{ duration: 200 }}\\\" >\\n\\n  \\t<TravelPageNav/>\\n\\n    <div class=\\\"hero-body\\\">\\n      <div class=\\\"container\\\">\\n        <h1 in:fade=\\\"{{ duration: 1000 }}\\\">{destHead}</h1>\\n      </div>\\n    </div>\\n\\n</section>\\n\"],\"names\":[],\"mappings\":\"AAUkC,EAAE,8BAAC,CAAC,AACpC,WAAW,CAAE,YAAY,CAAC,CAAC,OAAO,CAClC,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,MAAM,CAClB,KAAK,CAAE,KAAK,AAAE,CAAC,AAEjB,KAAK,8BAAC,CAAC,AACL,mBAAmB,CAAE,MAAM,CAC3B,eAAe,CAAE,KAAK,CACtB,gBAAgB,CAAE,OAAO,AAAE,CAAC,AAE9B,QAAQ,8BAAC,CAAC,AACR,gBAAgB,CAAE,IAAI,2BAA2B,CAAC,AAAE,CAAC,AAEvD,KAAK,8BAAC,CAAC,AACL,gBAAgB,CAAE,IAAI,yBAAyB,CAAC,AAAE,CAAC,AAErD,SAAS,8BAAC,CAAC,AACT,gBAAgB,CAAE,IAAI,6BAA6B,CAAC,AAAE,CAAC,AAEzD,OAAO,8BAAC,CAAC,AACP,gBAAgB,CAAE,IAAI,6BAA6B,CAAC,AAAE,CAAC,AAEzD,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,MAAM,CAAC,AAAC,CAAC,AACrC,yBAAU,CAAC,EAAE,eAAC,CAAC,AACb,SAAS,CAAE,IAAI,CACf,cAAc,CAAE,IAAI,AAAE,CAAC,AAAC,CAAC\"}"
 };
 
 const Hero = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 	let { destHead } = $$props;
+	let { current } = $$props;
 	if ($$props.destHead === void 0 && $$bindings.destHead && destHead !== void 0) $$bindings.destHead(destHead);
+	if ($$props.current === void 0 && $$bindings.current && current !== void 0) $$bindings.current(current);
 	$$result.css.add(css$3);
 
-	return `
-<section class="${"hero morocco is-transparent is-fullheight svelte-o2xj6m"}">${validate_component(TravelPageNav, "TravelPageNav").$$render($$result, {}, {}, {})}
+	return `<section class="${escape(current) + " hero is-transparent is-fullheight" + " svelte-10wr36a"}">${validate_component(TravelPageNav, "TravelPageNav").$$render($$result, {}, {}, {})}
 
-  <div class="${"hero-body svelte-o2xj6m"}"><div class="${"container"}"><h1 class="${"svelte-o2xj6m"}">${escape(destHead)}</h1></div></div></section>`;
+    <div class="${"hero-body svelte-10wr36a"}"><div class="${"container"}"><h1 class="${"svelte-10wr36a"}">${escape(destHead)}</h1></div></div></section>`;
 });
 
 /* src/components/Divider.svelte generated by Svelte v3.20.1 */
@@ -518,18 +738,20 @@ const Divider = create_ssr_component(($$result, $$props, $$bindings, $$slots) =>
 /* src/components/Blurb.svelte generated by Svelte v3.20.1 */
 
 const css$5 = {
-	code: ".blurb.svelte-oqf5m0.svelte-oqf5m0{margin:6rem 14rem}.blurb.svelte-oqf5m0 p.svelte-oqf5m0{font-family:'Playfair Display', serif;font-size:1.5rem;text-align:center;color:#969CA8}.blurb.svelte-oqf5m0 p.svelte-oqf5m0:first-child{font-size:2rem;text-align:center;margin-bottom:1rem}@media screen and (max-width: 1023px){.blurb.svelte-oqf5m0.svelte-oqf5m0{margin:4rem 1rem}.blurb.svelte-oqf5m0 p.svelte-oqf5m0:first-child{font-size:1.5rem}}",
-	map: "{\"version\":3,\"file\":\"Blurb.svelte\",\"sources\":[\"Blurb.svelte\"],\"sourcesContent\":[\"<script>\\n import { copy } from '../routes/morocco.js';\\n export let blurbCopy;\\n</script>\\n\\n<style media=\\\"screen\\\" lang=\\\"scss\\\">.blurb {\\n  margin: 6rem 14rem; }\\n\\n.blurb p {\\n  font-family: 'Playfair Display', serif;\\n  font-size: 1.5rem;\\n  text-align: center;\\n  color: #969CA8; }\\n\\n.blurb p:first-child {\\n  font-size: 2rem;\\n  text-align: center;\\n  margin-bottom: 1rem; }\\n\\n@media screen and (max-width: 1023px) {\\n  .blurb {\\n    margin: 4rem 1rem; }\\n  .blurb p:first-child {\\n    font-size: 1.5rem; } }\\n/*# sourceMappingURL=src/components/Blurb.svelte.map */</style>\\n\\n<div class=\\\"container blurb\\\">\\n  <p>{blurbCopy}</p>\\n  <p>* * *</p>\\n  <p>Andrea & Jeremy</p>\\n</div>\\n\"],\"names\":[],\"mappings\":\"AAKkC,MAAM,4BAAC,CAAC,AACxC,MAAM,CAAE,IAAI,CAAC,KAAK,AAAE,CAAC,AAEvB,oBAAM,CAAC,CAAC,cAAC,CAAC,AACR,WAAW,CAAE,kBAAkB,CAAC,CAAC,KAAK,CACtC,SAAS,CAAE,MAAM,CACjB,UAAU,CAAE,MAAM,CAClB,KAAK,CAAE,OAAO,AAAE,CAAC,AAEnB,oBAAM,CAAC,eAAC,YAAY,AAAC,CAAC,AACpB,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,MAAM,CAClB,aAAa,CAAE,IAAI,AAAE,CAAC,AAExB,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,MAAM,CAAC,AAAC,CAAC,AACrC,MAAM,4BAAC,CAAC,AACN,MAAM,CAAE,IAAI,CAAC,IAAI,AAAE,CAAC,AACtB,oBAAM,CAAC,eAAC,YAAY,AAAC,CAAC,AACpB,SAAS,CAAE,MAAM,AAAE,CAAC,AAAC,CAAC\"}"
+	code: ".blurb.svelte-6nyr8b.svelte-6nyr8b{margin:6rem 14rem}.blurb.svelte-6nyr8b p.svelte-6nyr8b{font-family:'Playfair Display', serif;font-size:1.5rem;text-align:center;color:#969CA8}.blurb.svelte-6nyr8b p.svelte-6nyr8b:first-child{font-size:2rem;text-align:center;margin-bottom:1rem}@media screen and (max-width: 1023px){.blurb.svelte-6nyr8b.svelte-6nyr8b{margin:4rem 1rem !important}.blurb.svelte-6nyr8b p.svelte-6nyr8b:first-child{font-size:1.5rem}}",
+	map: "{\"version\":3,\"file\":\"Blurb.svelte\",\"sources\":[\"Blurb.svelte\"],\"sourcesContent\":[\"<script>\\n export let blurbCopy;\\n export let TravlerCopy;\\n</script>\\n\\n<style media=\\\"screen\\\" lang=\\\"scss\\\">.blurb {\\n  margin: 6rem 14rem; }\\n\\n.blurb p {\\n  font-family: 'Playfair Display', serif;\\n  font-size: 1.5rem;\\n  text-align: center;\\n  color: #969CA8; }\\n\\n.blurb p:first-child {\\n  font-size: 2rem;\\n  text-align: center;\\n  margin-bottom: 1rem; }\\n\\n@media screen and (max-width: 1023px) {\\n  .blurb {\\n    margin: 4rem 1rem !important; }\\n  .blurb p:first-child {\\n    font-size: 1.5rem; } }\\n/*# sourceMappingURL=src/components/Blurb.svelte.map */</style>\\n\\n<div class=\\\"container blurb\\\">\\n  <p>{blurbCopy}</p>\\n  <p>* * *</p>\\n  <p>{TravlerCopy}</p>\\n</div>\\n\"],\"names\":[],\"mappings\":\"AAKkC,MAAM,4BAAC,CAAC,AACxC,MAAM,CAAE,IAAI,CAAC,KAAK,AAAE,CAAC,AAEvB,oBAAM,CAAC,CAAC,cAAC,CAAC,AACR,WAAW,CAAE,kBAAkB,CAAC,CAAC,KAAK,CACtC,SAAS,CAAE,MAAM,CACjB,UAAU,CAAE,MAAM,CAClB,KAAK,CAAE,OAAO,AAAE,CAAC,AAEnB,oBAAM,CAAC,eAAC,YAAY,AAAC,CAAC,AACpB,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,MAAM,CAClB,aAAa,CAAE,IAAI,AAAE,CAAC,AAExB,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,MAAM,CAAC,AAAC,CAAC,AACrC,MAAM,4BAAC,CAAC,AACN,MAAM,CAAE,IAAI,CAAC,IAAI,CAAC,UAAU,AAAE,CAAC,AACjC,oBAAM,CAAC,eAAC,YAAY,AAAC,CAAC,AACpB,SAAS,CAAE,MAAM,AAAE,CAAC,AAAC,CAAC\"}"
 };
 
 const Blurb = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 	let { blurbCopy } = $$props;
+	let { TravlerCopy } = $$props;
 	if ($$props.blurbCopy === void 0 && $$bindings.blurbCopy && blurbCopy !== void 0) $$bindings.blurbCopy(blurbCopy);
+	if ($$props.TravlerCopy === void 0 && $$bindings.TravlerCopy && TravlerCopy !== void 0) $$bindings.TravlerCopy(TravlerCopy);
 	$$result.css.add(css$5);
 
-	return `<div class="${"container blurb svelte-oqf5m0"}"><p class="${"svelte-oqf5m0"}">${escape(blurbCopy)}</p>
-  <p class="${"svelte-oqf5m0"}">* * *</p>
-  <p class="${"svelte-oqf5m0"}">Andrea &amp; Jeremy</p></div>`;
+	return `<div class="${"container blurb svelte-6nyr8b"}"><p class="${"svelte-6nyr8b"}">${escape(blurbCopy)}</p>
+  <p class="${"svelte-6nyr8b"}">* * *</p>
+  <p class="${"svelte-6nyr8b"}">${escape(TravlerCopy)}</p></div>`;
 });
 
 /* src/components/ChapterHeader.svelte generated by Svelte v3.20.1 */
@@ -551,8 +773,8 @@ const ChapterHeader = create_ssr_component(($$result, $$props, $$bindings, $$slo
 /* src/components/ShoeHero.svelte generated by Svelte v3.20.1 */
 
 const css$7 = {
-	code: "h1.svelte-1wahsxw.svelte-1wahsxw{font-family:'Engagement';font-size:150px;color:#FFFFFF;letter-spacing:-6.25px;text-align:center;font-weight:normal;margin-top:auto}.hero-body.svelte-1wahsxw.svelte-1wahsxw{padding-top:8rem;padding-bottom:8rem}.hero-image.svelte-1wahsxw.svelte-1wahsxw{margin-left:8rem;margin-right:8rem}.shoes.svelte-1wahsxw.svelte-1wahsxw{background-image:url(\"../images/shoes.jpg\") !important;background-size:cover;background-position:center}.hero-foot.svelte-1wahsxw.svelte-1wahsxw{margin-bottom:2rem}.tabs.svelte-1wahsxw ul.svelte-1wahsxw,.hero-foot.svelte-1wahsxw .tabs ul.svelte-1wahsxw{padding-left:14rem;padding-right:14rem}.hero-foot.svelte-1wahsxw .tabs ul.svelte-1wahsxw{padding-top:3rem}.hero-foot .hero-body.svelte-1wahsxw h1.svelte-1wahsxw{margin-top:auto}button.svelte-1wahsxw.svelte-1wahsxw,.hero-foot.svelte-1wahsxw .tabs a.svelte-1wahsxw{color:black;font-size:1rem;font-weight:bold;font-family:'Lato', sans-serif;font-size:1rem}.hero-foot.svelte-1wahsxw .tabs a.svelte-1wahsxw:hover{color:grey}.tabs.svelte-1wahsxw ul.svelte-1wahsxw{border-bottom-color:transparent;border-bottom-style:none}.hero-foot.svelte-1wahsxw .tabs .is-active.svelte-1wahsxw{color:grey;text-decoration:line-through}nav.svelte-1wahsxw.svelte-1wahsxw,button.svelte-1wahsxw.svelte-1wahsxw{margin-bottom:4rem}button.svelte-1wahsxw.svelte-1wahsxw{margin-top:2rem}@media screen and (max-width: 768px){.hero-image.svelte-1wahsxw.svelte-1wahsxw{margin:auto 2rem}.hero-body.svelte-1wahsxw h1.svelte-1wahsxw{visibility:hidden}.shoes.svelte-1wahsxw.svelte-1wahsxw{background-image:url(\"../images/shoes-portrait.jpg\") !important;background-size:cover;background-position:center;margin-left:1rem;margin-right:1rem}}@media screen and (max-width: 1023px){.hero-body.svelte-1wahsxw h1.svelte-1wahsxw{font-size:6rem;letter-spacing:-4px}}",
-	map: "{\"version\":3,\"file\":\"ShoeHero.svelte\",\"sources\":[\"ShoeHero.svelte\"],\"sourcesContent\":[\"<script >\\n  import { destination } from '../routes/data.js';\\n  import ModalNav from '../components/ModalNav.svelte';\\n  export let showModal = false;\\n</script>\\n\\n<style media=\\\"screen\\\" lang=\\\"scss\\\">h1 {\\n  font-family: 'Engagement';\\n  font-size: 150px;\\n  color: #FFFFFF;\\n  letter-spacing: -6.25px;\\n  text-align: center;\\n  font-weight: normal;\\n  margin-top: auto; }\\n\\n.hero-body {\\n  padding-top: 8rem;\\n  padding-bottom: 8rem; }\\n\\n.hero-image {\\n  margin-left: 8rem;\\n  margin-right: 8rem; }\\n\\n.shoes {\\n  background-image: url(\\\"../images/shoes.jpg\\\") !important;\\n  background-size: cover;\\n  background-position: center; }\\n\\n.hero-foot {\\n  margin-bottom: 2rem; }\\n\\n.tabs ul,\\n.hero-foot .tabs ul {\\n  padding-left: 14rem;\\n  padding-right: 14rem; }\\n\\n.hero-foot .tabs ul {\\n  padding-top: 3rem; }\\n\\n.hero-foot .hero-body h1 {\\n  margin-top: auto; }\\n\\nbutton,\\n.hero-foot .tabs a {\\n  color: black;\\n  font-size: 1rem;\\n  font-weight: bold;\\n  font-family: 'Lato', sans-serif;\\n  font-size: 1rem; }\\n\\n.hero-foot .tabs a:hover {\\n  color: grey; }\\n\\n.tabs ul {\\n  border-bottom-color: transparent;\\n  border-bottom-style: none; }\\n\\n.hero-foot .tabs .is-active {\\n  color: grey;\\n  text-decoration: line-through; }\\n\\nnav,\\nbutton {\\n  margin-bottom: 4rem; }\\n\\nbutton {\\n  margin-top: 2rem; }\\n\\n@media screen and (max-width: 768px) {\\n  .hero-image {\\n    margin: auto 2rem; }\\n  .hero-body h1 {\\n    visibility: hidden; }\\n  .shoes {\\n    background-image: url(\\\"../images/shoes-portrait.jpg\\\") !important;\\n    background-size: cover;\\n    background-position: center;\\n    margin-left: 1rem;\\n    margin-right: 1rem; } }\\n\\n@media screen and (max-width: 1023px) {\\n  .hero-body h1 {\\n    font-size: 6rem;\\n    letter-spacing: -4px; } }\\n/*# sourceMappingURL=src/components/ShoeHero.svelte.map */</style>\\n\\n<ModalNav bind:showModal/>\\n\\n  <!-- Hero content: will be in the middle -->\\n\\n  <div class=\\\"hero-image\\\">\\n    <div class=\\\"shoes hero-body\\\">\\n      <div class=\\\"container\\\">\\n        <h1>Wanderlust</h1>\\n      </div>\\n    </div>\\n  </div>\\n\\n  <!-- Hero footer: will stick at the bottom -->\\n  <div class=\\\"hero-foot is-hidden-mobile\\\">\\n    <nav class=\\\"tabs is-fullwidth\\\">\\n      <div class=\\\"container\\\">\\n        <ul>\\n          <!-- <li class=\\\"is-active\\\"><a>Home</a></li> -->\\n          <li><a class=\\\"is-active\\\" href=\\\"morocco\\\">{destination.one}</a></li>\\n          <li><a href=\\\"travel\\\">{destination.two}</a></li>\\n          <li><a href=\\\"travel\\\">{destination.three}</a></li>\\n          <li><a href=\\\"travel\\\">{destination.four}</a></li>\\n        </ul>\\n      </div>\\n    </nav>\\n  </div>\\n\\n<!-- </section> -->\\n<div class=\\\"container is-hidden-tablet\\\">\\n  <div class=\\\"column has-text-centered\\\">\\n    <button class=\\\"button is-white\\\" on:click={() => showModal = true}>Menu</button>\\n  </div>\\n</div>\\n\"],\"names\":[],\"mappings\":\"AAMkC,EAAE,8BAAC,CAAC,AACpC,WAAW,CAAE,YAAY,CACzB,SAAS,CAAE,KAAK,CAChB,KAAK,CAAE,OAAO,CACd,cAAc,CAAE,OAAO,CACvB,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,MAAM,CACnB,UAAU,CAAE,IAAI,AAAE,CAAC,AAErB,UAAU,8BAAC,CAAC,AACV,WAAW,CAAE,IAAI,CACjB,cAAc,CAAE,IAAI,AAAE,CAAC,AAEzB,WAAW,8BAAC,CAAC,AACX,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,AAAE,CAAC,AAEvB,MAAM,8BAAC,CAAC,AACN,gBAAgB,CAAE,IAAI,qBAAqB,CAAC,CAAC,UAAU,CACvD,eAAe,CAAE,KAAK,CACtB,mBAAmB,CAAE,MAAM,AAAE,CAAC,AAEhC,UAAU,8BAAC,CAAC,AACV,aAAa,CAAE,IAAI,AAAE,CAAC,AAExB,oBAAK,CAAC,iBAAE,CACR,yBAAU,CAAC,KAAK,CAAC,EAAE,eAAC,CAAC,AACnB,YAAY,CAAE,KAAK,CACnB,aAAa,CAAE,KAAK,AAAE,CAAC,AAEzB,yBAAU,CAAC,KAAK,CAAC,EAAE,eAAC,CAAC,AACnB,WAAW,CAAE,IAAI,AAAE,CAAC,AAEtB,UAAU,CAAC,yBAAU,CAAC,EAAE,eAAC,CAAC,AACxB,UAAU,CAAE,IAAI,AAAE,CAAC,AAErB,oCAAM,CACN,yBAAU,CAAC,KAAK,CAAC,CAAC,eAAC,CAAC,AAClB,KAAK,CAAE,KAAK,CACZ,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,IAAI,CACjB,WAAW,CAAE,MAAM,CAAC,CAAC,UAAU,CAC/B,SAAS,CAAE,IAAI,AAAE,CAAC,AAEpB,yBAAU,CAAC,KAAK,CAAC,gBAAC,MAAM,AAAC,CAAC,AACxB,KAAK,CAAE,IAAI,AAAE,CAAC,AAEhB,oBAAK,CAAC,EAAE,eAAC,CAAC,AACR,mBAAmB,CAAE,WAAW,CAChC,mBAAmB,CAAE,IAAI,AAAE,CAAC,AAE9B,yBAAU,CAAC,KAAK,CAAC,UAAU,eAAC,CAAC,AAC3B,KAAK,CAAE,IAAI,CACX,eAAe,CAAE,YAAY,AAAE,CAAC,AAElC,iCAAG,CACH,MAAM,8BAAC,CAAC,AACN,aAAa,CAAE,IAAI,AAAE,CAAC,AAExB,MAAM,8BAAC,CAAC,AACN,UAAU,CAAE,IAAI,AAAE,CAAC,AAErB,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACpC,WAAW,8BAAC,CAAC,AACX,MAAM,CAAE,IAAI,CAAC,IAAI,AAAE,CAAC,AACtB,yBAAU,CAAC,EAAE,eAAC,CAAC,AACb,UAAU,CAAE,MAAM,AAAE,CAAC,AACvB,MAAM,8BAAC,CAAC,AACN,gBAAgB,CAAE,IAAI,8BAA8B,CAAC,CAAC,UAAU,CAChE,eAAe,CAAE,KAAK,CACtB,mBAAmB,CAAE,MAAM,CAC3B,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,AAAE,CAAC,AAAC,CAAC,AAE3B,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,MAAM,CAAC,AAAC,CAAC,AACrC,yBAAU,CAAC,EAAE,eAAC,CAAC,AACb,SAAS,CAAE,IAAI,CACf,cAAc,CAAE,IAAI,AAAE,CAAC,AAAC,CAAC\"}"
+	code: "h1.svelte-1wahsxw.svelte-1wahsxw{font-family:'Engagement';font-size:150px;color:#FFFFFF;letter-spacing:-6.25px;text-align:center;font-weight:normal;margin-top:auto}.hero-body.svelte-1wahsxw.svelte-1wahsxw{padding-top:8rem;padding-bottom:8rem}.hero-image.svelte-1wahsxw.svelte-1wahsxw{margin-left:8rem;margin-right:8rem}.shoes.svelte-1wahsxw.svelte-1wahsxw{background-image:url(\"../images/shoes.jpg\") !important;background-size:cover;background-position:center}.hero-foot.svelte-1wahsxw.svelte-1wahsxw{margin-bottom:2rem}.tabs.svelte-1wahsxw ul.svelte-1wahsxw,.hero-foot.svelte-1wahsxw .tabs ul.svelte-1wahsxw{padding-left:14rem;padding-right:14rem}.hero-foot.svelte-1wahsxw .tabs ul.svelte-1wahsxw{padding-top:3rem}.hero-foot .hero-body.svelte-1wahsxw h1.svelte-1wahsxw{margin-top:auto}button.svelte-1wahsxw.svelte-1wahsxw,.hero-foot.svelte-1wahsxw .tabs a.svelte-1wahsxw{color:black;font-size:1rem;font-weight:bold;font-family:'Lato', sans-serif;font-size:1rem}.hero-foot.svelte-1wahsxw .tabs a.svelte-1wahsxw:hover{color:grey}.tabs.svelte-1wahsxw ul.svelte-1wahsxw{border-bottom-color:transparent;border-bottom-style:none}nav.svelte-1wahsxw.svelte-1wahsxw,button.svelte-1wahsxw.svelte-1wahsxw{margin-bottom:4rem}button.svelte-1wahsxw.svelte-1wahsxw{margin-top:2rem}@media screen and (max-width: 768px){.hero-image.svelte-1wahsxw.svelte-1wahsxw{margin:auto 2rem}.hero-body.svelte-1wahsxw h1.svelte-1wahsxw{visibility:hidden}.shoes.svelte-1wahsxw.svelte-1wahsxw{background-image:url(\"../images/shoes-portrait.jpg\") !important;background-size:cover;background-position:center;margin-left:1rem;margin-right:1rem}}@media screen and (max-width: 1023px){.hero-body.svelte-1wahsxw h1.svelte-1wahsxw{font-size:6rem;letter-spacing:-4px}}",
+	map: "{\"version\":3,\"file\":\"ShoeHero.svelte\",\"sources\":[\"ShoeHero.svelte\"],\"sourcesContent\":[\"<script >\\n  import { destination } from '../routes/data.js';\\n  import ModalNav from '../components/ModalNav.svelte';\\n  export let showModal = false;\\n</script>\\n\\n<style media=\\\"screen\\\" lang=\\\"scss\\\">h1 {\\n  font-family: 'Engagement';\\n  font-size: 150px;\\n  color: #FFFFFF;\\n  letter-spacing: -6.25px;\\n  text-align: center;\\n  font-weight: normal;\\n  margin-top: auto; }\\n\\n.hero-body {\\n  padding-top: 8rem;\\n  padding-bottom: 8rem; }\\n\\n.hero-image {\\n  margin-left: 8rem;\\n  margin-right: 8rem; }\\n\\n.shoes {\\n  background-image: url(\\\"../images/shoes.jpg\\\") !important;\\n  background-size: cover;\\n  background-position: center; }\\n\\n.hero-foot {\\n  margin-bottom: 2rem; }\\n\\n.tabs ul,\\n.hero-foot .tabs ul {\\n  padding-left: 14rem;\\n  padding-right: 14rem; }\\n\\n.hero-foot .tabs ul {\\n  padding-top: 3rem; }\\n\\n.hero-foot .hero-body h1 {\\n  margin-top: auto; }\\n\\nbutton,\\n.hero-foot .tabs a {\\n  color: black;\\n  font-size: 1rem;\\n  font-weight: bold;\\n  font-family: 'Lato', sans-serif;\\n  font-size: 1rem; }\\n\\n.hero-foot .tabs a:hover {\\n  color: grey; }\\n\\n.tabs ul {\\n  border-bottom-color: transparent;\\n  border-bottom-style: none; }\\n\\n.hero-foot .tabs .is-active {\\n  color: grey;\\n  text-decoration: line-through; }\\n\\nnav,\\nbutton {\\n  margin-bottom: 4rem; }\\n\\nbutton {\\n  margin-top: 2rem; }\\n\\n@media screen and (max-width: 768px) {\\n  .hero-image {\\n    margin: auto 2rem; }\\n  .hero-body h1 {\\n    visibility: hidden; }\\n  .shoes {\\n    background-image: url(\\\"../images/shoes-portrait.jpg\\\") !important;\\n    background-size: cover;\\n    background-position: center;\\n    margin-left: 1rem;\\n    margin-right: 1rem; } }\\n\\n@media screen and (max-width: 1023px) {\\n  .hero-body h1 {\\n    font-size: 6rem;\\n    letter-spacing: -4px; } }\\n/*# sourceMappingURL=src/components/ShoeHero.svelte.map */</style>\\n\\n<ModalNav bind:showModal/>\\n\\n  <!-- Hero content: will be in the middle -->\\n\\n  <div class=\\\"hero-image\\\">\\n    <div class=\\\"shoes hero-body\\\">\\n      <div class=\\\"container\\\">\\n        <h1>Wanderlust</h1>\\n      </div>\\n    </div>\\n  </div>\\n\\n  <!-- Hero footer: will stick at the bottom -->\\n  <div class=\\\"hero-foot is-hidden-mobile\\\">\\n    <nav class=\\\"tabs is-fullwidth\\\">\\n      <div class=\\\"container\\\">\\n        <ul>\\n          <!-- <li class=\\\"is-active\\\"><a>Home</a></li> -->\\n          <li><a href=\\\"morocco\\\">{destination.one}</a></li>\\n          <li><a href=\\\"istanbul\\\">{destination.two}</a></li>\\n          <li><a href=\\\"peru\\\">{destination.three}</a></li>\\n          <li><a href=\\\"russia\\\">{destination.four}</a></li>\\n        </ul>\\n      </div>\\n    </nav>\\n  </div>\\n\\n<!-- </section> -->\\n<div class=\\\"container is-hidden-tablet\\\">\\n  <div class=\\\"column has-text-centered\\\">\\n    <button class=\\\"button is-white\\\" on:click={() => showModal = true}>Menu</button>\\n  </div>\\n</div>\\n\"],\"names\":[],\"mappings\":\"AAMkC,EAAE,8BAAC,CAAC,AACpC,WAAW,CAAE,YAAY,CACzB,SAAS,CAAE,KAAK,CAChB,KAAK,CAAE,OAAO,CACd,cAAc,CAAE,OAAO,CACvB,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,MAAM,CACnB,UAAU,CAAE,IAAI,AAAE,CAAC,AAErB,UAAU,8BAAC,CAAC,AACV,WAAW,CAAE,IAAI,CACjB,cAAc,CAAE,IAAI,AAAE,CAAC,AAEzB,WAAW,8BAAC,CAAC,AACX,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,AAAE,CAAC,AAEvB,MAAM,8BAAC,CAAC,AACN,gBAAgB,CAAE,IAAI,qBAAqB,CAAC,CAAC,UAAU,CACvD,eAAe,CAAE,KAAK,CACtB,mBAAmB,CAAE,MAAM,AAAE,CAAC,AAEhC,UAAU,8BAAC,CAAC,AACV,aAAa,CAAE,IAAI,AAAE,CAAC,AAExB,oBAAK,CAAC,iBAAE,CACR,yBAAU,CAAC,KAAK,CAAC,EAAE,eAAC,CAAC,AACnB,YAAY,CAAE,KAAK,CACnB,aAAa,CAAE,KAAK,AAAE,CAAC,AAEzB,yBAAU,CAAC,KAAK,CAAC,EAAE,eAAC,CAAC,AACnB,WAAW,CAAE,IAAI,AAAE,CAAC,AAEtB,UAAU,CAAC,yBAAU,CAAC,EAAE,eAAC,CAAC,AACxB,UAAU,CAAE,IAAI,AAAE,CAAC,AAErB,oCAAM,CACN,yBAAU,CAAC,KAAK,CAAC,CAAC,eAAC,CAAC,AAClB,KAAK,CAAE,KAAK,CACZ,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,IAAI,CACjB,WAAW,CAAE,MAAM,CAAC,CAAC,UAAU,CAC/B,SAAS,CAAE,IAAI,AAAE,CAAC,AAEpB,yBAAU,CAAC,KAAK,CAAC,gBAAC,MAAM,AAAC,CAAC,AACxB,KAAK,CAAE,IAAI,AAAE,CAAC,AAEhB,oBAAK,CAAC,EAAE,eAAC,CAAC,AACR,mBAAmB,CAAE,WAAW,CAChC,mBAAmB,CAAE,IAAI,AAAE,CAAC,AAM9B,iCAAG,CACH,MAAM,8BAAC,CAAC,AACN,aAAa,CAAE,IAAI,AAAE,CAAC,AAExB,MAAM,8BAAC,CAAC,AACN,UAAU,CAAE,IAAI,AAAE,CAAC,AAErB,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACpC,WAAW,8BAAC,CAAC,AACX,MAAM,CAAE,IAAI,CAAC,IAAI,AAAE,CAAC,AACtB,yBAAU,CAAC,EAAE,eAAC,CAAC,AACb,UAAU,CAAE,MAAM,AAAE,CAAC,AACvB,MAAM,8BAAC,CAAC,AACN,gBAAgB,CAAE,IAAI,8BAA8B,CAAC,CAAC,UAAU,CAChE,eAAe,CAAE,KAAK,CACtB,mBAAmB,CAAE,MAAM,CAC3B,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,AAAE,CAAC,AAAC,CAAC,AAE3B,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,MAAM,CAAC,AAAC,CAAC,AACrC,yBAAU,CAAC,EAAE,eAAC,CAAC,AACb,SAAS,CAAE,IAAI,CACf,cAAc,CAAE,IAAI,AAAE,CAAC,AAAC,CAAC\"}"
 };
 
 const ShoeHero = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
@@ -583,10 +805,10 @@ const ShoeHero = create_ssr_component(($$result, $$props, $$bindings, $$slots) =
 
   
   <div class="${"hero-foot is-hidden-mobile svelte-1wahsxw"}"><nav class="${"tabs is-fullwidth svelte-1wahsxw"}"><div class="${"container"}"><ul class="${"svelte-1wahsxw"}">
-          <li><a class="${"is-active svelte-1wahsxw"}" href="${"morocco"}">${escape(destination.one)}</a></li>
-          <li><a href="${"travel"}" class="${"svelte-1wahsxw"}">${escape(destination.two)}</a></li>
-          <li><a href="${"travel"}" class="${"svelte-1wahsxw"}">${escape(destination.three)}</a></li>
-          <li><a href="${"travel"}" class="${"svelte-1wahsxw"}">${escape(destination.four)}</a></li></ul></div></nav></div>
+          <li><a href="${"morocco"}" class="${"svelte-1wahsxw"}">${escape(destination.one)}</a></li>
+          <li><a href="${"istanbul"}" class="${"svelte-1wahsxw"}">${escape(destination.two)}</a></li>
+          <li><a href="${"peru"}" class="${"svelte-1wahsxw"}">${escape(destination.three)}</a></li>
+          <li><a href="${"russia"}" class="${"svelte-1wahsxw"}">${escape(destination.four)}</a></li></ul></div></nav></div>
 
 
 <div class="${"container is-hidden-tablet"}"><div class="${"column has-text-centered"}"><button class="${"button is-white svelte-1wahsxw"}">Menu</button></div></div>`;
@@ -595,75 +817,197 @@ const ShoeHero = create_ssr_component(($$result, $$props, $$bindings, $$slots) =
 	return $$rendered;
 });
 
+/* src/routes/istanbul.svelte generated by Svelte v3.20.1 */
+
+const Istanbul = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
+	return `
+
+${($$result.head += `${($$result.title = `<title>${escape(destination.two)}</title>`, "")}`, "")}
+
+<div class="${"travelPage"}">${validate_component(Hero, "Hero").$$render(
+		$$result,
+		{
+			current: "istanbul",
+			destHead: destination.two
+		},
+		{},
+		{}
+	)}
+
+	${validate_component(Blurb, "Blurb").$$render(
+		$$result,
+		{
+			TravlerCopy: copy.travelers,
+			blurbCopy: copy.blurb
+		},
+		{},
+		{}
+	)}
+
+		${each(photos.two, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+
+		${each(photos.four, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+
+		${each(photos.one, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+
+		${each(photos.three, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${validate_component(ChapterHeader, "ChapterHeader").$$render($$result, { title: copy.farewell }, {}, {})}
+
+		${validate_component(ShoeHero, "ShoeHero").$$render($$result, {}, {}, {})}</div>`;
+});
+
 /* src/routes/morocco.svelte generated by Svelte v3.20.1 */
 
-const css$8 = {
-	code: "figure.svelte-1u9i392 img.svelte-1u9i392{margin-bottom:3rem}@media screen and (max-width: 1023px){.container.svelte-1u9i392.svelte-1u9i392{margin:1rem !important}figure.svelte-1u9i392 img.svelte-1u9i392{margin-bottom:0rem}}",
-	map: "{\"version\":3,\"file\":\"morocco.svelte\",\"sources\":[\"morocco.svelte\"],\"sourcesContent\":[\"<script>\\n\\timport Hero from '../components/Hero.svelte';\\n\\timport Divider from '../components/Divider.svelte';\\n\\timport Blurb from '../components/Blurb.svelte';\\n\\timport ChapterHeader from '../components/ChapterHeader.svelte';\\n\\timport ShoeHero from '../components/ShoeHero.svelte';\\n\\timport { fade } from 'svelte/transition';\\n\\timport { destination } from './data.js';\\n\\timport { copy, chapter, photos } from './morocco.js';\\n\\tlet visible = true;\\n</script>\\n\\n<style media=\\\"screen\\\" lang=\\\"scss\\\">figure img {\\n  margin-bottom: 3rem; }\\n\\n@media screen and (max-width: 1023px) {\\n  .container {\\n    margin: 1rem !important; }\\n  figure img {\\n    margin-bottom: 0rem; } }\\n/*# sourceMappingURL=src/routes/morocco.svelte.map */</style>\\n\\n\\n<!-- Page starts -->\\n\\n<svelte:head>\\n\\t<title>{destination.one}</title>\\n</svelte:head>\\n<!-- backgroundHero={backgroundHero} -->\\n<Hero destHead={destination.one}/>\\n\\n<Blurb blurbCopy={copy.blurb}/>\\n\\n\\t{#each photos.one as photo, i}\\n\\t\\t<div class=\\\"container image-gallery\\\">\\n\\t\\t\\t\\t<figure><img src={photo.src} alt={photo.alt}></figure>\\n\\t\\t</div>\\n\\t{/each}\\n\\n\\t<Divider/>\\n\\n\\t{#each photos.two as photo, i}\\n\\t\\t<div class=\\\"container image-gallery\\\">\\n\\t\\t\\t\\t<figure><img src={photo.src} alt={photo.alt}></figure>\\n\\t\\t</div>\\n\\t{/each}\\n\\n\\t<Divider/>\\n\\n\\t{#each photos.six as photo, i}\\n\\t\\t<div class=\\\"container image-gallery\\\">\\n\\t\\t\\t\\t<figure><img src={photo.src} alt={photo.alt}></figure>\\n\\t\\t</div>\\n\\t{/each}\\n\\n\\t<ChapterHeader title={chapter.one}/>\\n\\n\\t{#each photos.three as photo, i}\\n\\t\\t<div class=\\\"container image-gallery\\\">\\n\\t\\t\\t\\t<figure><img src={photo.src} alt={photo.alt}></figure>\\n\\t\\t</div>\\n\\t{/each}\\n\\n\\t<Divider/>\\n\\n\\t{#each photos.four as photo, i}\\n\\t\\t<div class=\\\"container image-gallery\\\">\\n\\t\\t\\t\\t<figure><img src={photo.src} alt={photo.alt}></figure>\\n\\t\\t</div>\\n\\t{/each}\\n\\n\\t<Divider/>\\n\\n\\t{#each photos.five as photo, i}\\n\\t\\t<div class=\\\"container image-gallery\\\">\\n\\t\\t\\t\\t<figure><img src={photo.src} alt={photo.alt}></figure>\\n\\t\\t</div>\\n\\t{/each}\\n\\n\\t<Divider/>\\n\\n\\t{#each photos.eight as photo, i}\\n\\t\\t<div class=\\\"container image-gallery\\\">\\n\\t\\t\\t\\t<figure><img src={photo.src} alt={photo.alt}></figure>\\n\\t\\t</div>\\n\\t{/each}\\n\\n\\t<ChapterHeader title={chapter.two}/>\\n\\n\\t{#each photos.seven as photo, i}\\n\\t\\t<div class=\\\"container image-gallery\\\">\\n\\t\\t\\t\\t<figure><img src={photo.src} alt={photo.alt}></figure>\\n\\t\\t</div>\\n\\t{/each}\\n\\n\\t<ChapterHeader title={chapter.two}/>\\n\\n\\t{#each photos.nine as photo, i}\\n\\t\\t<div class=\\\"container image-gallery\\\">\\n\\t\\t\\t\\t<figure><img src={photo.src} alt={photo.alt}></figure>\\n\\t\\t</div>\\n\\t{/each}\\n\\n\\t<ChapterHeader title={copy.farewell}/>\\n\\n\\t<ShoeHero/>\\n\"],\"names\":[],\"mappings\":\"AAYkC,qBAAM,CAAC,GAAG,eAAC,CAAC,AAC5C,aAAa,CAAE,IAAI,AAAE,CAAC,AAExB,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,MAAM,CAAC,AAAC,CAAC,AACrC,UAAU,8BAAC,CAAC,AACV,MAAM,CAAE,IAAI,CAAC,UAAU,AAAE,CAAC,AAC5B,qBAAM,CAAC,GAAG,eAAC,CAAC,AACV,aAAa,CAAE,IAAI,AAAE,CAAC,AAAC,CAAC\"}"
-};
-
 const Morocco = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
-	$$result.css.add(css$8);
-
 	return `
 
 ${($$result.head += `${($$result.title = `<title>${escape(destination.one)}</title>`, "")}`, "")}
 
-${validate_component(Hero, "Hero").$$render($$result, { destHead: destination.one }, {}, {})}
+<div class="${"travelPage"}">${validate_component(Hero, "Hero").$$render(
+		$$result,
+		{
+			current: "morocco",
+			destHead: destination.one
+		},
+		{},
+		{}
+	)}
 
-${validate_component(Blurb, "Blurb").$$render($$result, { blurbCopy: copy.blurb }, {}, {})}
+	${validate_component(Blurb, "Blurb").$$render(
+		$$result,
+		{
+			TravlerCopy: copy$1.travelers,
+			blurbCopy: copy$1.blurb
+		},
+		{},
+		{}
+	)}
 
-	${each(photos.one, (photo, i) => `<div class="${"container image-gallery svelte-1u9i392"}"><figure class="${"svelte-1u9i392"}"><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)} class="${"svelte-1u9i392"}"></figure>
-		</div>`)}
+		${each(photos$1.one, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
 
-	${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
 
-	${each(photos.two, (photo, i) => `<div class="${"container image-gallery svelte-1u9i392"}"><figure class="${"svelte-1u9i392"}"><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)} class="${"svelte-1u9i392"}"></figure>
-		</div>`)}
+		${each(photos$1.two, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
 
-	${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
 
-	${each(photos.six, (photo, i) => `<div class="${"container image-gallery svelte-1u9i392"}"><figure class="${"svelte-1u9i392"}"><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)} class="${"svelte-1u9i392"}"></figure>
-		</div>`)}
+		${each(photos$1.six, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
 
-	${validate_component(ChapterHeader, "ChapterHeader").$$render($$result, { title: chapter.one }, {}, {})}
+		${validate_component(ChapterHeader, "ChapterHeader").$$render($$result, { title: chapter$1.one }, {}, {})}
 
-	${each(photos.three, (photo, i) => `<div class="${"container image-gallery svelte-1u9i392"}"><figure class="${"svelte-1u9i392"}"><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)} class="${"svelte-1u9i392"}"></figure>
-		</div>`)}
+		${each(photos$1.three, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
 
-	${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
 
-	${each(photos.four, (photo, i) => `<div class="${"container image-gallery svelte-1u9i392"}"><figure class="${"svelte-1u9i392"}"><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)} class="${"svelte-1u9i392"}"></figure>
-		</div>`)}
+		${each(photos$1.four, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
 
-	${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
 
-	${each(photos.five, (photo, i) => `<div class="${"container image-gallery svelte-1u9i392"}"><figure class="${"svelte-1u9i392"}"><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)} class="${"svelte-1u9i392"}"></figure>
-		</div>`)}
+		${each(photos$1.five, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
 
-	${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
 
-	${each(photos.eight, (photo, i) => `<div class="${"container image-gallery svelte-1u9i392"}"><figure class="${"svelte-1u9i392"}"><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)} class="${"svelte-1u9i392"}"></figure>
-		</div>`)}
+		${each(photos$1.eight, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
 
-	${validate_component(ChapterHeader, "ChapterHeader").$$render($$result, { title: chapter.two }, {}, {})}
+		${validate_component(ChapterHeader, "ChapterHeader").$$render($$result, { title: chapter$1.two }, {}, {})}
 
-	${each(photos.seven, (photo, i) => `<div class="${"container image-gallery svelte-1u9i392"}"><figure class="${"svelte-1u9i392"}"><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)} class="${"svelte-1u9i392"}"></figure>
-		</div>`)}
+		${each(photos$1.seven, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
 
-	${validate_component(ChapterHeader, "ChapterHeader").$$render($$result, { title: chapter.two }, {}, {})}
+		${validate_component(ChapterHeader, "ChapterHeader").$$render($$result, { title: chapter$1.two }, {}, {})}
 
-	${each(photos.nine, (photo, i) => `<div class="${"container image-gallery svelte-1u9i392"}"><figure class="${"svelte-1u9i392"}"><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)} class="${"svelte-1u9i392"}"></figure>
-		</div>`)}
+		${each(photos$1.nine, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
 
-	${validate_component(ChapterHeader, "ChapterHeader").$$render($$result, { title: copy.farewell }, {}, {})}
+		${validate_component(ChapterHeader, "ChapterHeader").$$render($$result, { title: copy$1.farewell }, {}, {})}
 
-	${validate_component(ShoeHero, "ShoeHero").$$render($$result, {}, {}, {})}`;
+		${validate_component(ShoeHero, "ShoeHero").$$render($$result, {}, {}, {})}</div>`;
+});
+
+/* src/routes/russia.svelte generated by Svelte v3.20.1 */
+
+const Russia = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
+	return `
+
+${($$result.head += `${($$result.title = `<title>${escape(destination.four)}</title>`, "")}`, "")}
+
+<div class="${"travelPage"}">${validate_component(Hero, "Hero").$$render(
+		$$result,
+		{
+			current: "russia",
+			destHead: destination.four
+		},
+		{},
+		{}
+	)}
+
+	${validate_component(Blurb, "Blurb").$$render(
+		$$result,
+		{
+			TravlerCopy: copy$2.travelers,
+			blurbCopy: copy$2.blurb
+		},
+		{},
+		{}
+	)}
+
+		${each(photos$2.one, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+
+		${each(photos$2.two, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+
+		${each(photos$2.three, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+
+		${each(photos$2.four, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+
+		${each(photos$2.five, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+
+		${each(photos$2.six, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${each(photos$2.seven, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${validate_component(ChapterHeader, "ChapterHeader").$$render($$result, { title: copy$2.farewell }, {}, {})}
+
+		${validate_component(ShoeHero, "ShoeHero").$$render($$result, {}, {}, {})}</div>`;
 });
 
 /* src/routes/blog/index.svelte generated by Svelte v3.20.1 */
 
-const css$9 = {
+const css$8 = {
 	code: "ul.svelte-4fatyy{margin:0 0 1em 0;line-height:1.5}",
 	map: "{\"version\":3,\"file\":\"index.svelte\",\"sources\":[\"index.svelte\"],\"sourcesContent\":[\"<script context=\\\"module\\\">\\n\\texport function preload({ params, query }) {\\n\\t\\treturn this.fetch(`blog.json`).then(r => r.json()).then(posts => {\\n\\t\\t\\treturn { posts };\\n\\t\\t});\\n\\t}\\n</script>\\n\\n<script>\\n\\texport let posts;\\n</script>\\n\\n<style>\\n\\tul {\\n\\t\\tmargin: 0 0 1em 0;\\n\\t\\tline-height: 1.5;\\n\\t}\\n\\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9yb3V0ZXMvYmxvZy9pbmRleC5zdmVsdGUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtDQUNDO0VBQ0MsaUJBQWlCO0VBQ2pCLGdCQUFnQjtDQUNqQiIsImZpbGUiOiJzcmMvcm91dGVzL2Jsb2cvaW5kZXguc3ZlbHRlIiwic291cmNlc0NvbnRlbnQiOlsiXG5cdHVsIHtcblx0XHRtYXJnaW46IDAgMCAxZW0gMDtcblx0XHRsaW5lLWhlaWdodDogMS41O1xuXHR9XG4iXX0= */</style>\\n\\n<svelte:head>\\n\\t<title>Blog</title>\\n</svelte:head>\\n\\n<h1>Recent posts</h1>\\n\\n<ul>\\n\\t{#each posts as post}\\n\\t\\t<!-- we're using the non-standard `rel=prefetch` attribute to\\n\\t\\t\\t\\ttell Sapper to load the data for the page as soon as\\n\\t\\t\\t\\tthe user hovers over the link or taps it, instead of\\n\\t\\t\\t\\twaiting for the 'click' event -->\\n\\t\\t<li><a rel='prefetch' href='blog/{post.slug}'>{post.title}</a></li>\\n\\t{/each}\\n</ul>\"],\"names\":[],\"mappings\":\"AAaC,EAAE,cAAC,CAAC,AACH,MAAM,CAAE,CAAC,CAAC,CAAC,CAAC,GAAG,CAAC,CAAC,CACjB,WAAW,CAAE,GAAG,AACjB,CAAC\"}"
 };
@@ -677,7 +1021,7 @@ function preload({ params, query }) {
 const Blog = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 	let { posts } = $$props;
 	if ($$props.posts === void 0 && $$bindings.posts && posts !== void 0) $$bindings.posts(posts);
-	$$result.css.add(css$9);
+	$$result.css.add(css$8);
 
 	return `${($$result.head += `${($$result.title = `<title>Blog</title>`, "")}`, "")}
 
@@ -689,7 +1033,7 @@ const Blog = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 
 /* src/routes/blog/[slug].svelte generated by Svelte v3.20.1 */
 
-const css$a = {
+const css$9 = {
 	code: ".content.svelte-3nu9wu h2{font-size:1.4em;font-weight:500}.content.svelte-3nu9wu pre{background-color:#f9f9f9;box-shadow:inset 1px 1px 5px rgba(0,0,0,0.05);padding:0.5em;border-radius:2px;overflow-x:auto}.content.svelte-3nu9wu pre code{background-color:transparent;padding:0}.content.svelte-3nu9wu ul{line-height:1.5}.content.svelte-3nu9wu li{margin:0 0 0.5em 0}",
 	map: "{\"version\":3,\"file\":\"[slug].svelte\",\"sources\":[\"[slug].svelte\"],\"sourcesContent\":[\"<script context=\\\"module\\\">\\n\\texport async function preload({ params, query }) {\\n\\t\\t// the `slug` parameter is available because\\n\\t\\t// this file is called [slug].svelte\\n\\t\\tconst res = await this.fetch(`blog/${params.slug}.json`);\\n\\t\\tconst data = await res.json();\\n\\n\\t\\tif (res.status === 200) {\\n\\t\\t\\treturn { post: data };\\n\\t\\t} else {\\n\\t\\t\\tthis.error(res.status, data.message);\\n\\t\\t}\\n\\t}\\n</script>\\n\\n<script>\\n\\texport let post;\\n</script>\\n\\n<style>\\n\\t/*\\n\\t\\tBy default, CSS is locally scoped to the component,\\n\\t\\tand any unused styles are dead-code-eliminated.\\n\\t\\tIn this page, Svelte can't know which elements are\\n\\t\\tgoing to appear inside the {{{post.html}}} block,\\n\\t\\tso we have to use the :global(...) modifier to target\\n\\t\\tall elements inside .content\\n\\t*/\\n\\t.content :global(h2) {\\n\\t\\tfont-size: 1.4em;\\n\\t\\tfont-weight: 500;\\n\\t}\\n\\n\\t.content :global(pre) {\\n\\t\\tbackground-color: #f9f9f9;\\n\\t\\tbox-shadow: inset 1px 1px 5px rgba(0,0,0,0.05);\\n\\t\\tpadding: 0.5em;\\n\\t\\tborder-radius: 2px;\\n\\t\\toverflow-x: auto;\\n\\t}\\n\\n\\t.content :global(pre) :global(code) {\\n\\t\\tbackground-color: transparent;\\n\\t\\tpadding: 0;\\n\\t}\\n\\n\\t.content :global(ul) {\\n\\t\\tline-height: 1.5;\\n\\t}\\n\\n\\t.content :global(li) {\\n\\t\\tmargin: 0 0 0.5em 0;\\n\\t}\\n\\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9yb3V0ZXMvYmxvZy9bc2x1Z10uc3ZlbHRlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Q0FDQzs7Ozs7OztFQU9DO0NBQ0Q7RUFDQyxnQkFBZ0I7RUFDaEIsZ0JBQWdCO0NBQ2pCOztDQUVBO0VBQ0MseUJBQXlCO0VBQ3pCLDhDQUE4QztFQUM5QyxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGdCQUFnQjtDQUNqQjs7Q0FFQTtFQUNDLDZCQUE2QjtFQUM3QixVQUFVO0NBQ1g7O0NBRUE7RUFDQyxnQkFBZ0I7Q0FDakI7O0NBRUE7RUFDQyxtQkFBbUI7Q0FDcEIiLCJmaWxlIjoic3JjL3JvdXRlcy9ibG9nL1tzbHVnXS5zdmVsdGUiLCJzb3VyY2VzQ29udGVudCI6WyJcblx0Lypcblx0XHRCeSBkZWZhdWx0LCBDU1MgaXMgbG9jYWxseSBzY29wZWQgdG8gdGhlIGNvbXBvbmVudCxcblx0XHRhbmQgYW55IHVudXNlZCBzdHlsZXMgYXJlIGRlYWQtY29kZS1lbGltaW5hdGVkLlxuXHRcdEluIHRoaXMgcGFnZSwgU3ZlbHRlIGNhbid0IGtub3cgd2hpY2ggZWxlbWVudHMgYXJlXG5cdFx0Z29pbmcgdG8gYXBwZWFyIGluc2lkZSB0aGUge3t7cG9zdC5odG1sfX19IGJsb2NrLFxuXHRcdHNvIHdlIGhhdmUgdG8gdXNlIHRoZSA6Z2xvYmFsKC4uLikgbW9kaWZpZXIgdG8gdGFyZ2V0XG5cdFx0YWxsIGVsZW1lbnRzIGluc2lkZSAuY29udGVudFxuXHQqL1xuXHQuY29udGVudCA6Z2xvYmFsKGgyKSB7XG5cdFx0Zm9udC1zaXplOiAxLjRlbTtcblx0XHRmb250LXdlaWdodDogNTAwO1xuXHR9XG5cblx0LmNvbnRlbnQgOmdsb2JhbChwcmUpIHtcblx0XHRiYWNrZ3JvdW5kLWNvbG9yOiAjZjlmOWY5O1xuXHRcdGJveC1zaGFkb3c6IGluc2V0IDFweCAxcHggNXB4IHJnYmEoMCwwLDAsMC4wNSk7XG5cdFx0cGFkZGluZzogMC41ZW07XG5cdFx0Ym9yZGVyLXJhZGl1czogMnB4O1xuXHRcdG92ZXJmbG93LXg6IGF1dG87XG5cdH1cblxuXHQuY29udGVudCA6Z2xvYmFsKHByZSkgOmdsb2JhbChjb2RlKSB7XG5cdFx0YmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG5cdFx0cGFkZGluZzogMDtcblx0fVxuXG5cdC5jb250ZW50IDpnbG9iYWwodWwpIHtcblx0XHRsaW5lLWhlaWdodDogMS41O1xuXHR9XG5cblx0LmNvbnRlbnQgOmdsb2JhbChsaSkge1xuXHRcdG1hcmdpbjogMCAwIDAuNWVtIDA7XG5cdH1cbiJdfQ== */</style>\\n\\n<svelte:head>\\n\\t<title>{post.title}</title>\\n</svelte:head>\\n\\n<h1>{post.title}</h1>\\n\\n<div class='content'>\\n\\t{@html post.html}\\n</div>\\n\"],\"names\":[],\"mappings\":\"AA4BC,sBAAQ,CAAC,AAAQ,EAAE,AAAE,CAAC,AACrB,SAAS,CAAE,KAAK,CAChB,WAAW,CAAE,GAAG,AACjB,CAAC,AAED,sBAAQ,CAAC,AAAQ,GAAG,AAAE,CAAC,AACtB,gBAAgB,CAAE,OAAO,CACzB,UAAU,CAAE,KAAK,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,CAC9C,OAAO,CAAE,KAAK,CACd,aAAa,CAAE,GAAG,CAClB,UAAU,CAAE,IAAI,AACjB,CAAC,AAED,sBAAQ,CAAC,AAAQ,GAAG,AAAC,CAAC,AAAQ,IAAI,AAAE,CAAC,AACpC,gBAAgB,CAAE,WAAW,CAC7B,OAAO,CAAE,CAAC,AACX,CAAC,AAED,sBAAQ,CAAC,AAAQ,EAAE,AAAE,CAAC,AACrB,WAAW,CAAE,GAAG,AACjB,CAAC,AAED,sBAAQ,CAAC,AAAQ,EAAE,AAAE,CAAC,AACrB,MAAM,CAAE,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,CAAC,AACpB,CAAC\"}"
 };
@@ -711,7 +1055,7 @@ async function preload$1({ params, query }) {
 const U5Bslugu5D = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 	let { post } = $$props;
 	if ($$props.post === void 0 && $$bindings.post && post !== void 0) $$bindings.post(post);
-	$$result.css.add(css$a);
+	$$result.css.add(css$9);
 
 	return `${($$result.head += `${($$result.title = `<title>${escape(post.title)}</title>`, "")}`, "")}
 
@@ -720,9 +1064,59 @@ const U5Bslugu5D = create_ssr_component(($$result, $$props, $$bindings, $$slots)
 <div class="${"content svelte-3nu9wu"}">${post.html}</div>`;
 });
 
+/* src/routes/peru.svelte generated by Svelte v3.20.1 */
+
+const Peru = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
+	return `
+
+${($$result.head += `${($$result.title = `<title>${escape(destination.three)}</title>`, "")}`, "")}
+
+<div class="${"travelPage"}">${validate_component(Hero, "Hero").$$render(
+		$$result,
+		{
+			current: "peru",
+			destHead: destination.three
+		},
+		{},
+		{}
+	)}
+
+	${validate_component(Blurb, "Blurb").$$render(
+		$$result,
+		{
+			TravlerCopy: copy$3.travelers,
+			blurbCopy: copy$3.blurb
+		},
+		{},
+		{}
+	)}
+
+		${each(photos$3.three, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+
+		${each(photos$3.two, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+
+		${each(photos$3.one, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${validate_component(Divider, "Divider").$$render($$result, {}, {}, {})}
+
+		${each(photos$3.four, (photo, i) => `<div class="${"container image-gallery"}"><figure><img${add_attribute("src", photo.src, 0)}${add_attribute("alt", photo.alt, 0)}></figure>
+			</div>`)}
+
+		${validate_component(ChapterHeader, "ChapterHeader").$$render($$result, { title: copy$3.farewell }, {}, {})}
+
+		${validate_component(ShoeHero, "ShoeHero").$$render($$result, {}, {}, {})}</div>`;
+});
+
 /* src/routes/play.svelte generated by Svelte v3.20.1 */
 
-const css$b = {
+const css$a = {
 	code: ".image-gallery.svelte-14vpw1e figure img.svelte-14vpw1e{margin-bottom:30px}",
 	map: "{\"version\":3,\"file\":\"play.svelte\",\"sources\":[\"play.svelte\"],\"sourcesContent\":[\"<style>\\n.image-gallery figure img {\\n\\tmargin-bottom: 30px;\\n}\\n\\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9yb3V0ZXMvcGxheS5zdmVsdGUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0NBQ0MsbUJBQW1CO0FBQ3BCIiwiZmlsZSI6InNyYy9yb3V0ZXMvcGxheS5zdmVsdGUiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5pbWFnZS1nYWxsZXJ5IGZpZ3VyZSBpbWcge1xuXHRtYXJnaW4tYm90dG9tOiAzMHB4O1xufVxuIl19 */</style>\\n\\n<script>\\n\\tlet photosOne = [\\n\\t\\t{ src: 'images/aaa.jpg', alt: 'whatever' },\\n\\t\\t{ src: 'images/bbb.jpg', alt: 'yup' },\\n\\t\\t{ src: 'images/ccc.jpg', alt: 'new' }\\n\\t];\\n  let photosTwo = [\\n    { src: 'images/ddd.jpg', alt: 'stuff' },\\n    { src: 'images/eee.jpg', alt: 'shit' }\\n\\t];\\n\\tlet chapterOne = 'Aït Benhaddou';\\n\\tlet chapterTwo = \\t'Erg Chebbi';\\n\\t// let chapters = [\\n\\t// \\t{ one: 'Aït Benhaddou' },\\n\\t// \\t{ two: 'Erg Chebbi'}\\n\\t// ]\\n\\t// import test from 'test.js';\\n\\n\\timport ChapterHeader from '../components/ChapterHeader.svelte';\\n</script>\\n\\n<!-- <div class=\\\"container\\\">\\n\\t<p>{test}</p>\\n</div> -->\\n\\n\\n\\n\\n{#each photosOne as photo, i}\\n\\t<div class=\\\"container image-gallery\\\">\\n\\t\\t\\t<figure><img src={photo.src} alt={photo.alt}></figure>\\n\\t</div>\\n{/each}\\n\\n<div class=\\\"container\\\">\\n  <div class=\\\"chapter-header\\\">\\n    <h2>{chapterOne}</h2>\\n    <p>* * *</p>\\n  </div>\\n</div>\\n\\n\\n\\n{#each photosTwo as photo, i}\\n\\t<div class=\\\"container image-gallery\\\">\\n\\t\\t\\t<figure><img src={photo.src} alt={photo.alt}></figure>\\n\\t</div>\\n{/each}\\n\\n<div class=\\\"container\\\">\\n  <div class=\\\"chapter-header\\\">\\n    <h2>{chapterTwo}</h2>\\n    <p>* * *</p>\\n  </div>\\n</div>\\n\"],\"names\":[],\"mappings\":\"AACA,6BAAc,CAAC,MAAM,CAAC,GAAG,eAAC,CAAC,AAC1B,aAAa,CAAE,IAAI,AACpB,CAAC\"}"
 };
@@ -742,7 +1136,7 @@ const Play = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 		{ src: "images/eee.jpg", alt: "shit" }
 	];
 
-	$$result.css.add(css$b);
+	$$result.css.add(css$a);
 
 	return `
 
@@ -766,19 +1160,19 @@ ${each(photosTwo, (photo, i) => `<div class="${"container image-gallery svelte-1
 
 /* src/routes/_layout.svelte generated by Svelte v3.20.1 */
 
-const css$c = {
+const css$b = {
 	code: "*{box-sizing:border-box}html,body{margin:0;padding:0}",
 	map: "{\"version\":3,\"file\":\"_layout.svelte\",\"sources\":[\"_layout.svelte\"],\"sourcesContent\":[\"<script>\\n</script>\\n\\n<style lang=\\\"scss\\\" global>:global(*) {\\n  box-sizing: border-box; }\\n\\n:global(html), :global(body) {\\n  margin: 0;\\n  padding: 0; }\\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9yb3V0ZXMvX2xheW91dC5zdmVsdGUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxzQkFBc0IsRUFBRTs7QUFFMUI7RUFDRSxTQUFTO0VBQ1QsVUFBVSxFQUFFIiwiZmlsZSI6InNyYy9yb3V0ZXMvX2xheW91dC5zdmVsdGUiLCJzb3VyY2VzQ29udGVudCI6WyIqIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDsgfVxuXG5odG1sLCBib2R5IHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwOyB9XG4vKiMgc291cmNlTWFwcGluZ1VSTD1zcmMvcm91dGVzL19sYXlvdXQuc3ZlbHRlLm1hcCAqLyJdfQ== */</style>\\n\\n<main>\\n\\t<slot></slot>\\n</main>\\n\"],\"names\":[],\"mappings\":\"AAGkC,CAAC,AAAE,CAAC,AACpC,UAAU,CAAE,UAAU,AAAE,CAAC,AAEnB,IAAI,AAAC,CAAU,IAAI,AAAE,CAAC,AAC5B,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,AAAE,CAAC\"}"
 };
 
 const Layout = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
-	$$result.css.add(css$c);
+	$$result.css.add(css$b);
 	return `<main>${$$slots.default ? $$slots.default({}) : ``}</main>`;
 });
 
 /* src/routes/_error.svelte generated by Svelte v3.20.1 */
 
-const css$d = {
+const css$c = {
 	code: "h1.svelte-1hjjbzs,p.svelte-1hjjbzs{margin:0 auto}h1.svelte-1hjjbzs{font-size:2.8em;font-weight:700;margin:0 0 0.5em 0}p.svelte-1hjjbzs{margin:1em auto}@media(min-width: 480px){h1.svelte-1hjjbzs{font-size:4em}}",
 	map: "{\"version\":3,\"file\":\"_error.svelte\",\"sources\":[\"_error.svelte\"],\"sourcesContent\":[\"<script>\\n\\texport let status;\\n\\texport let error;\\n\\n\\tconst dev = undefined === 'development';\\n</script>\\n\\n<style>\\n\\th1, p {\\n\\t\\tmargin: 0 auto;\\n\\t}\\n\\n\\th1 {\\n\\t\\tfont-size: 2.8em;\\n\\t\\tfont-weight: 700;\\n\\t\\tmargin: 0 0 0.5em 0;\\n\\t}\\n\\n\\tp {\\n\\t\\tmargin: 1em auto;\\n\\t}\\n\\n\\t@media (min-width: 480px) {\\n\\t\\th1 {\\n\\t\\t\\tfont-size: 4em;\\n\\t\\t}\\n\\t}\\n\\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9yb3V0ZXMvX2Vycm9yLnN2ZWx0ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0NBQ0M7RUFDQyxjQUFjO0NBQ2Y7O0NBRUE7RUFDQyxnQkFBZ0I7RUFDaEIsZ0JBQWdCO0VBQ2hCLG1CQUFtQjtDQUNwQjs7Q0FFQTtFQUNDLGdCQUFnQjtDQUNqQjs7Q0FFQTtFQUNDO0dBQ0MsY0FBYztFQUNmO0NBQ0QiLCJmaWxlIjoic3JjL3JvdXRlcy9fZXJyb3Iuc3ZlbHRlIiwic291cmNlc0NvbnRlbnQiOlsiXG5cdGgxLCBwIHtcblx0XHRtYXJnaW46IDAgYXV0bztcblx0fVxuXG5cdGgxIHtcblx0XHRmb250LXNpemU6IDIuOGVtO1xuXHRcdGZvbnQtd2VpZ2h0OiA3MDA7XG5cdFx0bWFyZ2luOiAwIDAgMC41ZW0gMDtcblx0fVxuXG5cdHAge1xuXHRcdG1hcmdpbjogMWVtIGF1dG87XG5cdH1cblxuXHRAbWVkaWEgKG1pbi13aWR0aDogNDgwcHgpIHtcblx0XHRoMSB7XG5cdFx0XHRmb250LXNpemU6IDRlbTtcblx0XHR9XG5cdH1cbiJdfQ== */</style>\\n\\n<svelte:head>\\n\\t<title>{status}</title>\\n</svelte:head>\\n\\n<h1>{status}</h1>\\n\\n<p>{error.message}</p>\\n\\n{#if dev && error.stack}\\n\\t<pre>{error.stack}</pre>\\n{/if}\\n\"],\"names\":[],\"mappings\":\"AAQC,iBAAE,CAAE,CAAC,eAAC,CAAC,AACN,MAAM,CAAE,CAAC,CAAC,IAAI,AACf,CAAC,AAED,EAAE,eAAC,CAAC,AACH,SAAS,CAAE,KAAK,CAChB,WAAW,CAAE,GAAG,CAChB,MAAM,CAAE,CAAC,CAAC,CAAC,CAAC,KAAK,CAAC,CAAC,AACpB,CAAC,AAED,CAAC,eAAC,CAAC,AACF,MAAM,CAAE,GAAG,CAAC,IAAI,AACjB,CAAC,AAED,MAAM,AAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AAC1B,EAAE,eAAC,CAAC,AACH,SAAS,CAAE,GAAG,AACf,CAAC,AACF,CAAC\"}"
 };
@@ -788,7 +1182,7 @@ const Error$1 = create_ssr_component(($$result, $$props, $$bindings, $$slots) =>
 	let { error } = $$props;
 	if ($$props.status === void 0 && $$bindings.status && status !== void 0) $$bindings.status(status);
 	if ($$props.error === void 0 && $$bindings.error && error !== void 0) $$bindings.error(error);
-	$$result.css.add(css$d);
+	$$result.css.add(css$c);
 
 	return `${($$result.head += `${($$result.title = `<title>${escape(status)}</title>`, "")}`, "")}
 
@@ -806,30 +1200,51 @@ const d = decodeURIComponent;
 const manifest = {
 	server_routes: [
 		{
+			// istanbul.js
+			pattern: /^\/istanbul\/?$/,
+			handlers: route_0,
+			params: () => ({})
+		},
+
+		{
 			// morocco.js
 			pattern: /^\/morocco\/?$/,
-			handlers: route_0,
+			handlers: route_1,
+			params: () => ({})
+		},
+
+		{
+			// russia.js
+			pattern: /^\/russia\/?$/,
+			handlers: route_2,
 			params: () => ({})
 		},
 
 		{
 			// blog/index.json.js
 			pattern: /^\/blog.json$/,
-			handlers: route_1,
+			handlers: route_3,
 			params: () => ({})
 		},
 
 		{
 			// blog/[slug].json.js
 			pattern: /^\/blog\/([^\/]+?).json$/,
-			handlers: route_2,
+			handlers: route_4,
 			params: match => ({ slug: d(match[1]) })
 		},
 
 		{
 			// data.js
 			pattern: /^\/data\/?$/,
-			handlers: route_3,
+			handlers: route_5,
+			params: () => ({})
+		},
+
+		{
+			// peru.js
+			pattern: /^\/peru\/?$/,
+			handlers: route_6,
 			params: () => ({})
 		}
 	],
@@ -860,6 +1275,14 @@ const manifest = {
 		},
 
 		{
+			// russia.svelte
+			pattern: /^\/russia\/?$/,
+			parts: [
+				{ name: "russia", file: "russia.svelte", component: Russia }
+			]
+		},
+
+		{
 			// blog/index.svelte
 			pattern: /^\/blog\/?$/,
 			parts: [
@@ -873,6 +1296,14 @@ const manifest = {
 			parts: [
 				null,
 				{ name: "blog_$slug", file: "blog/[slug].svelte", component: U5Bslugu5D, preload: preload$1, params: match => ({ slug: d(match[1]) }) }
+			]
+		},
+
+		{
+			// peru.svelte
+			pattern: /^\/peru\/?$/,
+			parts: [
+				{ name: "peru", file: "peru.svelte", component: Peru }
 			]
 		},
 
