@@ -137,7 +137,7 @@
         <ul>
           <!-- <li class="is-active"><a>Home</a></li> -->
           <li><a href="morocco">{destination.one}</a></li>
-          <li><a href="istabul">{destination.two}</a></li>
+          <li><a href="istanbul">{destination.two}</a></li>
           <li><a href="peru">{destination.three}</a></li>
           <li><a href="russia">{destination.four}</a></li>
         </ul>

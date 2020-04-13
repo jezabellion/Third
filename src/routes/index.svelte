@@ -117,6 +117,13 @@
 
 </style>
 
+<svelte:head>
+  <meta property="og:title" content="Wanderlust" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="www.amazon.com" />
+  <meta property="og:image" content="../images/social-images/home-og.jpg" />
+</svelte:head>
+
 <ModalNav bind:showModal/>
 
 <section class="hero is-fullheight">
