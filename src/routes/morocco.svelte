@@ -13,7 +13,12 @@
 <!-- Page starts -->
 
 <svelte:head>
-	<title>{destination.one}</title>
+  <title>{destination.one} | {destination.home}</title>
+  <meta property="og:title" content="{destination.one}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rambling-man.netlify.com/morocco" />
+  <meta property="og:image" content="https://rambling-man.netlify.com/images/social-images/morocco-og.jpg" />
+  <meta property="og:description" content="{copy.blurb}" />
 </svelte:head>
 
 <div class="travelPage">

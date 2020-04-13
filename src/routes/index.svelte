@@ -118,10 +118,11 @@
 </style>
 
 <svelte:head>
+  <title>Wanderlust</title>
   <meta property="og:title" content="Wanderlust" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://affectionate-mayer-fa488a.netlify.com/" />
-  <meta property="og:image" content="https://affectionate-mayer-fa488a.netlify.com/images/social-images/home-og.jpg" />
+  <meta property="og:url" content="https://rambling-man.netlify.com/" />
+  <meta property="og:image" content="https://rambling-man.netlify.com/images/social-images/home-og.jpg" />
   <meta property="og:description" content="Amazing documetation of super duper travels" />
 </svelte:head>
 
