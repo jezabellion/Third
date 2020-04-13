@@ -19,7 +19,7 @@
 <div class="travelPage">
 	<Hero current={'morocco'} destHead={destination.one}/>
 
-	<Blurb TravlerCopy={copy.travelers} blurbCopy={copy.blurb}/>
+	<Blurb dateCopy={copy.date} TravlerCopy={copy.travelers} blurbCopy={copy.blurb}/>
 
 		{#each photos.one as photo, i}
 			<div class="container image-gallery">
@@ -27,7 +27,7 @@
 			</div>
 		{/each}
 
-		<Divider/>
+		<ChapterHeader title={chapter.three}/>
 
 		{#each photos.two as photo, i}
 			<div class="container image-gallery">
@@ -75,7 +75,7 @@
 			</div>
 		{/each}
 
-		<ChapterHeader title={chapter.two}/>
+		<Divider/>
 
 		{#each photos.seven as photo, i}
 			<div class="container image-gallery">

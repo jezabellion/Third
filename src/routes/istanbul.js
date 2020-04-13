@@ -2,8 +2,9 @@
 // Istanbul
 
 export const copy = {
-  blurb: 'Next  ow whatever level is a big next step in the propsition New new new shoes mane man to take your love of astronomy to the',
+  blurb: 'Five days rumbling and tumbling through the wonderful textures and sounds of Istanbul',
   travelers: 'Andrea & Jeremy',
+  date: '2018',
   farewell: 'Teşekkür ederim Turkey!'
 }
 

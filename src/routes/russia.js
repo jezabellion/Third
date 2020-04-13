@@ -2,8 +2,9 @@
 // Russia
 
 export const copy = {
-  blurb: 'Russia russia russia propsition New new new shoes mane man to take your love of astronomy to the',
+  blurb: 'Hurtling through the streets of Saint Petersburg & Moscow. Vodka & pickles, Dostoevsky, nuclear fallout shelters and Sputik',
   travelers: 'Ben & Jeremy',
+  date: '2017',
   farewell: 'Spasibo Russia!'
 }
 

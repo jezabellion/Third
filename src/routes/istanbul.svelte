@@ -19,7 +19,7 @@
 <div class="travelPage">
 	<Hero current={'istanbul'} destHead={destination.two}/>
 
-	<Blurb TravlerCopy={copy.travelers} blurbCopy={copy.blurb}/>
+	<Blurb dateCopy={copy.date} TravlerCopy={copy.travelers} blurbCopy={copy.blurb}/>
 
 		{#each photos.two as photo, i}
 			<div class="container image-gallery">

@@ -2,14 +2,16 @@
 // Morocco
 
 export const copy = {
-  blurb: 'New new new shoes mane man to take your love of astronomy to the next level is a big next step in the propsition',
+  blurb: 'A wild rolling road trip across Morocco, nine days, 3400Km. From the snowy atlas mountains to the mouth of the Sahara',
   travelers: 'Andrea & Jeremy',
+  date: '2018',
   farewell: 'Merci beaucoup Morocco!'
 }
 
 export const chapter = {
       one: 'Aït Benhaddou',
-      two: 'Erg Chebbi'
+      two: 'Erg Chebbi',
+      three: 'Ouarzazate'
     }
 
 export const photos = {

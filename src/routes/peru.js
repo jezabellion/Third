@@ -2,8 +2,9 @@
 // Peru
 
 export const copy = {
-  blurb: 'Next  ow whatever level is a big next step in the propsition New new new shoes mane man to take your love of astronomy to the',
+  blurb: 'From sea-level to 4,000m up into the Peruvian Andes, eating chicken in parks with cats, drunk on Baileys.',
   travelers: 'Izzy & Jeremy',
+  date: '7 Days | 2017',
   farewell: 'Muchas gracias Peru!'
 }
 

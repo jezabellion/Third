@@ -1,6 +1,7 @@
 <script>
  export let blurbCopy;
  export let TravlerCopy;
+ export let dateCopy;
 </script>
 
 <style media="screen" lang="scss">
@@ -35,4 +36,5 @@
   <p>{blurbCopy}</p>
   <p>* * *</p>
   <p>{TravlerCopy}</p>
+  <p>{dateCopy}</p>
 </div>
